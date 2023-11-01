@@ -59,7 +59,9 @@ def to_int(iterable: Iterable[Any]) -> Iterable[int]:
 
 def get_random_config(plug_count: int) -> dict[str, str]:
     return {
-        "rotor_places": " ".join(choices_unique(AvailableRotor.names(), k=3)),
+        "rotor_places": " ".join(
+            map(str, choices_unique(range(len(Kirino.available_rotor)), k=3))
+        ),
         "initial_rotor_positions": " ".join(map(str, choices(range(25), k=3))),
         "plugin_board": get_random_plugs(plug_count),
     }
@@ -98,14 +100,10 @@ if __name__ == "__main__":
         'plugin_board': 'MN AH JR CQ',
         'reflector': 'BETA',
     }
+    message = "AHAHAHJEVOUSAIBIENNIQUE"
+    e = get_enigma_from_config(**config, debug=True).encode_message(message)
 
-    message = "A"
-    e = get_enigma_from_config(**config).encode_message(message)
-
-    print(e)
-    decoded = get_enigma_from_config(**config).encode_message(e)
-    if message != decoded:
-        msg = f'message: {message}, message encodé: {e}, message réencodé: {decoded}'
-        raise ValueError(msg)
+    if message != get_enigma_from_config(**config).encode_message(e):
+        raise ValueError
     print(config)
     print(" ".join(chunks(e, 4)))
