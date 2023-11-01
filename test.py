@@ -34,6 +34,7 @@ def get_plug_choices() -> Iterable[str]:
 def get_plugin_board() -> Iterable[str]:
     yield from ("", "AI", "JK", "AI JK", "AI PU BM", "MN AH JR CQ")
 
+
 def get_reflectors() -> Iterable[AvailableReflector]:
     forbidden_reflectors = {
         AvailableReflector.BETA,
@@ -46,6 +47,7 @@ def get_reflectors() -> Iterable[AvailableReflector]:
 
         yield reflector
 
+
 def get_test_conf() -> Iterable[tuple[str, str, str, AvailableReflector]]:
     return product(
         get_rotor_choices(),
@@ -55,33 +57,11 @@ def get_test_conf() -> Iterable[tuple[str, str, str, AvailableReflector]]:
     )
 
 
-@pytest.mark.skip
 @pytest.mark.parametrize(
     ("rotor_choice", "plugin_board", "rotor_pos", "reflector"),
     get_test_conf(),
 )
-def test_kirino(
-    rotor_choice: str,
-    plugin_board: str,
-    rotor_pos: str,
-    reflector: AvailableReflector,
-    snapshot,
-) -> None:
-    message = "aaaaaah".upper()
-
-    encoded = encode_kirino(message, rotor_choice, plugin_board, rotor_pos)
-
-    assert encoded.strip() == snapshot
-
-    decoded = encode_kirino(encoded, rotor_choice, plugin_board, rotor_pos)
-    assert decoded == message
-
-
-@pytest.mark.parametrize(
-    ("rotor_choice", "plugin_board", "rotor_pos", "reflector"),
-    get_test_conf(),
-)
-def test_fred(
+def test_equality(
     rotor_choice: str,
     plugin_board: str,
     rotor_pos: str,
@@ -89,8 +69,8 @@ def test_fred(
 ) -> None:
     message = "AHAHAHJEVOUSAIBIENNIQUE"
 
-    encoded = encode_fred(message, rotor_choice, plugin_board, rotor_pos, reflector)
-    decoded = encode_fred(encoded, rotor_choice, plugin_board, rotor_pos, reflector)
+    encoded = encode(message, rotor_choice, plugin_board, rotor_pos, reflector)
+    decoded = encode(encoded, rotor_choice, plugin_board, rotor_pos, reflector)
 
     assert decoded == message
 
@@ -99,7 +79,7 @@ def test_fred(
     ("rotor_choice", "plugin_board", "rotor_pos", "reflector"),
     get_test_conf(),
 )
-def test_fred_(
+def test_snapshot(
     rotor_choice: str,
     plugin_board: str,
     rotor_pos: str,
@@ -108,45 +88,12 @@ def test_fred_(
 ) -> None:
     message = "AHAHAHJEVOUSAIBIENNIQUE"
 
-    encoded = encode_fred(message, rotor_choice, plugin_board, rotor_pos, reflector)
+    encoded = encode(message, rotor_choice, plugin_board, rotor_pos, reflector)
 
     assert encoded.strip() == snapshot
 
-    decoded = encode_fred(encoded, rotor_choice, plugin_board, rotor_pos, reflector)
-    assert decoded == message
 
-
-@pytest.mark.skip
-@pytest.mark.parametrize(
-    ("rotor_choice", "plugin_board", "rotor_pos"),
-    [("4 9 10", "ZL RC WN JP KF IO HV ED GX MT", "20 23 11")],
-    # get_test_conf(),
-)
-def test_versus(rotor_choice: str, plugin_board: str, rotor_pos: str) -> None:
-    message = "AHAHAHJEVOUSAIBIENNIQUE"
-    fred = encode_fred(message, rotor_choice, plugin_board, rotor_pos)
-    kirino = encode_kirino(message, rotor_choice, plugin_board, rotor_pos)
-
-    assert fred == kirino
-
-
-def encode_kirino(
-    message: str,
-    rotor_choice: str,
-    plugin_board: str,
-    rotor_pos: str,
-) -> str:
-    from kirino import Enigma
-
-    enigma = Enigma()
-    enigma.set_initial_rotor_place(rotor_choice)
-    enigma.set_plugin_board(plugin_board)
-    enigma.set_initial_rotor_position(rotor_pos)
-
-    return enigma.output_message(message)
-
-
-def encode_fred(
+def encode(
     message: str,
     rotor_choice: str,
     plugin_board: str,

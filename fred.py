@@ -7,8 +7,6 @@ from enigma import Enigma, RotorConfig, Plug
 from enigma.available import AvailableRotor, AvailableReflector
 from enigma.helper import get_letter_from_index
 
-from kirino import Enigma as Kirino
-
 T = TypeVar("T")
 
 
@@ -59,9 +57,7 @@ def to_int(iterable: Iterable[Any]) -> Iterable[int]:
 
 def get_random_config(plug_count: int) -> dict[str, str]:
     return {
-        "rotor_places": " ".join(
-            map(str, choices_unique(range(len(Kirino.available_rotor)), k=3))
-        ),
+        "rotor_places": " ".join(choices_unique(AvailableRotor.names(), k=3)),
         "initial_rotor_positions": " ".join(map(str, choices(range(25), k=3))),
         "plugin_board": get_random_plugs(plug_count),
     }
@@ -93,13 +89,13 @@ def chunks(lst: Collection[Any], n: int):
 
 
 if __name__ == "__main__":
-    # config = get_random_config(10)
     config = {
         "rotor_places": "II1930 IIIC I1930",
         "initial_rotor_positions": "20 23 11",
         "plugin_board": "MN AH JR CQ",
         "reflector": "UKW",
     }
+    config = get_random_config(10)
     message = "AHAHAHJEVOUSAIBIENNIQUE"
     e = get_enigma_from_config(**config, debug=True).encode_message(message)
 
