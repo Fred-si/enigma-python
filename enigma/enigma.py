@@ -3,14 +3,14 @@ from dataclasses import dataclass
 from string import ascii_uppercase
 from typing import Callable
 
-from .available import AvailableRotor as AvailableRotor, AvailableReflector as AvailableReflector
+from .available import AvailableRotor, AvailableReflector
 from .helper import (
     get_letter_from_index,
     get_letter_index,
     is_single_ascii_uppercase_letter,
 )
 from .plug_board import Plug, PlugBoard
-from .rotor import Reflector, Rotor
+from .rotor import AbstractRotor, FrozenRotor, Reflector, Rotor
 from .exception import NotASCIILetterError
 
 
@@ -43,10 +43,12 @@ class Enigma:
             reflector.encoder_config,
             reflector.rotor_position,
         )
-        rotors: list[Rotor] = [reflector]
+        rotors: list[AbstractRotor] = [
+            reflector,
+            FrozenRotor(AvailableReflector.ETW, "A"),
+        ]
         for rotor in rotors_config:
-            rotors.insert(
-                0,
+            rotors.append(
                 Rotor(
                     rotor.encoder_config,
                     rotor.rotor_position,
@@ -56,11 +58,11 @@ class Enigma:
 
         self._encode = self._chain(
             plug_board.permute,
-            *(r.encode for r in rotors),
-            *(r.encode_reverse for r in rotors[:-1][::-1]),
+            *(r.encode for r in rotors[::-1]),
+            *(r.encode_reverse for r in rotors),
             plug_board.permute,
         )
-        self._make_step = rotors[0].make_step
+        self._make_step = rotors[-1].make_step
 
     def encode_message(self, message: str) -> str:
         return " ".join(self.encode_word(word) for word in message.split())
@@ -88,7 +90,9 @@ class Enigma:
             previous_letter = get_letter_from_index(letter)
             for encoder in encoders:
                 letter = encoder(letter)
-                self.debug(f"Converted fred {previous_letter} -> {get_letter_from_index(letter)}")
+                self.debug(
+                    f"Converted fred {previous_letter} -> {get_letter_from_index(letter)}"
+                )
                 previous_letter = get_letter_from_index(letter)
 
             return letter

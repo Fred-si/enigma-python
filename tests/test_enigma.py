@@ -75,7 +75,7 @@ class TestEnigma:
             RotorConfig("QYHOGNECVPUZTFDJAXWMKISRBL", "A"),
         )
 
-        assert Enigma(*config).encode_letter("A") == "I"
+        assert Enigma(*config).encode_letter("A") == "M"
 
     @pytest.mark.parametrize("letter", ascii_uppercase)
     def test_encode_already_encoded_letter_should_return_decoded_letter(
@@ -107,7 +107,7 @@ class TestEnigma:
             ),
             RotorConfig("QYHOGNECVPUZTFDJAXWMKISRBL", "A"),
         )
-        assert Enigma(*config).encode_letter("a") == "I"
+        assert Enigma(*config).encode_letter("a") == "M"
 
     @pytest.mark.parametrize("letter", ["", "AB", "É", "!", ",", '"', "'"])
     def test_encode_should_raise_not_ascii_error_when_letter_is_not_an_ascii_letter(
@@ -136,7 +136,7 @@ class TestEnigma:
         )
         encoded = Enigma(*config).encode_word("FOOBAR")
 
-        assert encoded == "VSLRQF"
+        assert encoded == "IQRDCU"
 
     def test_encode_already_encoded_word_should_return_decoded_word(self) -> None:
         config = (
@@ -166,7 +166,7 @@ class TestEnigma:
         )
         encoded = Enigma(*config).encode_message("FOO BAR")
 
-        assert encoded == "VSL RQF"
+        assert encoded == "IQR DCU"
 
     def test_encode_already_encoded_message_should_return_decoded_message(self) -> None:
         config = (
@@ -201,7 +201,7 @@ class TestEnigma:
         )
         encoded = Enigma(*config).encode_message("FOO BAR")
 
-        assert encoded == "PMJ LKE"
+        assert encoded == "ERN DCW"
 
     def test_encode_already_encoded_message_should_return_decoded_message_again(
         self,

@@ -6,7 +6,7 @@ from .encoder import Encoder
 from .helper import get_letter_index
 
 
-class BaseRotor(ABC):
+class AbstractRotor(ABC):
     @property
     @abstractmethod
     def position(self) -> int:
@@ -20,11 +20,13 @@ class BaseRotor(ABC):
     def encode(self, letter: int) -> int:
         return self.encoder.encode((letter + self.position) % 26)
 
+    def encode_reverse(self, letter: int) -> int:
+        return (self.encoder.encode_reverse(letter) - self.position + 26) % 26
+
     def make_step(self) -> None:
         pass
 
-
-class Reflector(BaseRotor):
+class FrozenRotor(AbstractRotor):
     def __init__(
         self,
         config: AvailableReflector,
@@ -43,11 +45,17 @@ class Reflector(BaseRotor):
     def encoder(self) -> Encoder:
         return self._encoder
 
+
+
+class Reflector(FrozenRotor):
+    def encode_reverse(self, letter: int) -> int:
+        return letter
+
     def __repr__(self) -> str:
         return f"Reflector({repr(self.config)}, {repr(self._position)})"
 
 
-class Rotor(BaseRotor):
+class Rotor(AbstractRotor):
     def __init__(
         self,
         config: AvailableRotor,
@@ -60,9 +68,6 @@ class Rotor(BaseRotor):
         self._encoder = Encoder(config)
         self._position = get_letter_index(initial_position)
         self._turnover = turnover
-
-    def encode_reverse(self, letter: int) -> int:
-        return (self._encoder.encode_reverse(letter) - self._position + 26) % 26
 
     def make_step(self) -> None:
         self._position = (self._position + 1) % 26
