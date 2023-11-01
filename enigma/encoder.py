@@ -1,8 +1,8 @@
-from collections.abc import Iterable, Iterator
+from collections.abc import Iterator
 
 
 from .available import AvailableRotor, AvailableReflector
-from .helper import get_letter_from_index, get_letter_index
+from .helper import get_letter_index
 
 
 class Config:
