@@ -17,14 +17,16 @@ class AbstractRotor(ABC):
     def encoder(self) -> Encoder:
         ...
 
+    @abstractmethod
+    def make_step(self) -> None:
+        ...
+
     def encode(self, letter: int) -> int:
         return self.encoder.encode((letter + self.position) % 26)
 
     def encode_reverse(self, letter: int) -> int:
         return (self.encoder.encode_reverse(letter) - self.position + 26) % 26
 
-    def make_step(self) -> None:
-        pass
 
 class FrozenRotor(AbstractRotor):
     def __init__(
@@ -45,6 +47,8 @@ class FrozenRotor(AbstractRotor):
     def encoder(self) -> Encoder:
         return self._encoder
 
+    def make_step(self) -> None:
+        pass
 
 
 class Reflector(FrozenRotor):
