@@ -1,11 +1,10 @@
 from collections.abc import Iterable
-from enum import StrEnum
 from random import choice, choices
 from string import ascii_uppercase
 from typing import Any, Collection, TypeVar
 
 from enigma import Enigma, RotorConfig, Plug
-from enigma.available import AvailableRotor as AvailableRotor, AvailableReflector as AvailableReflector
+from enigma.available import AvailableRotor, AvailableReflector
 from enigma.helper import get_letter_from_index
 
 from kirino import Enigma as Kirino
@@ -14,9 +13,9 @@ T = TypeVar("T")
 
 
 def get_enigma_from_config(
-    rotor_places: str = "II1930 IIIC I1930",
-    initial_rotor_positions: str = "5 22 17",
-    plugin_board: str = "AB BC DE FG HI JK LM NO PQ RS",
+    rotor_places,
+    initial_rotor_positions,
+    plugin_board,
     reflector: AvailableReflector = AvailableReflector.UKW.name,
     *,
     debug: bool = False
