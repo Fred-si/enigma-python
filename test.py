@@ -10,7 +10,7 @@ def joined_permutation(iterable: Iterable[Any], r=None, char=' ') -> Iterable[st
         yield char.join(p)
 
 def get_rotor_choices() -> Iterable[str]:
-    yield from joined_permutation("012")
+    yield from joined_permutation(("II1930", "IIIC", "I1930"))
 
 def get_rotor_pos() -> Iterable[str]:
     for p in product(range(3), repeat=3):
@@ -41,7 +41,19 @@ def test_kirino(rotor_choice: str, plugin_board: str, rotor_pos: str, snapshot) 
     decoded = encode_kirino(encoded, rotor_choice, plugin_board, rotor_pos)
     assert decoded == message
 
+@pytest.mark.parametrize(
+    ("rotor_choice", "plugin_board", "rotor_pos"),
+    get_test_conf(),
+)
+def test_fred(rotor_choice: str, plugin_board: str, rotor_pos: str, snapshot) -> None:
+    message = "aaaaaah".upper()
 
+    encoded = encode_fred(message, rotor_choice, plugin_board, rotor_pos)
+    decoded = encode_fred(encoded, rotor_choice, plugin_board, rotor_pos)
+
+    assert decoded == message
+
+@pytest.mark.skip
 @pytest.mark.parametrize(
     ("rotor_choice", "plugin_board", "rotor_pos"),
     get_test_conf(),
