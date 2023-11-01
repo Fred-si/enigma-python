@@ -4,6 +4,8 @@ from string import ascii_uppercase
 
 
 def _validate(enum: StrEnum) -> StrEnum:
+    unique(enum)
+
     for e in enum:
         if len(e) != len(set(e)):
             msg = f"{enum}.{e.name} contain more the same letter several times."
@@ -24,7 +26,6 @@ class _Available(StrEnum):
 
 
 @_validate
-@unique
 class AvailableRotor(_Available):
     IC = "DMTWSILRUYQNKFEJCAZBPGXOHV"
     IIC = "HQZGPJTMOBLNCIFDYAWVEUSRKX"
@@ -46,7 +47,6 @@ class AvailableRotor(_Available):
 
 
 @_validate
-@unique
 class AvailableReflector(_Available):
     UKW = "QYHOGNECVPUZTFDJAXWMKISRBL"
     ETW = "QWERTZUIOASDFGHJKPYXCVBNML"
@@ -57,5 +57,5 @@ class AvailableReflector(_Available):
     REFB = "YRUHQSLDPXNGOKMIEBFZCWVJAT"
     REFC = "FVPJIAOYEDRZXWGCTKUQSBNMHL"
     REFBTHIN = "ENKQAUYWJICOPBLMDXZVFTHRGS"
-    REFCTTHIN = "RDOBJNTKVEHMLFCWZAXGYIPSUQ"
+    REFCTHIN = "RDOBJNTKVEHMLFCWZAXGYIPSUQ"
     REFETW = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
