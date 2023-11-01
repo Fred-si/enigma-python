@@ -1,0 +1,625 @@
+# serializer version: 1
+# name: TestRotor.test_backward_with_lowercased_letters[a]
+  'J'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[b]
+  'V'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[c]
+  'I'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[d]
+  'C'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[e]
+  'S'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[f]
+  'M'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[g]
+  'B'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[h]
+  'Z'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[i]
+  'L'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[j]
+  'A'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[k]
+  'U'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[l]
+  'W'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[m]
+  'K'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[n]
+  'R'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[o]
+  'E'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[p]
+  'Q'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[q]
+  'D'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[r]
+  'N'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[s]
+  'H'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[t]
+  'P'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[u]
+  'G'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[v]
+  'O'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[w]
+  'T'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[x]
+  'F'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[y]
+  'Y'
+# ---
+# name: TestRotor.test_backward_with_lowercased_letters[z]
+  'X'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[A]
+  'J'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[B]
+  'V'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[C]
+  'I'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[D]
+  'C'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[E]
+  'S'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[F]
+  'M'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[G]
+  'B'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[H]
+  'Z'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[I]
+  'L'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[J]
+  'A'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[K]
+  'U'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[L]
+  'W'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[M]
+  'K'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[N]
+  'R'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[O]
+  'E'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[P]
+  'Q'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[Q]
+  'D'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[R]
+  'N'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[S]
+  'H'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[T]
+  'P'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[U]
+  'G'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[V]
+  'O'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[W]
+  'T'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[X]
+  'F'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[Y]
+  'Y'
+# ---
+# name: TestRotor.test_backward_with_uppercased_letters[Z]
+  'X'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[a]
+  'J'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[b]
+  'G'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[c]
+  'D'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[d]
+  'Q'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[e]
+  'O'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[f]
+  'X'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[g]
+  'U'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[h]
+  'S'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[i]
+  'C'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[j]
+  'A'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[k]
+  'M'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[l]
+  'I'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[m]
+  'F'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[n]
+  'R'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[o]
+  'V'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[p]
+  'T'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[q]
+  'P'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[r]
+  'N'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[s]
+  'E'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[t]
+  'W'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[u]
+  'K'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[v]
+  'B'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[w]
+  'L'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[x]
+  'Z'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[y]
+  'Y'
+# ---
+# name: TestRotor.test_forward_with_lowercased_letters[z]
+  'H'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[A]
+  'J'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[B]
+  'G'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[C]
+  'D'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[D]
+  'Q'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[E]
+  'O'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[F]
+  'X'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[G]
+  'U'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[H]
+  'S'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[I]
+  'C'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[J]
+  'A'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[K]
+  'M'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[L]
+  'I'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[M]
+  'F'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[N]
+  'R'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[O]
+  'V'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[P]
+  'T'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[Q]
+  'P'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[R]
+  'N'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[S]
+  'E'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[T]
+  'W'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[U]
+  'K'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[V]
+  'B'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[W]
+  'L'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[X]
+  'Z'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[Y]
+  'Y'
+# ---
+# name: TestRotor.test_forward_with_uppercased_letters[Z]
+  'H'
+# ---
+# name: TestRotorElement.test_backward[A]
+  'J'
+# ---
+# name: TestRotorElement.test_backward[B]
+  'G'
+# ---
+# name: TestRotorElement.test_backward[C]
+  'D'
+# ---
+# name: TestRotorElement.test_backward[D]
+  'Q'
+# ---
+# name: TestRotorElement.test_backward[E]
+  'O'
+# ---
+# name: TestRotorElement.test_backward[F]
+  'X'
+# ---
+# name: TestRotorElement.test_backward[G]
+  'U'
+# ---
+# name: TestRotorElement.test_backward[H]
+  'S'
+# ---
+# name: TestRotorElement.test_backward[I]
+  'C'
+# ---
+# name: TestRotorElement.test_backward[J]
+  'A'
+# ---
+# name: TestRotorElement.test_backward[K]
+  'M'
+# ---
+# name: TestRotorElement.test_backward[L]
+  'I'
+# ---
+# name: TestRotorElement.test_backward[M]
+  'F'
+# ---
+# name: TestRotorElement.test_backward[N]
+  'R'
+# ---
+# name: TestRotorElement.test_backward[O]
+  'V'
+# ---
+# name: TestRotorElement.test_backward[P]
+  'T'
+# ---
+# name: TestRotorElement.test_backward[Q]
+  'P'
+# ---
+# name: TestRotorElement.test_backward[R]
+  'N'
+# ---
+# name: TestRotorElement.test_backward[S]
+  'E'
+# ---
+# name: TestRotorElement.test_backward[T]
+  'W'
+# ---
+# name: TestRotorElement.test_backward[U]
+  'K'
+# ---
+# name: TestRotorElement.test_backward[V]
+  'B'
+# ---
+# name: TestRotorElement.test_backward[W]
+  'L'
+# ---
+# name: TestRotorElement.test_backward[X]
+  'Z'
+# ---
+# name: TestRotorElement.test_backward[Y]
+  'Y'
+# ---
+# name: TestRotorElement.test_backward[Z]
+  'H'
+# ---
+# name: TestRotorElement.test_forward[A]
+  'J'
+# ---
+# name: TestRotorElement.test_forward[B]
+  'V'
+# ---
+# name: TestRotorElement.test_forward[C]
+  'I'
+# ---
+# name: TestRotorElement.test_forward[D]
+  'C'
+# ---
+# name: TestRotorElement.test_forward[E]
+  'S'
+# ---
+# name: TestRotorElement.test_forward[F]
+  'M'
+# ---
+# name: TestRotorElement.test_forward[G]
+  'B'
+# ---
+# name: TestRotorElement.test_forward[H]
+  'Z'
+# ---
+# name: TestRotorElement.test_forward[I]
+  'L'
+# ---
+# name: TestRotorElement.test_forward[J]
+  'A'
+# ---
+# name: TestRotorElement.test_forward[K]
+  'U'
+# ---
+# name: TestRotorElement.test_forward[L]
+  'W'
+# ---
+# name: TestRotorElement.test_forward[M]
+  'K'
+# ---
+# name: TestRotorElement.test_forward[N]
+  'R'
+# ---
+# name: TestRotorElement.test_forward[O]
+  'E'
+# ---
+# name: TestRotorElement.test_forward[P]
+  'Q'
+# ---
+# name: TestRotorElement.test_forward[Q]
+  'D'
+# ---
+# name: TestRotorElement.test_forward[R]
+  'N'
+# ---
+# name: TestRotorElement.test_forward[S]
+  'H'
+# ---
+# name: TestRotorElement.test_forward[T]
+  'P'
+# ---
+# name: TestRotorElement.test_forward[U]
+  'G'
+# ---
+# name: TestRotorElement.test_forward[V]
+  'O'
+# ---
+# name: TestRotorElement.test_forward[W]
+  'T'
+# ---
+# name: TestRotorElement.test_forward[X]
+  'F'
+# ---
+# name: TestRotorElement.test_forward[Y]
+  'Y'
+# ---
+# name: TestRotorElement.test_forward[Z]
+  'X'
+# ---
+# name: test_main[A]
+  'L'
+# ---
+# name: test_main[B]
+  'G'
+# ---
+# name: test_main[C]
+  'U'
+# ---
+# name: test_main[D]
+  'M'
+# ---
+# name: test_main[E]
+  'L'
+# ---
+# name: test_main[F]
+  'N'
+# ---
+# name: test_main[G]
+  'B'
+# ---
+# name: test_main[H]
+  'Y'
+# ---
+# name: test_main[I]
+  'Q'
+# ---
+# name: test_main[J]
+  'A'
+# ---
+# name: test_main[K]
+  'I'
+# ---
+# name: test_main[L]
+  'A'
+# ---
+# name: test_main[M]
+  'D'
+# ---
+# name: test_main[N]
+  'F'
+# ---
+# name: test_main[O]
+  'Q'
+# ---
+# name: test_main[P]
+  'W'
+# ---
+# name: test_main[Q]
+  'I'
+# ---
+# name: test_main[R]
+  'Z'
+# ---
+# name: test_main[S]
+  'V'
+# ---
+# name: test_main[T]
+  'X'
+# ---
+# name: test_main[U]
+  'C'
+# ---
+# name: test_main[V]
+  'S'
+# ---
+# name: test_main[W]
+  'P'
+# ---
+# name: test_main[X]
+  'T'
+# ---
+# name: test_main[Y]
+  'H'
+# ---
+# name: test_main[Z]
+  'J'
+# ---
+# name: test_main[a]
+  'L'
+# ---
+# name: test_main[b]
+  'G'
+# ---
+# name: test_main[c]
+  'U'
+# ---
+# name: test_main[d]
+  'M'
+# ---
+# name: test_main[e]
+  'L'
+# ---
+# name: test_main[f]
+  'N'
+# ---
+# name: test_main[g]
+  'B'
+# ---
+# name: test_main[h]
+  'Y'
+# ---
+# name: test_main[i]
+  'Q'
+# ---
+# name: test_main[j]
+  'A'
+# ---
+# name: test_main[k]
+  'I'
+# ---
+# name: test_main[l]
+  'A'
+# ---
+# name: test_main[m]
+  'D'
+# ---
+# name: test_main[n]
+  'F'
+# ---
+# name: test_main[o]
+  'Q'
+# ---
+# name: test_main[p]
+  'W'
+# ---
+# name: test_main[q]
+  'I'
+# ---
+# name: test_main[r]
+  'Z'
+# ---
+# name: test_main[s]
+  'V'
+# ---
+# name: test_main[t]
+  'X'
+# ---
+# name: test_main[u]
+  'C'
+# ---
+# name: test_main[v]
+  'S'
+# ---
+# name: test_main[w]
+  'P'
+# ---
+# name: test_main[x]
+  'T'
+# ---
+# name: test_main[y]
+  'H'
+# ---
+# name: test_main[z]
+  'J'
+# ---

@@ -1,0 +1,4861 @@
+# serializer version: 1
+# name: test_fred[0 1 2--0 0 0]
+  'QJNLUDM'
+# ---
+# name: test_fred[0 1 2--0 0 1]
+  'JNLUDNW'
+# ---
+# name: test_fred[0 1 2--0 0 2]
+  'NLUDNNU'
+# ---
+# name: test_fred[0 1 2--0 1 0]
+  'SPVMGDQ'
+# ---
+# name: test_fred[0 1 2--0 1 1]
+  'PVMGDDN'
+# ---
+# name: test_fred[0 1 2--0 1 2]
+  'VMGDDMV'
+# ---
+# name: test_fred[0 1 2--0 2 0]
+  'SDTDXSG'
+# ---
+# name: test_fred[0 1 2--0 2 1]
+  'DTDXSXD'
+# ---
+# name: test_fred[0 1 2--0 2 2]
+  'TDXSXRM'
+# ---
+# name: test_fred[0 1 2--1 0 0]
+  'ZVJORER'
+# ---
+# name: test_fred[0 1 2--1 0 1]
+  'VJOREKR'
+# ---
+# name: test_fred[0 1 2--1 0 2]
+  'JOREKFL'
+# ---
+# name: test_fred[0 1 2--1 1 0]
+  'PVKURPN'
+# ---
+# name: test_fred[0 1 2--1 1 1]
+  'VKURPES'
+# ---
+# name: test_fred[0 1 2--1 1 2]
+  'KURPEKS'
+# ---
+# name: test_fred[0 1 2--1 2 0]
+  'YNSWTGP'
+# ---
+# name: test_fred[0 1 2--1 2 1]
+  'NSWTGQU'
+# ---
+# name: test_fred[0 1 2--1 2 2]
+  'SWTGQKK'
+# ---
+# name: test_fred[0 1 2--2 0 0]
+  'CIYTLHS'
+# ---
+# name: test_fred[0 1 2--2 0 1]
+  'IYTLHIZ'
+# ---
+# name: test_fred[0 1 2--2 0 2]
+  'YTLHINW'
+# ---
+# name: test_fred[0 1 2--2 1 0]
+  'QYWMIRP'
+# ---
+# name: test_fred[0 1 2--2 1 1]
+  'YWMIRNK'
+# ---
+# name: test_fred[0 1 2--2 1 2]
+  'WMIRNEV'
+# ---
+# name: test_fred[0 1 2--2 2 0]
+  'TMFSBZV'
+# ---
+# name: test_fred[0 1 2--2 2 1]
+  'MFSBZDD'
+# ---
+# name: test_fred[0 1 2--2 2 2]
+  'FSBZDVD'
+# ---
+# name: test_fred[0 1 2-AI JK-0 0 0]
+  'FQZTVNM'
+# ---
+# name: test_fred[0 1 2-AI JK-0 0 1]
+  'QZTVNXW'
+# ---
+# name: test_fred[0 1 2-AI JK-0 0 2]
+  'ZTVNXVU'
+# ---
+# name: test_fred[0 1 2-AI JK-0 1 0]
+  'FFCWURQ'
+# ---
+# name: test_fred[0 1 2-AI JK-0 1 1]
+  'FCWURON'
+# ---
+# name: test_fred[0 1 2-AI JK-0 1 2]
+  'CWUROWV'
+# ---
+# name: test_fred[0 1 2-AI JK-0 2 0]
+  'TJMGKHG'
+# ---
+# name: test_fred[0 1 2-AI JK-0 2 1]
+  'JMGKHED'
+# ---
+# name: test_fred[0 1 2-AI JK-0 2 2]
+  'MGKHENM'
+# ---
+# name: test_fred[0 1 2-AI JK-1 0 0]
+  'UEQZDSR'
+# ---
+# name: test_fred[0 1 2-AI JK-1 0 1]
+  'EQZDSSR'
+# ---
+# name: test_fred[0 1 2-AI JK-1 0 2]
+  'QZDSSML'
+# ---
+# name: test_fred[0 1 2-AI JK-1 1 0]
+  'QXEPYON'
+# ---
+# name: test_fred[0 1 2-AI JK-1 1 1]
+  'XEPYOTS'
+# ---
+# name: test_fred[0 1 2-AI JK-1 1 2]
+  'EPYOTTS'
+# ---
+# name: test_fred[0 1 2-AI JK-1 2 0]
+  'QSJCGQP'
+# ---
+# name: test_fred[0 1 2-AI JK-1 2 1]
+  'SJCGQVU'
+# ---
+# name: test_fred[0 1 2-AI JK-1 2 2]
+  'JCGQVLJ'
+# ---
+# name: test_fred[0 1 2-AI JK-2 0 0]
+  'VIRPBTS'
+# ---
+# name: test_fred[0 1 2-AI JK-2 0 1]
+  'IRPBTIZ'
+# ---
+# name: test_fred[0 1 2-AI JK-2 0 2]
+  'RPBTIXW'
+# ---
+# name: test_fred[0 1 2-AI JK-2 1 0]
+  'JTGEIQP'
+# ---
+# name: test_fred[0 1 2-AI JK-2 1 1]
+  'TGEIQLJ'
+# ---
+# name: test_fred[0 1 2-AI JK-2 1 2]
+  'GEIQLWV'
+# ---
+# name: test_fred[0 1 2-AI JK-2 2 0]
+  'XFMMUWV'
+# ---
+# name: test_fred[0 1 2-AI JK-2 2 1]
+  'FMMUWED'
+# ---
+# name: test_fred[0 1 2-AI JK-2 2 2]
+  'MMUWEED'
+# ---
+# name: test_fred[0 1 2-AI PU BM-0 0 0]
+  'FQZTVNB'
+# ---
+# name: test_fred[0 1 2-AI PU BM-0 0 1]
+  'QZTVNXW'
+# ---
+# name: test_fred[0 1 2-AI PU BM-0 0 2]
+  'ZTVNXVP'
+# ---
+# name: test_fred[0 1 2-AI PU BM-0 1 0]
+  'FFCWPRQ'
+# ---
+# name: test_fred[0 1 2-AI PU BM-0 1 1]
+  'FCWPRON'
+# ---
+# name: test_fred[0 1 2-AI PU BM-0 1 2]
+  'CWPROWV'
+# ---
+# name: test_fred[0 1 2-AI PU BM-0 2 0]
+  'TKBGJHG'
+# ---
+# name: test_fred[0 1 2-AI PU BM-0 2 1]
+  'KBGJHED'
+# ---
+# name: test_fred[0 1 2-AI PU BM-0 2 2]
+  'BGJHENB'
+# ---
+# name: test_fred[0 1 2-AI PU BM-1 0 0]
+  'PEQZDSR'
+# ---
+# name: test_fred[0 1 2-AI PU BM-1 0 1]
+  'EQZDSSR'
+# ---
+# name: test_fred[0 1 2-AI PU BM-1 0 2]
+  'QZDSSBL'
+# ---
+# name: test_fred[0 1 2-AI PU BM-1 1 0]
+  'QXEUYON'
+# ---
+# name: test_fred[0 1 2-AI PU BM-1 1 1]
+  'XEUYOTS'
+# ---
+# name: test_fred[0 1 2-AI PU BM-1 1 2]
+  'EUYOTTS'
+# ---
+# name: test_fred[0 1 2-AI PU BM-1 2 0]
+  'QSKCGQU'
+# ---
+# name: test_fred[0 1 2-AI PU BM-1 2 1]
+  'SKCGQVP'
+# ---
+# name: test_fred[0 1 2-AI PU BM-1 2 2]
+  'KCGQVLK'
+# ---
+# name: test_fred[0 1 2-AI PU BM-2 0 0]
+  'VIRUMTS'
+# ---
+# name: test_fred[0 1 2-AI PU BM-2 0 1]
+  'IRUMTIZ'
+# ---
+# name: test_fred[0 1 2-AI PU BM-2 0 2]
+  'RUMTIXW'
+# ---
+# name: test_fred[0 1 2-AI PU BM-2 1 0]
+  'KTGEIQU'
+# ---
+# name: test_fred[0 1 2-AI PU BM-2 1 1]
+  'TGEIQLK'
+# ---
+# name: test_fred[0 1 2-AI PU BM-2 1 2]
+  'GEIQLWV'
+# ---
+# name: test_fred[0 1 2-AI PU BM-2 2 0]
+  'XFBBPWV'
+# ---
+# name: test_fred[0 1 2-AI PU BM-2 2 1]
+  'FBBPWED'
+# ---
+# name: test_fred[0 1 2-AI PU BM-2 2 2]
+  'BBPWEED'
+# ---
+# name: test_fred[0 1 2-AI-0 0 0]
+  'FQZTVNM'
+# ---
+# name: test_fred[0 1 2-AI-0 0 1]
+  'QZTVNXW'
+# ---
+# name: test_fred[0 1 2-AI-0 0 2]
+  'ZTVNXVU'
+# ---
+# name: test_fred[0 1 2-AI-0 1 0]
+  'FFCWURQ'
+# ---
+# name: test_fred[0 1 2-AI-0 1 1]
+  'FCWURON'
+# ---
+# name: test_fred[0 1 2-AI-0 1 2]
+  'CWUROWV'
+# ---
+# name: test_fred[0 1 2-AI-0 2 0]
+  'TKMGJHG'
+# ---
+# name: test_fred[0 1 2-AI-0 2 1]
+  'KMGJHED'
+# ---
+# name: test_fred[0 1 2-AI-0 2 2]
+  'MGJHENM'
+# ---
+# name: test_fred[0 1 2-AI-1 0 0]
+  'UEQZDSR'
+# ---
+# name: test_fred[0 1 2-AI-1 0 1]
+  'EQZDSSR'
+# ---
+# name: test_fred[0 1 2-AI-1 0 2]
+  'QZDSSML'
+# ---
+# name: test_fred[0 1 2-AI-1 1 0]
+  'QXEPYON'
+# ---
+# name: test_fred[0 1 2-AI-1 1 1]
+  'XEPYOTS'
+# ---
+# name: test_fred[0 1 2-AI-1 1 2]
+  'EPYOTTS'
+# ---
+# name: test_fred[0 1 2-AI-1 2 0]
+  'QSKCGQP'
+# ---
+# name: test_fred[0 1 2-AI-1 2 1]
+  'SKCGQVU'
+# ---
+# name: test_fred[0 1 2-AI-1 2 2]
+  'KCGQVLK'
+# ---
+# name: test_fred[0 1 2-AI-2 0 0]
+  'VIRPBTS'
+# ---
+# name: test_fred[0 1 2-AI-2 0 1]
+  'IRPBTIZ'
+# ---
+# name: test_fred[0 1 2-AI-2 0 2]
+  'RPBTIXW'
+# ---
+# name: test_fred[0 1 2-AI-2 1 0]
+  'KTGEIQP'
+# ---
+# name: test_fred[0 1 2-AI-2 1 1]
+  'TGEIQLK'
+# ---
+# name: test_fred[0 1 2-AI-2 1 2]
+  'GEIQLWV'
+# ---
+# name: test_fred[0 1 2-AI-2 2 0]
+  'XFMMUWV'
+# ---
+# name: test_fred[0 1 2-AI-2 2 1]
+  'FMMUWED'
+# ---
+# name: test_fred[0 1 2-AI-2 2 2]
+  'MMUWEED'
+# ---
+# name: test_fred[0 1 2-JK-0 0 0]
+  'QKNLUDM'
+# ---
+# name: test_fred[0 1 2-JK-0 0 1]
+  'KNLUDNW'
+# ---
+# name: test_fred[0 1 2-JK-0 0 2]
+  'NLUDNNU'
+# ---
+# name: test_fred[0 1 2-JK-0 1 0]
+  'SPVMGDQ'
+# ---
+# name: test_fred[0 1 2-JK-0 1 1]
+  'PVMGDDN'
+# ---
+# name: test_fred[0 1 2-JK-0 1 2]
+  'VMGDDMV'
+# ---
+# name: test_fred[0 1 2-JK-0 2 0]
+  'SDTDXSG'
+# ---
+# name: test_fred[0 1 2-JK-0 2 1]
+  'DTDXSXD'
+# ---
+# name: test_fred[0 1 2-JK-0 2 2]
+  'TDXSXRM'
+# ---
+# name: test_fred[0 1 2-JK-1 0 0]
+  'ZVKORER'
+# ---
+# name: test_fred[0 1 2-JK-1 0 1]
+  'VKOREJR'
+# ---
+# name: test_fred[0 1 2-JK-1 0 2]
+  'KOREJFL'
+# ---
+# name: test_fred[0 1 2-JK-1 1 0]
+  'PVJURPN'
+# ---
+# name: test_fred[0 1 2-JK-1 1 1]
+  'VJURPES'
+# ---
+# name: test_fred[0 1 2-JK-1 1 2]
+  'JURPEJS'
+# ---
+# name: test_fred[0 1 2-JK-1 2 0]
+  'YNSWTGP'
+# ---
+# name: test_fred[0 1 2-JK-1 2 1]
+  'NSWTGQU'
+# ---
+# name: test_fred[0 1 2-JK-1 2 2]
+  'SWTGQJJ'
+# ---
+# name: test_fred[0 1 2-JK-2 0 0]
+  'CIYTLHS'
+# ---
+# name: test_fred[0 1 2-JK-2 0 1]
+  'IYTLHIZ'
+# ---
+# name: test_fred[0 1 2-JK-2 0 2]
+  'YTLHINW'
+# ---
+# name: test_fred[0 1 2-JK-2 1 0]
+  'QYWMIRP'
+# ---
+# name: test_fred[0 1 2-JK-2 1 1]
+  'YWMIRNJ'
+# ---
+# name: test_fred[0 1 2-JK-2 1 2]
+  'WMIRNEV'
+# ---
+# name: test_fred[0 1 2-JK-2 2 0]
+  'TMFSBZV'
+# ---
+# name: test_fred[0 1 2-JK-2 2 1]
+  'MFSBZDD'
+# ---
+# name: test_fred[0 1 2-JK-2 2 2]
+  'FSBZDVD'
+# ---
+# name: test_fred[0 2 1--0 0 0]
+  'MGXBZDO'
+# ---
+# name: test_fred[0 2 1--0 0 1]
+  'GXBZDRL'
+# ---
+# name: test_fred[0 2 1--0 0 2]
+  'XBZDRUN'
+# ---
+# name: test_fred[0 2 1--0 1 0]
+  'SFLWFOW'
+# ---
+# name: test_fred[0 2 1--0 1 1]
+  'FLWFOVB'
+# ---
+# name: test_fred[0 2 1--0 1 2]
+  'LWFOVFC'
+# ---
+# name: test_fred[0 2 1--0 2 0]
+  'RVFRODN'
+# ---
+# name: test_fred[0 2 1--0 2 1]
+  'VFRODSO'
+# ---
+# name: test_fred[0 2 1--0 2 2]
+  'FRODSVB'
+# ---
+# name: test_fred[0 2 1--1 0 0]
+  'NVWJVSU'
+# ---
+# name: test_fred[0 2 1--1 0 1]
+  'VWJVSLI'
+# ---
+# name: test_fred[0 2 1--1 0 2]
+  'WJVSLDG'
+# ---
+# name: test_fred[0 2 1--1 1 0]
+  'PHKQRRL'
+# ---
+# name: test_fred[0 2 1--1 1 1]
+  'HKQRREQ'
+# ---
+# name: test_fred[0 2 1--1 1 2]
+  'KQRRESS'
+# ---
+# name: test_fred[0 2 1--1 2 0]
+  'VEIVHWT'
+# ---
+# name: test_fred[0 2 1--1 2 1]
+  'EIVHWDA'
+# ---
+# name: test_fred[0 2 1--1 2 2]
+  'IVHWDHI'
+# ---
+# name: test_fred[0 2 1--2 0 0]
+  'KBZRFQF'
+# ---
+# name: test_fred[0 2 1--2 0 1]
+  'BZRFQBF'
+# ---
+# name: test_fred[0 2 1--2 0 2]
+  'ZRFQBZQ'
+# ---
+# name: test_fred[0 2 1--2 1 0]
+  'SBZDMCJ'
+# ---
+# name: test_fred[0 2 1--2 1 1]
+  'BZDMCXN'
+# ---
+# name: test_fred[0 2 1--2 1 2]
+  'ZDMCXYF'
+# ---
+# name: test_fred[0 2 1--2 2 0]
+  'WLGRVGJ'
+# ---
+# name: test_fred[0 2 1--2 2 1]
+  'LGRVGRJ'
+# ---
+# name: test_fred[0 2 1--2 2 2]
+  'GRVGRCF'
+# ---
+# name: test_fred[0 2 1-AI JK-0 0 0]
+  'FXOQWPO'
+# ---
+# name: test_fred[0 2 1-AI JK-0 0 1]
+  'XOQWPML'
+# ---
+# name: test_fred[0 2 1-AI JK-0 0 2]
+  'OQWPMON'
+# ---
+# name: test_fred[0 2 1-AI JK-0 1 0]
+  'ODNRDXW'
+# ---
+# name: test_fred[0 2 1-AI JK-0 1 1]
+  'DNRDXCB'
+# ---
+# name: test_fred[0 2 1-AI JK-0 1 2]
+  'NRDXCDC'
+# ---
+# name: test_fred[0 2 1-AI JK-0 2 0]
+  'FOXNTON'
+# ---
+# name: test_fred[0 2 1-AI JK-0 2 1]
+  'OXNTOPO'
+# ---
+# name: test_fred[0 2 1-AI JK-0 2 2]
+  'XNTOPCB'
+# ---
+# name: test_fred[0 2 1-AI JK-1 0 0]
+  'SSFNZVU'
+# ---
+# name: test_fred[0 2 1-AI JK-1 0 1]
+  'SFNZVKA'
+# ---
+# name: test_fred[0 2 1-AI JK-1 0 2]
+  'FNZVKHG'
+# ---
+# name: test_fred[0 2 1-AI JK-1 1 0]
+  'BREVYML'
+# ---
+# name: test_fred[0 2 1-AI JK-1 1 1]
+  'REVYMRQ'
+# ---
+# name: test_fred[0 2 1-AI JK-1 1 2]
+  'EVYMRTS'
+# ---
+# name: test_fred[0 2 1-AI JK-1 2 0]
+  'RFIBSUT'
+# ---
+# name: test_fred[0 2 1-AI JK-1 2 1]
+  'FIBSUBI'
+# ---
+# name: test_fred[0 2 1-AI JK-1 2 2]
+  'IBSUBKA'
+# ---
+# name: test_fred[0 2 1-AI JK-2 0 0]
+  'XDYJJGF'
+# ---
+# name: test_fred[0 2 1-AI JK-2 0 1]
+  'DYJJGGF'
+# ---
+# name: test_fred[0 2 1-AI JK-2 0 2]
+  'YJJGGRQ'
+# ---
+# name: test_fred[0 2 1-AI JK-2 1 0]
+  'TKHWTJK'
+# ---
+# name: test_fred[0 2 1-AI JK-2 1 1]
+  'KHWTJON'
+# ---
+# name: test_fred[0 2 1-AI JK-2 1 2]
+  'HWTJOGF'
+# ---
+# name: test_fred[0 2 1-AI JK-2 2 0]
+  'CGTCXJK'
+# ---
+# name: test_fred[0 2 1-AI JK-2 2 1]
+  'GTCXJJK'
+# ---
+# name: test_fred[0 2 1-AI JK-2 2 2]
+  'TCXJJGF'
+# ---
+# name: test_fred[0 2 1-AI PU BM-0 0 0]
+  'FXOQWUO'
+# ---
+# name: test_fred[0 2 1-AI PU BM-0 0 1]
+  'XOQWUBL'
+# ---
+# name: test_fred[0 2 1-AI PU BM-0 0 2]
+  'OQWUBON'
+# ---
+# name: test_fred[0 2 1-AI PU BM-0 1 0]
+  'ODNRDXW'
+# ---
+# name: test_fred[0 2 1-AI PU BM-0 1 1]
+  'DNRDXCM'
+# ---
+# name: test_fred[0 2 1-AI PU BM-0 1 2]
+  'NRDXCDC'
+# ---
+# name: test_fred[0 2 1-AI PU BM-0 2 0]
+  'FOXNTON'
+# ---
+# name: test_fred[0 2 1-AI PU BM-0 2 1]
+  'OXNTOUO'
+# ---
+# name: test_fred[0 2 1-AI PU BM-0 2 2]
+  'XNTOUCM'
+# ---
+# name: test_fred[0 2 1-AI PU BM-1 0 0]
+  'SSFNZVP'
+# ---
+# name: test_fred[0 2 1-AI PU BM-1 0 1]
+  'SFNZVJA'
+# ---
+# name: test_fred[0 2 1-AI PU BM-1 0 2]
+  'FNZVJHG'
+# ---
+# name: test_fred[0 2 1-AI PU BM-1 1 0]
+  'MREVYBL'
+# ---
+# name: test_fred[0 2 1-AI PU BM-1 1 1]
+  'REVYBRQ'
+# ---
+# name: test_fred[0 2 1-AI PU BM-1 1 2]
+  'EVYBRTS'
+# ---
+# name: test_fred[0 2 1-AI PU BM-1 2 0]
+  'RFIMSPT'
+# ---
+# name: test_fred[0 2 1-AI PU BM-1 2 1]
+  'FIMSPMI'
+# ---
+# name: test_fred[0 2 1-AI PU BM-1 2 2]
+  'IMSPMJA'
+# ---
+# name: test_fred[0 2 1-AI PU BM-2 0 0]
+  'XDYKKGF'
+# ---
+# name: test_fred[0 2 1-AI PU BM-2 0 1]
+  'DYKKGGF'
+# ---
+# name: test_fred[0 2 1-AI PU BM-2 0 2]
+  'YKKGGRQ'
+# ---
+# name: test_fred[0 2 1-AI PU BM-2 1 0]
+  'TJHWTKJ'
+# ---
+# name: test_fred[0 2 1-AI PU BM-2 1 1]
+  'JHWTKON'
+# ---
+# name: test_fred[0 2 1-AI PU BM-2 1 2]
+  'HWTKOGF'
+# ---
+# name: test_fred[0 2 1-AI PU BM-2 2 0]
+  'CGTCXKJ'
+# ---
+# name: test_fred[0 2 1-AI PU BM-2 2 1]
+  'GTCXKKJ'
+# ---
+# name: test_fred[0 2 1-AI PU BM-2 2 2]
+  'TCXKKGF'
+# ---
+# name: test_fred[0 2 1-AI-0 0 0]
+  'FXOQWPO'
+# ---
+# name: test_fred[0 2 1-AI-0 0 1]
+  'XOQWPML'
+# ---
+# name: test_fred[0 2 1-AI-0 0 2]
+  'OQWPMON'
+# ---
+# name: test_fred[0 2 1-AI-0 1 0]
+  'ODNRDXW'
+# ---
+# name: test_fred[0 2 1-AI-0 1 1]
+  'DNRDXCB'
+# ---
+# name: test_fred[0 2 1-AI-0 1 2]
+  'NRDXCDC'
+# ---
+# name: test_fred[0 2 1-AI-0 2 0]
+  'FOXNTON'
+# ---
+# name: test_fred[0 2 1-AI-0 2 1]
+  'OXNTOPO'
+# ---
+# name: test_fred[0 2 1-AI-0 2 2]
+  'XNTOPCB'
+# ---
+# name: test_fred[0 2 1-AI-1 0 0]
+  'SSFNZVU'
+# ---
+# name: test_fred[0 2 1-AI-1 0 1]
+  'SFNZVJA'
+# ---
+# name: test_fred[0 2 1-AI-1 0 2]
+  'FNZVJHG'
+# ---
+# name: test_fred[0 2 1-AI-1 1 0]
+  'BREVYML'
+# ---
+# name: test_fred[0 2 1-AI-1 1 1]
+  'REVYMRQ'
+# ---
+# name: test_fred[0 2 1-AI-1 1 2]
+  'EVYMRTS'
+# ---
+# name: test_fred[0 2 1-AI-1 2 0]
+  'RFIBSUT'
+# ---
+# name: test_fred[0 2 1-AI-1 2 1]
+  'FIBSUBI'
+# ---
+# name: test_fred[0 2 1-AI-1 2 2]
+  'IBSUBJA'
+# ---
+# name: test_fred[0 2 1-AI-2 0 0]
+  'XDYKKGF'
+# ---
+# name: test_fred[0 2 1-AI-2 0 1]
+  'DYKKGGF'
+# ---
+# name: test_fred[0 2 1-AI-2 0 2]
+  'YKKGGRQ'
+# ---
+# name: test_fred[0 2 1-AI-2 1 0]
+  'TJHWTKJ'
+# ---
+# name: test_fred[0 2 1-AI-2 1 1]
+  'JHWTKON'
+# ---
+# name: test_fred[0 2 1-AI-2 1 2]
+  'HWTKOGF'
+# ---
+# name: test_fred[0 2 1-AI-2 2 0]
+  'CGTCXKJ'
+# ---
+# name: test_fred[0 2 1-AI-2 2 1]
+  'GTCXKKJ'
+# ---
+# name: test_fred[0 2 1-AI-2 2 2]
+  'TCXKKGF'
+# ---
+# name: test_fred[0 2 1-JK-0 0 0]
+  'MGXBZDO'
+# ---
+# name: test_fred[0 2 1-JK-0 0 1]
+  'GXBZDRL'
+# ---
+# name: test_fred[0 2 1-JK-0 0 2]
+  'XBZDRUN'
+# ---
+# name: test_fred[0 2 1-JK-0 1 0]
+  'SFLWFOW'
+# ---
+# name: test_fred[0 2 1-JK-0 1 1]
+  'FLWFOVB'
+# ---
+# name: test_fred[0 2 1-JK-0 1 2]
+  'LWFOVFC'
+# ---
+# name: test_fred[0 2 1-JK-0 2 0]
+  'RVFRODN'
+# ---
+# name: test_fred[0 2 1-JK-0 2 1]
+  'VFRODSO'
+# ---
+# name: test_fred[0 2 1-JK-0 2 2]
+  'FRODSVB'
+# ---
+# name: test_fred[0 2 1-JK-1 0 0]
+  'NVWKVSU'
+# ---
+# name: test_fred[0 2 1-JK-1 0 1]
+  'VWKVSLI'
+# ---
+# name: test_fred[0 2 1-JK-1 0 2]
+  'WKVSLDG'
+# ---
+# name: test_fred[0 2 1-JK-1 1 0]
+  'PHJQRRL'
+# ---
+# name: test_fred[0 2 1-JK-1 1 1]
+  'HJQRREQ'
+# ---
+# name: test_fred[0 2 1-JK-1 1 2]
+  'JQRRESS'
+# ---
+# name: test_fred[0 2 1-JK-1 2 0]
+  'VEIVHWT'
+# ---
+# name: test_fred[0 2 1-JK-1 2 1]
+  'EIVHWDA'
+# ---
+# name: test_fred[0 2 1-JK-1 2 2]
+  'IVHWDHI'
+# ---
+# name: test_fred[0 2 1-JK-2 0 0]
+  'JBZRFQF'
+# ---
+# name: test_fred[0 2 1-JK-2 0 1]
+  'BZRFQBF'
+# ---
+# name: test_fred[0 2 1-JK-2 0 2]
+  'ZRFQBZQ'
+# ---
+# name: test_fred[0 2 1-JK-2 1 0]
+  'SBZDMCK'
+# ---
+# name: test_fred[0 2 1-JK-2 1 1]
+  'BZDMCXN'
+# ---
+# name: test_fred[0 2 1-JK-2 1 2]
+  'ZDMCXYF'
+# ---
+# name: test_fred[0 2 1-JK-2 2 0]
+  'WLGRVGK'
+# ---
+# name: test_fred[0 2 1-JK-2 2 1]
+  'LGRVGRK'
+# ---
+# name: test_fred[0 2 1-JK-2 2 2]
+  'GRVGRCF'
+# ---
+# name: test_fred[1 0 2--0 0 0]
+  'HWISSPN'
+# ---
+# name: test_fred[1 0 2--0 0 1]
+  'WISSPTF'
+# ---
+# name: test_fred[1 0 2--0 0 2]
+  'ISSPTTQ'
+# ---
+# name: test_fred[1 0 2--0 1 0]
+  'YGHJPFT'
+# ---
+# name: test_fred[1 0 2--0 1 1]
+  'GHJPFQJ'
+# ---
+# name: test_fred[1 0 2--0 1 2]
+  'HJPFQUK'
+# ---
+# name: test_fred[1 0 2--0 2 0]
+  'ZOUEHHE'
+# ---
+# name: test_fred[1 0 2--0 2 1]
+  'OUEHHCQ'
+# ---
+# name: test_fred[1 0 2--0 2 2]
+  'UEHHCWT'
+# ---
+# name: test_fred[1 0 2--1 0 0]
+  'VQKEPFM'
+# ---
+# name: test_fred[1 0 2--1 0 1]
+  'QKEPFTB'
+# ---
+# name: test_fred[1 0 2--1 0 2]
+  'KEPFTWO'
+# ---
+# name: test_fred[1 0 2--1 1 0]
+  'UEHLTWQ'
+# ---
+# name: test_fred[1 0 2--1 1 1]
+  'EHLTWCW'
+# ---
+# name: test_fred[1 0 2--1 1 2]
+  'HLTWCSN'
+# ---
+# name: test_fred[1 0 2--1 2 0]
+  'JHBZHQA'
+# ---
+# name: test_fred[1 0 2--1 2 1]
+  'HBZHQHN'
+# ---
+# name: test_fred[1 0 2--1 2 2]
+  'BZHQHLE'
+# ---
+# name: test_fred[1 0 2--2 0 0]
+  'YWHOVRM'
+# ---
+# name: test_fred[1 0 2--2 0 1]
+  'WHOVRCI'
+# ---
+# name: test_fred[1 0 2--2 0 2]
+  'HOVRCNG'
+# ---
+# name: test_fred[1 0 2--2 1 0]
+  'JGGMHHQ'
+# ---
+# name: test_fred[1 0 2--2 1 1]
+  'GGMHHNS'
+# ---
+# name: test_fred[1 0 2--2 1 2]
+  'GMHHNUV'
+# ---
+# name: test_fred[1 0 2--2 2 0]
+  'EESEWWT'
+# ---
+# name: test_fred[1 0 2--2 2 1]
+  'ESEWWDD'
+# ---
+# name: test_fred[1 0 2--2 2 2]
+  'SEWWDWL'
+# ---
+# name: test_fred[1 0 2-AI JK-0 0 0]
+  'QJIGJON'
+# ---
+# name: test_fred[1 0 2-AI JK-0 0 1]
+  'JIGJOGF'
+# ---
+# name: test_fred[1 0 2-AI JK-0 0 2]
+  'IGJOGRQ'
+# ---
+# name: test_fred[1 0 2-AI JK-0 1 0]
+  'RBDSZUT'
+# ---
+# name: test_fred[1 0 2-AI JK-0 1 1]
+  'BDSZUJK'
+# ---
+# name: test_fred[1 0 2-AI JK-0 1 2]
+  'DSZUJLJ'
+# ---
+# name: test_fred[1 0 2-AI JK-0 2 0]
+  'GQLBBFE'
+# ---
+# name: test_fred[1 0 2-AI JK-0 2 1]
+  'QLBBFRQ'
+# ---
+# name: test_fred[1 0 2-AI JK-0 2 2]
+  'LBBFRUT'
+# ---
+# name: test_fred[1 0 2-AI JK-1 0 0]
+  'OPDRYNM'
+# ---
+# name: test_fred[1 0 2-AI JK-1 0 1]
+  'PDRYNCB'
+# ---
+# name: test_fred[1 0 2-AI JK-1 0 2]
+  'DRYNCPO'
+# ---
+# name: test_fred[1 0 2-AI JK-1 1 0]
+  'GBPVMRQ'
+# ---
+# name: test_fred[1 0 2-AI JK-1 1 1]
+  'BPVMRXW'
+# ---
+# name: test_fred[1 0 2-AI JK-1 1 2]
+  'PVMRXON'
+# ---
+# name: test_fred[1 0 2-AI JK-1 2 0]
+  'BZOBLBI'
+# ---
+# name: test_fred[1 0 2-AI JK-1 2 1]
+  'ZOBLBON'
+# ---
+# name: test_fred[1 0 2-AI JK-1 2 2]
+  'OBLBOFE'
+# ---
+# name: test_fred[1 0 2-AI JK-2 0 0]
+  'GBRSMNM'
+# ---
+# name: test_fred[1 0 2-AI JK-2 0 1]
+  'BRSMNKA'
+# ---
+# name: test_fred[1 0 2-AI JK-2 0 2]
+  'RSMNKHG'
+# ---
+# name: test_fred[1 0 2-AI JK-2 1 0]
+  'CZSBBRQ'
+# ---
+# name: test_fred[1 0 2-AI JK-2 1 1]
+  'ZSBBRTS'
+# ---
+# name: test_fred[1 0 2-AI JK-2 1 2]
+  'SBBRTWV'
+# ---
+# name: test_fred[1 0 2-AI JK-2 2 0]
+  'VFMKHUT'
+# ---
+# name: test_fred[1 0 2-AI JK-2 2 1]
+  'FMKHUED'
+# ---
+# name: test_fred[1 0 2-AI JK-2 2 2]
+  'MKHUEML'
+# ---
+# name: test_fred[1 0 2-AI PU BM-0 0 0]
+  'QKIGKON'
+# ---
+# name: test_fred[1 0 2-AI PU BM-0 0 1]
+  'KIGKOGF'
+# ---
+# name: test_fred[1 0 2-AI PU BM-0 0 2]
+  'IGKOGRQ'
+# ---
+# name: test_fred[1 0 2-AI PU BM-0 1 0]
+  'RMDSZPT'
+# ---
+# name: test_fred[1 0 2-AI PU BM-0 1 1]
+  'MDSZPKJ'
+# ---
+# name: test_fred[1 0 2-AI PU BM-0 1 2]
+  'DSZPKLK'
+# ---
+# name: test_fred[1 0 2-AI PU BM-0 2 0]
+  'GQLMMFE'
+# ---
+# name: test_fred[1 0 2-AI PU BM-0 2 1]
+  'QLMMFRQ'
+# ---
+# name: test_fred[1 0 2-AI PU BM-0 2 2]
+  'LMMFRPT'
+# ---
+# name: test_fred[1 0 2-AI PU BM-1 0 0]
+  'OUDRYNB'
+# ---
+# name: test_fred[1 0 2-AI PU BM-1 0 1]
+  'UDRYNCM'
+# ---
+# name: test_fred[1 0 2-AI PU BM-1 0 2]
+  'DRYNCUO'
+# ---
+# name: test_fred[1 0 2-AI PU BM-1 1 0]
+  'GMUVBRQ'
+# ---
+# name: test_fred[1 0 2-AI PU BM-1 1 1]
+  'MUVBRXW'
+# ---
+# name: test_fred[1 0 2-AI PU BM-1 1 2]
+  'UVBRXON'
+# ---
+# name: test_fred[1 0 2-AI PU BM-1 2 0]
+  'MZOMLMI'
+# ---
+# name: test_fred[1 0 2-AI PU BM-1 2 1]
+  'ZOMLMON'
+# ---
+# name: test_fred[1 0 2-AI PU BM-1 2 2]
+  'OMLMOFE'
+# ---
+# name: test_fred[1 0 2-AI PU BM-2 0 0]
+  'GMRSBNB'
+# ---
+# name: test_fred[1 0 2-AI PU BM-2 0 1]
+  'MRSBNJA'
+# ---
+# name: test_fred[1 0 2-AI PU BM-2 0 2]
+  'RSBNJHG'
+# ---
+# name: test_fred[1 0 2-AI PU BM-2 1 0]
+  'CZSMMRQ'
+# ---
+# name: test_fred[1 0 2-AI PU BM-2 1 1]
+  'ZSMMRTS'
+# ---
+# name: test_fred[1 0 2-AI PU BM-2 1 2]
+  'SMMRTWV'
+# ---
+# name: test_fred[1 0 2-AI PU BM-2 2 0]
+  'VFBJHPT'
+# ---
+# name: test_fred[1 0 2-AI PU BM-2 2 1]
+  'FBJHPED'
+# ---
+# name: test_fred[1 0 2-AI PU BM-2 2 2]
+  'BJHPEBL'
+# ---
+# name: test_fred[1 0 2-AI-0 0 0]
+  'QKIGKON'
+# ---
+# name: test_fred[1 0 2-AI-0 0 1]
+  'KIGKOGF'
+# ---
+# name: test_fred[1 0 2-AI-0 0 2]
+  'IGKOGRQ'
+# ---
+# name: test_fred[1 0 2-AI-0 1 0]
+  'RBDSZUT'
+# ---
+# name: test_fred[1 0 2-AI-0 1 1]
+  'BDSZUKJ'
+# ---
+# name: test_fred[1 0 2-AI-0 1 2]
+  'DSZUKLK'
+# ---
+# name: test_fred[1 0 2-AI-0 2 0]
+  'GQLBBFE'
+# ---
+# name: test_fred[1 0 2-AI-0 2 1]
+  'QLBBFRQ'
+# ---
+# name: test_fred[1 0 2-AI-0 2 2]
+  'LBBFRUT'
+# ---
+# name: test_fred[1 0 2-AI-1 0 0]
+  'OPDRYNM'
+# ---
+# name: test_fred[1 0 2-AI-1 0 1]
+  'PDRYNCB'
+# ---
+# name: test_fred[1 0 2-AI-1 0 2]
+  'DRYNCPO'
+# ---
+# name: test_fred[1 0 2-AI-1 1 0]
+  'GBPVMRQ'
+# ---
+# name: test_fred[1 0 2-AI-1 1 1]
+  'BPVMRXW'
+# ---
+# name: test_fred[1 0 2-AI-1 1 2]
+  'PVMRXON'
+# ---
+# name: test_fred[1 0 2-AI-1 2 0]
+  'BZOBLBI'
+# ---
+# name: test_fred[1 0 2-AI-1 2 1]
+  'ZOBLBON'
+# ---
+# name: test_fred[1 0 2-AI-1 2 2]
+  'OBLBOFE'
+# ---
+# name: test_fred[1 0 2-AI-2 0 0]
+  'GBRSMNM'
+# ---
+# name: test_fred[1 0 2-AI-2 0 1]
+  'BRSMNJA'
+# ---
+# name: test_fred[1 0 2-AI-2 0 2]
+  'RSMNJHG'
+# ---
+# name: test_fred[1 0 2-AI-2 1 0]
+  'CZSBBRQ'
+# ---
+# name: test_fred[1 0 2-AI-2 1 1]
+  'ZSBBRTS'
+# ---
+# name: test_fred[1 0 2-AI-2 1 2]
+  'SBBRTWV'
+# ---
+# name: test_fred[1 0 2-AI-2 2 0]
+  'VFMJHUT'
+# ---
+# name: test_fred[1 0 2-AI-2 2 1]
+  'FMJHUED'
+# ---
+# name: test_fred[1 0 2-AI-2 2 2]
+  'MJHUEML'
+# ---
+# name: test_fred[1 0 2-JK-0 0 0]
+  'HWISSPN'
+# ---
+# name: test_fred[1 0 2-JK-0 0 1]
+  'WISSPTF'
+# ---
+# name: test_fred[1 0 2-JK-0 0 2]
+  'ISSPTTQ'
+# ---
+# name: test_fred[1 0 2-JK-0 1 0]
+  'YGHKPFT'
+# ---
+# name: test_fred[1 0 2-JK-0 1 1]
+  'GHKPFQK'
+# ---
+# name: test_fred[1 0 2-JK-0 1 2]
+  'HKPFQUJ'
+# ---
+# name: test_fred[1 0 2-JK-0 2 0]
+  'ZOUEHHE'
+# ---
+# name: test_fred[1 0 2-JK-0 2 1]
+  'OUEHHCQ'
+# ---
+# name: test_fred[1 0 2-JK-0 2 2]
+  'UEHHCWT'
+# ---
+# name: test_fred[1 0 2-JK-1 0 0]
+  'VQJEPFM'
+# ---
+# name: test_fred[1 0 2-JK-1 0 1]
+  'QJEPFTB'
+# ---
+# name: test_fred[1 0 2-JK-1 0 2]
+  'JEPFTWO'
+# ---
+# name: test_fred[1 0 2-JK-1 1 0]
+  'UEHLTWQ'
+# ---
+# name: test_fred[1 0 2-JK-1 1 1]
+  'EHLTWCW'
+# ---
+# name: test_fred[1 0 2-JK-1 1 2]
+  'HLTWCSN'
+# ---
+# name: test_fred[1 0 2-JK-1 2 0]
+  'KHBZHQA'
+# ---
+# name: test_fred[1 0 2-JK-1 2 1]
+  'HBZHQHN'
+# ---
+# name: test_fred[1 0 2-JK-1 2 2]
+  'BZHQHLE'
+# ---
+# name: test_fred[1 0 2-JK-2 0 0]
+  'YWHOVRM'
+# ---
+# name: test_fred[1 0 2-JK-2 0 1]
+  'WHOVRCI'
+# ---
+# name: test_fred[1 0 2-JK-2 0 2]
+  'HOVRCNG'
+# ---
+# name: test_fred[1 0 2-JK-2 1 0]
+  'KGGMHHQ'
+# ---
+# name: test_fred[1 0 2-JK-2 1 1]
+  'GGMHHNS'
+# ---
+# name: test_fred[1 0 2-JK-2 1 2]
+  'GMHHNUV'
+# ---
+# name: test_fred[1 0 2-JK-2 2 0]
+  'EESEWWT'
+# ---
+# name: test_fred[1 0 2-JK-2 2 1]
+  'ESEWWDD'
+# ---
+# name: test_fred[1 0 2-JK-2 2 2]
+  'SEWWDWL'
+# ---
+# name: test_fred[1 2 0--0 0 0]
+  'QCRYNCC'
+# ---
+# name: test_fred[1 2 0--0 0 1]
+  'CRYNCIZ'
+# ---
+# name: test_fred[1 2 0--0 0 2]
+  'RYNCIYR'
+# ---
+# name: test_fred[1 2 0--0 1 0]
+  'TKLDFMW'
+# ---
+# name: test_fred[1 2 0--0 1 1]
+  'KLDFMXN'
+# ---
+# name: test_fred[1 2 0--0 1 2]
+  'LDFMXJK'
+# ---
+# name: test_fred[1 2 0--0 2 0]
+  'NQNLIRU'
+# ---
+# name: test_fred[1 2 0--0 2 1]
+  'QNLIRDW'
+# ---
+# name: test_fred[1 2 0--0 2 2]
+  'NLIRDDU'
+# ---
+# name: test_fred[1 2 0--1 0 0]
+  'LUXLIDO'
+# ---
+# name: test_fred[1 2 0--1 0 1]
+  'UXLIDSW'
+# ---
+# name: test_fred[1 2 0--1 0 2]
+  'XLIDSQL'
+# ---
+# name: test_fred[1 2 0--1 1 0]
+  'TTBZCJR'
+# ---
+# name: test_fred[1 2 0--1 1 1]
+  'TBZCJYY'
+# ---
+# name: test_fred[1 2 0--1 1 2]
+  'BZCJYCQ'
+# ---
+# name: test_fred[1 2 0--1 2 0]
+  'ISMJHRJ'
+# ---
+# name: test_fred[1 2 0--1 2 1]
+  'SMJHRSV'
+# ---
+# name: test_fred[1 2 0--1 2 2]
+  'MJHRSLF'
+# ---
+# name: test_fred[1 2 0--2 0 0]
+  'CSYTUDI'
+# ---
+# name: test_fred[1 2 0--2 0 1]
+  'SYTUDGG'
+# ---
+# name: test_fred[1 2 0--2 0 2]
+  'YTUDGIZ'
+# ---
+# name: test_fred[1 2 0--2 1 0]
+  'MRNTVTD'
+# ---
+# name: test_fred[1 2 0--2 1 1]
+  'RNTVTEN'
+# ---
+# name: test_fred[1 2 0--2 1 2]
+  'NTVTEQU'
+# ---
+# name: test_fred[1 2 0--2 2 0]
+  'JTMNIIZ'
+# ---
+# name: test_fred[1 2 0--2 2 1]
+  'TMNIIEV'
+# ---
+# name: test_fred[1 2 0--2 2 2]
+  'MNIIEEP'
+# ---
+# name: test_fred[1 2 0-AI JK-0 0 0]
+  'NKHURDC'
+# ---
+# name: test_fred[1 2 0-AI JK-0 0 1]
+  'KHURDIZ'
+# ---
+# name: test_fred[1 2 0-AI JK-0 0 2]
+  'HURDISR'
+# ---
+# name: test_fred[1 2 0-AI JK-0 1 0]
+  'XDJYGXW'
+# ---
+# name: test_fred[1 2 0-AI JK-0 1 1]
+  'DJYGXON'
+# ---
+# name: test_fred[1 2 0-AI JK-0 1 2]
+  'JYGXOLJ'
+# ---
+# name: test_fred[1 2 0-AI JK-0 2 0]
+  'LFFFIVU'
+# ---
+# name: test_fred[1 2 0-AI JK-0 2 1]
+  'FFFIVXW'
+# ---
+# name: test_fred[1 2 0-AI JK-0 2 2]
+  'FFIVXVU'
+# ---
+# name: test_fred[1 2 0-AI JK-1 0 0]
+  'FKHXIPO'
+# ---
+# name: test_fred[1 2 0-AI JK-1 0 1]
+  'KHXIPXW'
+# ---
+# name: test_fred[1 2 0-AI JK-1 0 2]
+  'HXIPXML'
+# ---
+# name: test_fred[1 2 0-AI JK-1 1 0]
+  'QGPSVSR'
+# ---
+# name: test_fred[1 2 0-AI JK-1 1 1]
+  'GPSVSZY'
+# ---
+# name: test_fred[1 2 0-AI JK-1 1 2]
+  'PSVSZRQ'
+# ---
+# name: test_fred[1 2 0-AI JK-1 2 0]
+  'IWOBZJK'
+# ---
+# name: test_fred[1 2 0-AI JK-1 2 1]
+  'WOBZJWV'
+# ---
+# name: test_fred[1 2 0-AI JK-1 2 2]
+  'OBZJWGF'
+# ---
+# name: test_fred[1 2 0-AI JK-2 0 0]
+  'FQSUCKA'
+# ---
+# name: test_fred[1 2 0-AI JK-2 0 1]
+  'QSUCKHG'
+# ---
+# name: test_fred[1 2 0-AI JK-2 0 2]
+  'SUCKHIZ'
+# ---
+# name: test_fred[1 2 0-AI JK-2 1 0]
+  'TMESWED'
+# ---
+# name: test_fred[1 2 0-AI JK-2 1 1]
+  'MESWEON'
+# ---
+# name: test_fred[1 2 0-AI JK-2 1 2]
+  'ESWEOVU'
+# ---
+# name: test_fred[1 2 0-AI JK-2 2 0]
+  'RZEEIIZ'
+# ---
+# name: test_fred[1 2 0-AI JK-2 2 1]
+  'ZEEIIWV'
+# ---
+# name: test_fred[1 2 0-AI JK-2 2 2]
+  'EEIIWQP'
+# ---
+# name: test_fred[1 2 0-AI PU BM-0 0 0]
+  'NJHPRDC'
+# ---
+# name: test_fred[1 2 0-AI PU BM-0 0 1]
+  'JHPRDIZ'
+# ---
+# name: test_fred[1 2 0-AI PU BM-0 0 2]
+  'HPRDISR'
+# ---
+# name: test_fred[1 2 0-AI PU BM-0 1 0]
+  'XDKYGXW'
+# ---
+# name: test_fred[1 2 0-AI PU BM-0 1 1]
+  'DKYGXON'
+# ---
+# name: test_fred[1 2 0-AI PU BM-0 1 2]
+  'KYGXOLK'
+# ---
+# name: test_fred[1 2 0-AI PU BM-0 2 0]
+  'LFFFIVP'
+# ---
+# name: test_fred[1 2 0-AI PU BM-0 2 1]
+  'FFFIVXW'
+# ---
+# name: test_fred[1 2 0-AI PU BM-0 2 2]
+  'FFIVXVP'
+# ---
+# name: test_fred[1 2 0-AI PU BM-1 0 0]
+  'FJHXIUO'
+# ---
+# name: test_fred[1 2 0-AI PU BM-1 0 1]
+  'JHXIUXW'
+# ---
+# name: test_fred[1 2 0-AI PU BM-1 0 2]
+  'HXIUXBL'
+# ---
+# name: test_fred[1 2 0-AI PU BM-1 1 0]
+  'QGUSVSR'
+# ---
+# name: test_fred[1 2 0-AI PU BM-1 1 1]
+  'GUSVSZY'
+# ---
+# name: test_fred[1 2 0-AI PU BM-1 1 2]
+  'USVSZRQ'
+# ---
+# name: test_fred[1 2 0-AI PU BM-1 2 0]
+  'IWOMZKJ'
+# ---
+# name: test_fred[1 2 0-AI PU BM-1 2 1]
+  'WOMZKWV'
+# ---
+# name: test_fred[1 2 0-AI PU BM-1 2 2]
+  'OMZKWGF'
+# ---
+# name: test_fred[1 2 0-AI PU BM-2 0 0]
+  'FQSPCJA'
+# ---
+# name: test_fred[1 2 0-AI PU BM-2 0 1]
+  'QSPCJHG'
+# ---
+# name: test_fred[1 2 0-AI PU BM-2 0 2]
+  'SPCJHIZ'
+# ---
+# name: test_fred[1 2 0-AI PU BM-2 1 0]
+  'TBESWED'
+# ---
+# name: test_fred[1 2 0-AI PU BM-2 1 1]
+  'BESWEON'
+# ---
+# name: test_fred[1 2 0-AI PU BM-2 1 2]
+  'ESWEOVP'
+# ---
+# name: test_fred[1 2 0-AI PU BM-2 2 0]
+  'RZEEIIZ'
+# ---
+# name: test_fred[1 2 0-AI PU BM-2 2 1]
+  'ZEEIIWV'
+# ---
+# name: test_fred[1 2 0-AI PU BM-2 2 2]
+  'EEIIWQU'
+# ---
+# name: test_fred[1 2 0-AI-0 0 0]
+  'NJHURDC'
+# ---
+# name: test_fred[1 2 0-AI-0 0 1]
+  'JHURDIZ'
+# ---
+# name: test_fred[1 2 0-AI-0 0 2]
+  'HURDISR'
+# ---
+# name: test_fred[1 2 0-AI-0 1 0]
+  'XDKYGXW'
+# ---
+# name: test_fred[1 2 0-AI-0 1 1]
+  'DKYGXON'
+# ---
+# name: test_fred[1 2 0-AI-0 1 2]
+  'KYGXOLK'
+# ---
+# name: test_fred[1 2 0-AI-0 2 0]
+  'LFFFIVU'
+# ---
+# name: test_fred[1 2 0-AI-0 2 1]
+  'FFFIVXW'
+# ---
+# name: test_fred[1 2 0-AI-0 2 2]
+  'FFIVXVU'
+# ---
+# name: test_fred[1 2 0-AI-1 0 0]
+  'FJHXIPO'
+# ---
+# name: test_fred[1 2 0-AI-1 0 1]
+  'JHXIPXW'
+# ---
+# name: test_fred[1 2 0-AI-1 0 2]
+  'HXIPXML'
+# ---
+# name: test_fred[1 2 0-AI-1 1 0]
+  'QGPSVSR'
+# ---
+# name: test_fred[1 2 0-AI-1 1 1]
+  'GPSVSZY'
+# ---
+# name: test_fred[1 2 0-AI-1 1 2]
+  'PSVSZRQ'
+# ---
+# name: test_fred[1 2 0-AI-1 2 0]
+  'IWOBZKJ'
+# ---
+# name: test_fred[1 2 0-AI-1 2 1]
+  'WOBZKWV'
+# ---
+# name: test_fred[1 2 0-AI-1 2 2]
+  'OBZKWGF'
+# ---
+# name: test_fred[1 2 0-AI-2 0 0]
+  'FQSUCJA'
+# ---
+# name: test_fred[1 2 0-AI-2 0 1]
+  'QSUCJHG'
+# ---
+# name: test_fred[1 2 0-AI-2 0 2]
+  'SUCJHIZ'
+# ---
+# name: test_fred[1 2 0-AI-2 1 0]
+  'TMESWED'
+# ---
+# name: test_fred[1 2 0-AI-2 1 1]
+  'MESWEON'
+# ---
+# name: test_fred[1 2 0-AI-2 1 2]
+  'ESWEOVU'
+# ---
+# name: test_fred[1 2 0-AI-2 2 0]
+  'RZEEIIZ'
+# ---
+# name: test_fred[1 2 0-AI-2 2 1]
+  'ZEEIIWV'
+# ---
+# name: test_fred[1 2 0-AI-2 2 2]
+  'EEIIWQP'
+# ---
+# name: test_fred[1 2 0-JK-0 0 0]
+  'QCRYNCC'
+# ---
+# name: test_fred[1 2 0-JK-0 0 1]
+  'CRYNCIZ'
+# ---
+# name: test_fred[1 2 0-JK-0 0 2]
+  'RYNCIYR'
+# ---
+# name: test_fred[1 2 0-JK-0 1 0]
+  'TJLDFMW'
+# ---
+# name: test_fred[1 2 0-JK-0 1 1]
+  'JLDFMXN'
+# ---
+# name: test_fred[1 2 0-JK-0 1 2]
+  'LDFMXKJ'
+# ---
+# name: test_fred[1 2 0-JK-0 2 0]
+  'NQNLIRU'
+# ---
+# name: test_fred[1 2 0-JK-0 2 1]
+  'QNLIRDW'
+# ---
+# name: test_fred[1 2 0-JK-0 2 2]
+  'NLIRDDU'
+# ---
+# name: test_fred[1 2 0-JK-1 0 0]
+  'LUXLIDO'
+# ---
+# name: test_fred[1 2 0-JK-1 0 1]
+  'UXLIDSW'
+# ---
+# name: test_fred[1 2 0-JK-1 0 2]
+  'XLIDSQL'
+# ---
+# name: test_fred[1 2 0-JK-1 1 0]
+  'TTBZCKR'
+# ---
+# name: test_fred[1 2 0-JK-1 1 1]
+  'TBZCKYY'
+# ---
+# name: test_fred[1 2 0-JK-1 1 2]
+  'BZCKYCQ'
+# ---
+# name: test_fred[1 2 0-JK-1 2 0]
+  'ISMKHRK'
+# ---
+# name: test_fred[1 2 0-JK-1 2 1]
+  'SMKHRSV'
+# ---
+# name: test_fred[1 2 0-JK-1 2 2]
+  'MKHRSLF'
+# ---
+# name: test_fred[1 2 0-JK-2 0 0]
+  'CSYTUDI'
+# ---
+# name: test_fred[1 2 0-JK-2 0 1]
+  'SYTUDGG'
+# ---
+# name: test_fred[1 2 0-JK-2 0 2]
+  'YTUDGIZ'
+# ---
+# name: test_fred[1 2 0-JK-2 1 0]
+  'MRNTVTD'
+# ---
+# name: test_fred[1 2 0-JK-2 1 1]
+  'RNTVTEN'
+# ---
+# name: test_fred[1 2 0-JK-2 1 2]
+  'NTVTEQU'
+# ---
+# name: test_fred[1 2 0-JK-2 2 0]
+  'KTMNIIZ'
+# ---
+# name: test_fred[1 2 0-JK-2 2 1]
+  'TMNIIEV'
+# ---
+# name: test_fred[1 2 0-JK-2 2 2]
+  'MNIIEEP'
+# ---
+# name: test_fred[2 0 1--0 0 0]
+  'PIMVEQK'
+# ---
+# name: test_fred[2 0 1--0 0 1]
+  'IMVEQGV'
+# ---
+# name: test_fred[2 0 1--0 0 2]
+  'MVEQGLS'
+# ---
+# name: test_fred[2 0 1--0 1 0]
+  'FSGVKVF'
+# ---
+# name: test_fred[2 0 1--0 1 1]
+  'SGVKVMX'
+# ---
+# name: test_fred[2 0 1--0 1 2]
+  'GVKVMKP'
+# ---
+# name: test_fred[2 0 1--0 2 0]
+  'WYVSUBK'
+# ---
+# name: test_fred[2 0 1--0 2 1]
+  'YVSUBZI'
+# ---
+# name: test_fred[2 0 1--0 2 2]
+  'VSUBZKG'
+# ---
+# name: test_fred[2 0 1--1 0 0]
+  'PFPISND'
+# ---
+# name: test_fred[2 0 1--1 0 1]
+  'FPISNVA'
+# ---
+# name: test_fred[2 0 1--1 0 2]
+  'PISNVHS'
+# ---
+# name: test_fred[2 0 1--1 1 0]
+  'MFDVKXM'
+# ---
+# name: test_fred[2 0 1--1 1 1]
+  'FDVKXVX'
+# ---
+# name: test_fred[2 0 1--1 1 2]
+  'DVKXVBB'
+# ---
+# name: test_fred[2 0 1--1 2 0]
+  'SBZWKRP'
+# ---
+# name: test_fred[2 0 1--1 2 1]
+  'BZWKRCX'
+# ---
+# name: test_fred[2 0 1--1 2 2]
+  'ZWKRCKB'
+# ---
+# name: test_fred[2 0 1--2 0 0]
+  'HPJJFNN'
+# ---
+# name: test_fred[2 0 1--2 0 1]
+  'PJJFNIZ'
+# ---
+# name: test_fred[2 0 1--2 0 2]
+  'JJFNITA'
+# ---
+# name: test_fred[2 0 1--2 1 0]
+  'GODHNXC'
+# ---
+# name: test_fred[2 0 1--2 1 1]
+  'ODHNXUM'
+# ---
+# name: test_fred[2 0 1--2 1 2]
+  'DHNXUST'
+# ---
+# name: test_fred[2 0 1--2 2 0]
+  'UQIGVRP'
+# ---
+# name: test_fred[2 0 1--2 2 1]
+  'QIGVRBE'
+# ---
+# name: test_fred[2 0 1--2 2 2]
+  'IGVRBZQ'
+# ---
+# name: test_fred[2 0 1-AI JK-0 0 0]
+  'EIPWCLJ'
+# ---
+# name: test_fred[2 0 1-AI JK-0 0 1]
+  'IPWCLWV'
+# ---
+# name: test_fred[2 0 1-AI JK-0 0 2]
+  'PWCLWTS'
+# ---
+# name: test_fred[2 0 1-AI JK-0 1 0]
+  'CYSJMGF'
+# ---
+# name: test_fred[2 0 1-AI JK-0 1 1]
+  'YSJMGYX'
+# ---
+# name: test_fred[2 0 1-AI JK-0 1 2]
+  'SJMGYQP'
+# ---
+# name: test_fred[2 0 1-AI JK-0 2 0]
+  'TTQKHLJ'
+# ---
+# name: test_fred[2 0 1-AI JK-0 2 1]
+  'TQKHLKA'
+# ---
+# name: test_fred[2 0 1-AI JK-0 2 2]
+  'QKHLKHG'
+# ---
+# name: test_fred[2 0 1-AI JK-1 0 0]
+  'MMOIEED'
+# ---
+# name: test_fred[2 0 1-AI JK-1 0 1]
+  'MOIEEBI'
+# ---
+# name: test_fred[2 0 1-AI JK-1 0 2]
+  'OIEEBTS'
+# ---
+# name: test_fred[2 0 1-AI JK-1 1 0]
+  'HOKHWNM'
+# ---
+# name: test_fred[2 0 1-AI JK-1 1 1]
+  'OKHWNYX'
+# ---
+# name: test_fred[2 0 1-AI JK-1 1 2]
+  'KHWNYCB'
+# ---
+# name: test_fred[2 0 1-AI JK-1 2 0]
+  'GOOKHQP'
+# ---
+# name: test_fred[2 0 1-AI JK-1 2 1]
+  'OOKHQYX'
+# ---
+# name: test_fred[2 0 1-AI JK-1 2 2]
+  'OKHQYCB'
+# ---
+# name: test_fred[2 0 1-AI JK-2 0 0]
+  'PDUZZON'
+# ---
+# name: test_fred[2 0 1-AI JK-2 0 1]
+  'DUZZOIZ'
+# ---
+# name: test_fred[2 0 1-AI JK-2 0 2]
+  'UZZOIBI'
+# ---
+# name: test_fred[2 0 1-AI JK-2 1 0]
+  'NJBGTDC'
+# ---
+# name: test_fred[2 0 1-AI JK-2 1 1]
+  'JBGTDNM'
+# ---
+# name: test_fred[2 0 1-AI JK-2 1 2]
+  'BGTDNUT'
+# ---
+# name: test_fred[2 0 1-AI JK-2 2 0]
+  'XCILOQP'
+# ---
+# name: test_fred[2 0 1-AI JK-2 2 1]
+  'CILOQFE'
+# ---
+# name: test_fred[2 0 1-AI JK-2 2 2]
+  'ILOQFRQ'
+# ---
+# name: test_fred[2 0 1-AI PU BM-0 0 0]
+  'EIUWCLK'
+# ---
+# name: test_fred[2 0 1-AI PU BM-0 0 1]
+  'IUWCLWV'
+# ---
+# name: test_fred[2 0 1-AI PU BM-0 0 2]
+  'UWCLWTS'
+# ---
+# name: test_fred[2 0 1-AI PU BM-0 1 0]
+  'CYSKBGF'
+# ---
+# name: test_fred[2 0 1-AI PU BM-0 1 1]
+  'YSKBGYX'
+# ---
+# name: test_fred[2 0 1-AI PU BM-0 1 2]
+  'SKBGYQU'
+# ---
+# name: test_fred[2 0 1-AI PU BM-0 2 0]
+  'TTQJHLK'
+# ---
+# name: test_fred[2 0 1-AI PU BM-0 2 1]
+  'TQJHLJA'
+# ---
+# name: test_fred[2 0 1-AI PU BM-0 2 2]
+  'QJHLJHG'
+# ---
+# name: test_fred[2 0 1-AI PU BM-1 0 0]
+  'BBOIEED'
+# ---
+# name: test_fred[2 0 1-AI PU BM-1 0 1]
+  'BOIEEMI'
+# ---
+# name: test_fred[2 0 1-AI PU BM-1 0 2]
+  'OIEEMTS'
+# ---
+# name: test_fred[2 0 1-AI PU BM-1 1 0]
+  'HOJHWNB'
+# ---
+# name: test_fred[2 0 1-AI PU BM-1 1 1]
+  'OJHWNYX'
+# ---
+# name: test_fred[2 0 1-AI PU BM-1 1 2]
+  'JHWNYCM'
+# ---
+# name: test_fred[2 0 1-AI PU BM-1 2 0]
+  'GOOJHQU'
+# ---
+# name: test_fred[2 0 1-AI PU BM-1 2 1]
+  'OOJHQYX'
+# ---
+# name: test_fred[2 0 1-AI PU BM-1 2 2]
+  'OJHQYCM'
+# ---
+# name: test_fred[2 0 1-AI PU BM-2 0 0]
+  'UDPZZON'
+# ---
+# name: test_fred[2 0 1-AI PU BM-2 0 1]
+  'DPZZOIZ'
+# ---
+# name: test_fred[2 0 1-AI PU BM-2 0 2]
+  'PZZOIMI'
+# ---
+# name: test_fred[2 0 1-AI PU BM-2 1 0]
+  'NKMGTDC'
+# ---
+# name: test_fred[2 0 1-AI PU BM-2 1 1]
+  'KMGTDNB'
+# ---
+# name: test_fred[2 0 1-AI PU BM-2 1 2]
+  'MGTDNPT'
+# ---
+# name: test_fred[2 0 1-AI PU BM-2 2 0]
+  'XCILOQU'
+# ---
+# name: test_fred[2 0 1-AI PU BM-2 2 1]
+  'CILOQFE'
+# ---
+# name: test_fred[2 0 1-AI PU BM-2 2 2]
+  'ILOQFRQ'
+# ---
+# name: test_fred[2 0 1-AI-0 0 0]
+  'EIPWCLK'
+# ---
+# name: test_fred[2 0 1-AI-0 0 1]
+  'IPWCLWV'
+# ---
+# name: test_fred[2 0 1-AI-0 0 2]
+  'PWCLWTS'
+# ---
+# name: test_fred[2 0 1-AI-0 1 0]
+  'CYSKMGF'
+# ---
+# name: test_fred[2 0 1-AI-0 1 1]
+  'YSKMGYX'
+# ---
+# name: test_fred[2 0 1-AI-0 1 2]
+  'SKMGYQP'
+# ---
+# name: test_fred[2 0 1-AI-0 2 0]
+  'TTQJHLK'
+# ---
+# name: test_fred[2 0 1-AI-0 2 1]
+  'TQJHLJA'
+# ---
+# name: test_fred[2 0 1-AI-0 2 2]
+  'QJHLJHG'
+# ---
+# name: test_fred[2 0 1-AI-1 0 0]
+  'MMOIEED'
+# ---
+# name: test_fred[2 0 1-AI-1 0 1]
+  'MOIEEBI'
+# ---
+# name: test_fred[2 0 1-AI-1 0 2]
+  'OIEEBTS'
+# ---
+# name: test_fred[2 0 1-AI-1 1 0]
+  'HOJHWNM'
+# ---
+# name: test_fred[2 0 1-AI-1 1 1]
+  'OJHWNYX'
+# ---
+# name: test_fred[2 0 1-AI-1 1 2]
+  'JHWNYCB'
+# ---
+# name: test_fred[2 0 1-AI-1 2 0]
+  'GOOJHQP'
+# ---
+# name: test_fred[2 0 1-AI-1 2 1]
+  'OOJHQYX'
+# ---
+# name: test_fred[2 0 1-AI-1 2 2]
+  'OJHQYCB'
+# ---
+# name: test_fred[2 0 1-AI-2 0 0]
+  'PDUZZON'
+# ---
+# name: test_fred[2 0 1-AI-2 0 1]
+  'DUZZOIZ'
+# ---
+# name: test_fred[2 0 1-AI-2 0 2]
+  'UZZOIBI'
+# ---
+# name: test_fred[2 0 1-AI-2 1 0]
+  'NKBGTDC'
+# ---
+# name: test_fred[2 0 1-AI-2 1 1]
+  'KBGTDNM'
+# ---
+# name: test_fred[2 0 1-AI-2 1 2]
+  'BGTDNUT'
+# ---
+# name: test_fred[2 0 1-AI-2 2 0]
+  'XCILOQP'
+# ---
+# name: test_fred[2 0 1-AI-2 2 1]
+  'CILOQFE'
+# ---
+# name: test_fred[2 0 1-AI-2 2 2]
+  'ILOQFRQ'
+# ---
+# name: test_fred[2 0 1-JK-0 0 0]
+  'PIMVEQJ'
+# ---
+# name: test_fred[2 0 1-JK-0 0 1]
+  'IMVEQGV'
+# ---
+# name: test_fred[2 0 1-JK-0 0 2]
+  'MVEQGLS'
+# ---
+# name: test_fred[2 0 1-JK-0 1 0]
+  'FSGVJVF'
+# ---
+# name: test_fred[2 0 1-JK-0 1 1]
+  'SGVJVMX'
+# ---
+# name: test_fred[2 0 1-JK-0 1 2]
+  'GVJVMJP'
+# ---
+# name: test_fred[2 0 1-JK-0 2 0]
+  'WYVSUBJ'
+# ---
+# name: test_fred[2 0 1-JK-0 2 1]
+  'YVSUBZI'
+# ---
+# name: test_fred[2 0 1-JK-0 2 2]
+  'VSUBZJG'
+# ---
+# name: test_fred[2 0 1-JK-1 0 0]
+  'PFPISND'
+# ---
+# name: test_fred[2 0 1-JK-1 0 1]
+  'FPISNVA'
+# ---
+# name: test_fred[2 0 1-JK-1 0 2]
+  'PISNVHS'
+# ---
+# name: test_fred[2 0 1-JK-1 1 0]
+  'MFDVJXM'
+# ---
+# name: test_fred[2 0 1-JK-1 1 1]
+  'FDVJXVX'
+# ---
+# name: test_fred[2 0 1-JK-1 1 2]
+  'DVJXVBB'
+# ---
+# name: test_fred[2 0 1-JK-1 2 0]
+  'SBZWJRP'
+# ---
+# name: test_fred[2 0 1-JK-1 2 1]
+  'BZWJRCX'
+# ---
+# name: test_fred[2 0 1-JK-1 2 2]
+  'ZWJRCJB'
+# ---
+# name: test_fred[2 0 1-JK-2 0 0]
+  'HPKKFNN'
+# ---
+# name: test_fred[2 0 1-JK-2 0 1]
+  'PKKFNIZ'
+# ---
+# name: test_fred[2 0 1-JK-2 0 2]
+  'KKFNITA'
+# ---
+# name: test_fred[2 0 1-JK-2 1 0]
+  'GODHNXC'
+# ---
+# name: test_fred[2 0 1-JK-2 1 1]
+  'ODHNXUM'
+# ---
+# name: test_fred[2 0 1-JK-2 1 2]
+  'DHNXUST'
+# ---
+# name: test_fred[2 0 1-JK-2 2 0]
+  'UQIGVRP'
+# ---
+# name: test_fred[2 0 1-JK-2 2 1]
+  'QIGVRBE'
+# ---
+# name: test_fred[2 0 1-JK-2 2 2]
+  'IGVRBZQ'
+# ---
+# name: test_fred[2 1 0--0 0 0]
+  'QEQIIWA'
+# ---
+# name: test_fred[2 1 0--0 0 1]
+  'EQIIWHI'
+# ---
+# name: test_fred[2 1 0--0 0 2]
+  'QIIWHSG'
+# ---
+# name: test_fred[2 1 0--0 1 0]
+  'WOKIOMR'
+# ---
+# name: test_fred[2 1 0--0 1 1]
+  'OKIOMIZ'
+# ---
+# name: test_fred[2 1 0--0 1 2]
+  'KIOMIOT'
+# ---
+# name: test_fred[2 1 0--0 2 0]
+  'VBZPFFS'
+# ---
+# name: test_fred[2 1 0--0 2 1]
+  'BZPFFIZ'
+# ---
+# name: test_fred[2 1 0--0 2 2]
+  'ZPFFIKL'
+# ---
+# name: test_fred[2 1 0--1 0 0]
+  'QHQELFP'
+# ---
+# name: test_fred[2 1 0--1 0 1]
+  'HQELFDS'
+# ---
+# name: test_fred[2 1 0--1 0 2]
+  'QELFDWW'
+# ---
+# name: test_fred[2 1 0--1 1 0]
+  'LFXSLMG'
+# ---
+# name: test_fred[2 1 0--1 1 1]
+  'FXSLMVB'
+# ---
+# name: test_fred[2 1 0--1 1 2]
+  'XSLMVNW'
+# ---
+# name: test_fred[2 1 0--1 2 0]
+  'KLEGRJT'
+# ---
+# name: test_fred[2 1 0--1 2 1]
+  'LEGRJWY'
+# ---
+# name: test_fred[2 1 0--1 2 2]
+  'EGRJWKQ'
+# ---
+# name: test_fred[2 1 0--2 0 0]
+  'HSIFOEP'
+# ---
+# name: test_fred[2 1 0--2 0 1]
+  'SIFOEQS'
+# ---
+# name: test_fred[2 1 0--2 0 2]
+  'IFOEQTJ'
+# ---
+# name: test_fred[2 1 0--2 1 0]
+  'YEXTLWB'
+# ---
+# name: test_fred[2 1 0--2 1 1]
+  'EXTLWPF'
+# ---
+# name: test_fred[2 1 0--2 1 2]
+  'XTLWPGW'
+# ---
+# name: test_fred[2 1 0--2 2 0]
+  'TYHIJCY'
+# ---
+# name: test_fred[2 1 0--2 2 1]
+  'YHIJCEP'
+# ---
+# name: test_fred[2 1 0--2 2 2]
+  'HIJCEYQ'
+# ---
+# name: test_fred[2 1 0-AI JK-0 0 0]
+  'YWRIIBI'
+# ---
+# name: test_fred[2 1 0-AI JK-0 0 1]
+  'WRIIBKA'
+# ---
+# name: test_fred[2 1 0-AI JK-0 0 2]
+  'RIIBKHG'
+# ---
+# name: test_fred[2 1 0-AI JK-0 1 0]
+  'JYGIYSR'
+# ---
+# name: test_fred[2 1 0-AI JK-0 1 1]
+  'YGIYSIZ'
+# ---
+# name: test_fred[2 1 0-AI JK-0 1 2]
+  'GIYSIUT'
+# ---
+# name: test_fred[2 1 0-AI JK-0 2 0]
+  'LDDFSTS'
+# ---
+# name: test_fred[2 1 0-AI JK-0 2 1]
+  'DDFSTIZ'
+# ---
+# name: test_fred[2 1 0-AI JK-0 2 2]
+  'DFSTIML'
+# ---
+# name: test_fred[2 1 0-AI JK-1 0 0]
+  'BFDOQQP'
+# ---
+# name: test_fred[2 1 0-AI JK-1 0 1]
+  'FDOQQTS'
+# ---
+# name: test_fred[2 1 0-AI JK-1 0 2]
+  'DOQQTXW'
+# ---
+# name: test_fred[2 1 0-AI JK-1 1 0]
+  'OSUXKHG'
+# ---
+# name: test_fred[2 1 0-AI JK-1 1 1]
+  'SUXKHCB'
+# ---
+# name: test_fred[2 1 0-AI JK-1 1 2]
+  'UXKHCXW'
+# ---
+# name: test_fred[2 1 0-AI JK-1 2 0]
+  'LCYFXUT'
+# ---
+# name: test_fred[2 1 0-AI JK-1 2 1]
+  'CYFXUZY'
+# ---
+# name: test_fred[2 1 0-AI JK-1 2 2]
+  'YFXUZRQ'
+# ---
+# name: test_fred[2 1 0-AI JK-2 0 0]
+  'DEIRUQP'
+# ---
+# name: test_fred[2 1 0-AI JK-2 0 1]
+  'EIRUQTS'
+# ---
+# name: test_fred[2 1 0-AI JK-2 0 2]
+  'IRUQTJK'
+# ---
+# name: test_fred[2 1 0-AI JK-2 1 0]
+  'SKHQJCB'
+# ---
+# name: test_fred[2 1 0-AI JK-2 1 1]
+  'KHQJCGF'
+# ---
+# name: test_fred[2 1 0-AI JK-2 1 2]
+  'HQJCGXW'
+# ---
+# name: test_fred[2 1 0-AI JK-2 2 0]
+  'MBEIEZY'
+# ---
+# name: test_fred[2 1 0-AI JK-2 2 1]
+  'BEIEZQP'
+# ---
+# name: test_fred[2 1 0-AI JK-2 2 2]
+  'EIEZQRQ'
+# ---
+# name: test_fred[2 1 0-AI PU BM-0 0 0]
+  'YWRIIMI'
+# ---
+# name: test_fred[2 1 0-AI PU BM-0 0 1]
+  'WRIIMJA'
+# ---
+# name: test_fred[2 1 0-AI PU BM-0 0 2]
+  'RIIMJHG'
+# ---
+# name: test_fred[2 1 0-AI PU BM-0 1 0]
+  'KYGIYSR'
+# ---
+# name: test_fred[2 1 0-AI PU BM-0 1 1]
+  'YGIYSIZ'
+# ---
+# name: test_fred[2 1 0-AI PU BM-0 1 2]
+  'GIYSIPT'
+# ---
+# name: test_fred[2 1 0-AI PU BM-0 2 0]
+  'LDDFSTS'
+# ---
+# name: test_fred[2 1 0-AI PU BM-0 2 1]
+  'DDFSTIZ'
+# ---
+# name: test_fred[2 1 0-AI PU BM-0 2 2]
+  'DFSTIBL'
+# ---
+# name: test_fred[2 1 0-AI PU BM-1 0 0]
+  'MFDOQQU'
+# ---
+# name: test_fred[2 1 0-AI PU BM-1 0 1]
+  'FDOQQTS'
+# ---
+# name: test_fred[2 1 0-AI PU BM-1 0 2]
+  'DOQQTXW'
+# ---
+# name: test_fred[2 1 0-AI PU BM-1 1 0]
+  'OSPXJHG'
+# ---
+# name: test_fred[2 1 0-AI PU BM-1 1 1]
+  'SPXJHCM'
+# ---
+# name: test_fred[2 1 0-AI PU BM-1 1 2]
+  'PXJHCXW'
+# ---
+# name: test_fred[2 1 0-AI PU BM-1 2 0]
+  'LCYFXPT'
+# ---
+# name: test_fred[2 1 0-AI PU BM-1 2 1]
+  'CYFXPZY'
+# ---
+# name: test_fred[2 1 0-AI PU BM-1 2 2]
+  'YFXPZRQ'
+# ---
+# name: test_fred[2 1 0-AI PU BM-2 0 0]
+  'DEIRPQU'
+# ---
+# name: test_fred[2 1 0-AI PU BM-2 0 1]
+  'EIRPQTS'
+# ---
+# name: test_fred[2 1 0-AI PU BM-2 0 2]
+  'IRPQTKJ'
+# ---
+# name: test_fred[2 1 0-AI PU BM-2 1 0]
+  'SJHQKCM'
+# ---
+# name: test_fred[2 1 0-AI PU BM-2 1 1]
+  'JHQKCGF'
+# ---
+# name: test_fred[2 1 0-AI PU BM-2 1 2]
+  'HQKCGXW'
+# ---
+# name: test_fred[2 1 0-AI PU BM-2 2 0]
+  'BMEIEZY'
+# ---
+# name: test_fred[2 1 0-AI PU BM-2 2 1]
+  'MEIEZQU'
+# ---
+# name: test_fred[2 1 0-AI PU BM-2 2 2]
+  'EIEZQRQ'
+# ---
+# name: test_fred[2 1 0-AI-0 0 0]
+  'YWRIIBI'
+# ---
+# name: test_fred[2 1 0-AI-0 0 1]
+  'WRIIBJA'
+# ---
+# name: test_fred[2 1 0-AI-0 0 2]
+  'RIIBJHG'
+# ---
+# name: test_fred[2 1 0-AI-0 1 0]
+  'KYGIYSR'
+# ---
+# name: test_fred[2 1 0-AI-0 1 1]
+  'YGIYSIZ'
+# ---
+# name: test_fred[2 1 0-AI-0 1 2]
+  'GIYSIUT'
+# ---
+# name: test_fred[2 1 0-AI-0 2 0]
+  'LDDFSTS'
+# ---
+# name: test_fred[2 1 0-AI-0 2 1]
+  'DDFSTIZ'
+# ---
+# name: test_fred[2 1 0-AI-0 2 2]
+  'DFSTIML'
+# ---
+# name: test_fred[2 1 0-AI-1 0 0]
+  'BFDOQQP'
+# ---
+# name: test_fred[2 1 0-AI-1 0 1]
+  'FDOQQTS'
+# ---
+# name: test_fred[2 1 0-AI-1 0 2]
+  'DOQQTXW'
+# ---
+# name: test_fred[2 1 0-AI-1 1 0]
+  'OSUXJHG'
+# ---
+# name: test_fred[2 1 0-AI-1 1 1]
+  'SUXJHCB'
+# ---
+# name: test_fred[2 1 0-AI-1 1 2]
+  'UXJHCXW'
+# ---
+# name: test_fred[2 1 0-AI-1 2 0]
+  'LCYFXUT'
+# ---
+# name: test_fred[2 1 0-AI-1 2 1]
+  'CYFXUZY'
+# ---
+# name: test_fred[2 1 0-AI-1 2 2]
+  'YFXUZRQ'
+# ---
+# name: test_fred[2 1 0-AI-2 0 0]
+  'DEIRUQP'
+# ---
+# name: test_fred[2 1 0-AI-2 0 1]
+  'EIRUQTS'
+# ---
+# name: test_fred[2 1 0-AI-2 0 2]
+  'IRUQTKJ'
+# ---
+# name: test_fred[2 1 0-AI-2 1 0]
+  'SJHQKCB'
+# ---
+# name: test_fred[2 1 0-AI-2 1 1]
+  'JHQKCGF'
+# ---
+# name: test_fred[2 1 0-AI-2 1 2]
+  'HQKCGXW'
+# ---
+# name: test_fred[2 1 0-AI-2 2 0]
+  'MBEIEZY'
+# ---
+# name: test_fred[2 1 0-AI-2 2 1]
+  'BEIEZQP'
+# ---
+# name: test_fred[2 1 0-AI-2 2 2]
+  'EIEZQRQ'
+# ---
+# name: test_fred[2 1 0-JK-0 0 0]
+  'QEQIIWA'
+# ---
+# name: test_fred[2 1 0-JK-0 0 1]
+  'EQIIWHI'
+# ---
+# name: test_fred[2 1 0-JK-0 0 2]
+  'QIIWHSG'
+# ---
+# name: test_fred[2 1 0-JK-0 1 0]
+  'WOJIOMR'
+# ---
+# name: test_fred[2 1 0-JK-0 1 1]
+  'OJIOMIZ'
+# ---
+# name: test_fred[2 1 0-JK-0 1 2]
+  'JIOMIOT'
+# ---
+# name: test_fred[2 1 0-JK-0 2 0]
+  'VBZPFFS'
+# ---
+# name: test_fred[2 1 0-JK-0 2 1]
+  'BZPFFIZ'
+# ---
+# name: test_fred[2 1 0-JK-0 2 2]
+  'ZPFFIJL'
+# ---
+# name: test_fred[2 1 0-JK-1 0 0]
+  'QHQELFP'
+# ---
+# name: test_fred[2 1 0-JK-1 0 1]
+  'HQELFDS'
+# ---
+# name: test_fred[2 1 0-JK-1 0 2]
+  'QELFDWW'
+# ---
+# name: test_fred[2 1 0-JK-1 1 0]
+  'LFXSLMG'
+# ---
+# name: test_fred[2 1 0-JK-1 1 1]
+  'FXSLMVB'
+# ---
+# name: test_fred[2 1 0-JK-1 1 2]
+  'XSLMVNW'
+# ---
+# name: test_fred[2 1 0-JK-1 2 0]
+  'JLEGRKT'
+# ---
+# name: test_fred[2 1 0-JK-1 2 1]
+  'LEGRKWY'
+# ---
+# name: test_fred[2 1 0-JK-1 2 2]
+  'EGRKWJQ'
+# ---
+# name: test_fred[2 1 0-JK-2 0 0]
+  'HSIFOEP'
+# ---
+# name: test_fred[2 1 0-JK-2 0 1]
+  'SIFOEQS'
+# ---
+# name: test_fred[2 1 0-JK-2 0 2]
+  'IFOEQTK'
+# ---
+# name: test_fred[2 1 0-JK-2 1 0]
+  'YEXTLWB'
+# ---
+# name: test_fred[2 1 0-JK-2 1 1]
+  'EXTLWPF'
+# ---
+# name: test_fred[2 1 0-JK-2 1 2]
+  'XTLWPGW'
+# ---
+# name: test_fred[2 1 0-JK-2 2 0]
+  'TYHIKCY'
+# ---
+# name: test_fred[2 1 0-JK-2 2 1]
+  'YHIKCEP'
+# ---
+# name: test_fred[2 1 0-JK-2 2 2]
+  'HIKCEYQ'
+# ---
+# name: test_kirino[0 1 2--0 0 0]
+  'QJNLUDM'
+# ---
+# name: test_kirino[0 1 2--0 0 1]
+  'JNLUDNW'
+# ---
+# name: test_kirino[0 1 2--0 0 2]
+  'NLUDNNU'
+# ---
+# name: test_kirino[0 1 2--0 1 0]
+  'SPVMGDQ'
+# ---
+# name: test_kirino[0 1 2--0 1 1]
+  'PVMGDDN'
+# ---
+# name: test_kirino[0 1 2--0 1 2]
+  'VMGDDMV'
+# ---
+# name: test_kirino[0 1 2--0 2 0]
+  'SDTDXSG'
+# ---
+# name: test_kirino[0 1 2--0 2 1]
+  'DTDXSXD'
+# ---
+# name: test_kirino[0 1 2--0 2 2]
+  'TDXSXRM'
+# ---
+# name: test_kirino[0 1 2--1 0 0]
+  'ZVJORER'
+# ---
+# name: test_kirino[0 1 2--1 0 1]
+  'VJOREKR'
+# ---
+# name: test_kirino[0 1 2--1 0 2]
+  'JOREKFL'
+# ---
+# name: test_kirino[0 1 2--1 1 0]
+  'PVKURPN'
+# ---
+# name: test_kirino[0 1 2--1 1 1]
+  'VKURPES'
+# ---
+# name: test_kirino[0 1 2--1 1 2]
+  'KURPEKS'
+# ---
+# name: test_kirino[0 1 2--1 2 0]
+  'YNSWTGP'
+# ---
+# name: test_kirino[0 1 2--1 2 1]
+  'NSWTGQU'
+# ---
+# name: test_kirino[0 1 2--1 2 2]
+  'SWTGQKK'
+# ---
+# name: test_kirino[0 1 2--2 0 0]
+  'CIYTLHS'
+# ---
+# name: test_kirino[0 1 2--2 0 1]
+  'IYTLHIZ'
+# ---
+# name: test_kirino[0 1 2--2 0 2]
+  'YTLHINW'
+# ---
+# name: test_kirino[0 1 2--2 1 0]
+  'QYWMIRP'
+# ---
+# name: test_kirino[0 1 2--2 1 1]
+  'YWMIRNK'
+# ---
+# name: test_kirino[0 1 2--2 1 2]
+  'WMIRNEV'
+# ---
+# name: test_kirino[0 1 2--2 2 0]
+  'TMFSBZV'
+# ---
+# name: test_kirino[0 1 2--2 2 1]
+  'MFSBZDD'
+# ---
+# name: test_kirino[0 1 2--2 2 2]
+  'FSBZDVD'
+# ---
+# name: test_kirino[0 1 2-AI JK-0 0 0]
+  'FQZTVNM'
+# ---
+# name: test_kirino[0 1 2-AI JK-0 0 1]
+  'QZTVNXW'
+# ---
+# name: test_kirino[0 1 2-AI JK-0 0 2]
+  'ZTVNXVU'
+# ---
+# name: test_kirino[0 1 2-AI JK-0 1 0]
+  'FFCWURQ'
+# ---
+# name: test_kirino[0 1 2-AI JK-0 1 1]
+  'FCWURON'
+# ---
+# name: test_kirino[0 1 2-AI JK-0 1 2]
+  'CWUROWV'
+# ---
+# name: test_kirino[0 1 2-AI JK-0 2 0]
+  'TJMGKHG'
+# ---
+# name: test_kirino[0 1 2-AI JK-0 2 1]
+  'JMGKHED'
+# ---
+# name: test_kirino[0 1 2-AI JK-0 2 2]
+  'MGKHENM'
+# ---
+# name: test_kirino[0 1 2-AI JK-1 0 0]
+  'UEQZDSR'
+# ---
+# name: test_kirino[0 1 2-AI JK-1 0 1]
+  'EQZDSSR'
+# ---
+# name: test_kirino[0 1 2-AI JK-1 0 2]
+  'QZDSSML'
+# ---
+# name: test_kirino[0 1 2-AI JK-1 1 0]
+  'QXEPYON'
+# ---
+# name: test_kirino[0 1 2-AI JK-1 1 1]
+  'XEPYOTS'
+# ---
+# name: test_kirino[0 1 2-AI JK-1 1 2]
+  'EPYOTTS'
+# ---
+# name: test_kirino[0 1 2-AI JK-1 2 0]
+  'QSJCGQP'
+# ---
+# name: test_kirino[0 1 2-AI JK-1 2 1]
+  'SJCGQVU'
+# ---
+# name: test_kirino[0 1 2-AI JK-1 2 2]
+  'JCGQVLJ'
+# ---
+# name: test_kirino[0 1 2-AI JK-2 0 0]
+  'VIRPBTS'
+# ---
+# name: test_kirino[0 1 2-AI JK-2 0 1]
+  'IRPBTIZ'
+# ---
+# name: test_kirino[0 1 2-AI JK-2 0 2]
+  'RPBTIXW'
+# ---
+# name: test_kirino[0 1 2-AI JK-2 1 0]
+  'JTGEIQP'
+# ---
+# name: test_kirino[0 1 2-AI JK-2 1 1]
+  'TGEIQLJ'
+# ---
+# name: test_kirino[0 1 2-AI JK-2 1 2]
+  'GEIQLWV'
+# ---
+# name: test_kirino[0 1 2-AI JK-2 2 0]
+  'XFMMUWV'
+# ---
+# name: test_kirino[0 1 2-AI JK-2 2 1]
+  'FMMUWED'
+# ---
+# name: test_kirino[0 1 2-AI JK-2 2 2]
+  'MMUWEED'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-0 0 0]
+  'FQZTVNB'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-0 0 1]
+  'QZTVNXW'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-0 0 2]
+  'ZTVNXVP'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-0 1 0]
+  'FFCWPRQ'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-0 1 1]
+  'FCWPRON'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-0 1 2]
+  'CWPROWV'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-0 2 0]
+  'TKBGJHG'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-0 2 1]
+  'KBGJHED'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-0 2 2]
+  'BGJHENB'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-1 0 0]
+  'PEQZDSR'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-1 0 1]
+  'EQZDSSR'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-1 0 2]
+  'QZDSSBL'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-1 1 0]
+  'QXEUYON'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-1 1 1]
+  'XEUYOTS'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-1 1 2]
+  'EUYOTTS'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-1 2 0]
+  'QSKCGQU'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-1 2 1]
+  'SKCGQVP'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-1 2 2]
+  'KCGQVLK'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-2 0 0]
+  'VIRUMTS'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-2 0 1]
+  'IRUMTIZ'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-2 0 2]
+  'RUMTIXW'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-2 1 0]
+  'KTGEIQU'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-2 1 1]
+  'TGEIQLK'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-2 1 2]
+  'GEIQLWV'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-2 2 0]
+  'XFBBPWV'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-2 2 1]
+  'FBBPWED'
+# ---
+# name: test_kirino[0 1 2-AI PU BM-2 2 2]
+  'BBPWEED'
+# ---
+# name: test_kirino[0 1 2-AI-0 0 0]
+  'FQZTVNM'
+# ---
+# name: test_kirino[0 1 2-AI-0 0 1]
+  'QZTVNXW'
+# ---
+# name: test_kirino[0 1 2-AI-0 0 2]
+  'ZTVNXVU'
+# ---
+# name: test_kirino[0 1 2-AI-0 1 0]
+  'FFCWURQ'
+# ---
+# name: test_kirino[0 1 2-AI-0 1 1]
+  'FCWURON'
+# ---
+# name: test_kirino[0 1 2-AI-0 1 2]
+  'CWUROWV'
+# ---
+# name: test_kirino[0 1 2-AI-0 2 0]
+  'TKMGJHG'
+# ---
+# name: test_kirino[0 1 2-AI-0 2 1]
+  'KMGJHED'
+# ---
+# name: test_kirino[0 1 2-AI-0 2 2]
+  'MGJHENM'
+# ---
+# name: test_kirino[0 1 2-AI-1 0 0]
+  'UEQZDSR'
+# ---
+# name: test_kirino[0 1 2-AI-1 0 1]
+  'EQZDSSR'
+# ---
+# name: test_kirino[0 1 2-AI-1 0 2]
+  'QZDSSML'
+# ---
+# name: test_kirino[0 1 2-AI-1 1 0]
+  'QXEPYON'
+# ---
+# name: test_kirino[0 1 2-AI-1 1 1]
+  'XEPYOTS'
+# ---
+# name: test_kirino[0 1 2-AI-1 1 2]
+  'EPYOTTS'
+# ---
+# name: test_kirino[0 1 2-AI-1 2 0]
+  'QSKCGQP'
+# ---
+# name: test_kirino[0 1 2-AI-1 2 1]
+  'SKCGQVU'
+# ---
+# name: test_kirino[0 1 2-AI-1 2 2]
+  'KCGQVLK'
+# ---
+# name: test_kirino[0 1 2-AI-2 0 0]
+  'VIRPBTS'
+# ---
+# name: test_kirino[0 1 2-AI-2 0 1]
+  'IRPBTIZ'
+# ---
+# name: test_kirino[0 1 2-AI-2 0 2]
+  'RPBTIXW'
+# ---
+# name: test_kirino[0 1 2-AI-2 1 0]
+  'KTGEIQP'
+# ---
+# name: test_kirino[0 1 2-AI-2 1 1]
+  'TGEIQLK'
+# ---
+# name: test_kirino[0 1 2-AI-2 1 2]
+  'GEIQLWV'
+# ---
+# name: test_kirino[0 1 2-AI-2 2 0]
+  'XFMMUWV'
+# ---
+# name: test_kirino[0 1 2-AI-2 2 1]
+  'FMMUWED'
+# ---
+# name: test_kirino[0 1 2-AI-2 2 2]
+  'MMUWEED'
+# ---
+# name: test_kirino[0 1 2-JK-0 0 0]
+  'QKNLUDM'
+# ---
+# name: test_kirino[0 1 2-JK-0 0 1]
+  'KNLUDNW'
+# ---
+# name: test_kirino[0 1 2-JK-0 0 2]
+  'NLUDNNU'
+# ---
+# name: test_kirino[0 1 2-JK-0 1 0]
+  'SPVMGDQ'
+# ---
+# name: test_kirino[0 1 2-JK-0 1 1]
+  'PVMGDDN'
+# ---
+# name: test_kirino[0 1 2-JK-0 1 2]
+  'VMGDDMV'
+# ---
+# name: test_kirino[0 1 2-JK-0 2 0]
+  'SDTDXSG'
+# ---
+# name: test_kirino[0 1 2-JK-0 2 1]
+  'DTDXSXD'
+# ---
+# name: test_kirino[0 1 2-JK-0 2 2]
+  'TDXSXRM'
+# ---
+# name: test_kirino[0 1 2-JK-1 0 0]
+  'ZVKORER'
+# ---
+# name: test_kirino[0 1 2-JK-1 0 1]
+  'VKOREJR'
+# ---
+# name: test_kirino[0 1 2-JK-1 0 2]
+  'KOREJFL'
+# ---
+# name: test_kirino[0 1 2-JK-1 1 0]
+  'PVJURPN'
+# ---
+# name: test_kirino[0 1 2-JK-1 1 1]
+  'VJURPES'
+# ---
+# name: test_kirino[0 1 2-JK-1 1 2]
+  'JURPEJS'
+# ---
+# name: test_kirino[0 1 2-JK-1 2 0]
+  'YNSWTGP'
+# ---
+# name: test_kirino[0 1 2-JK-1 2 1]
+  'NSWTGQU'
+# ---
+# name: test_kirino[0 1 2-JK-1 2 2]
+  'SWTGQJJ'
+# ---
+# name: test_kirino[0 1 2-JK-2 0 0]
+  'CIYTLHS'
+# ---
+# name: test_kirino[0 1 2-JK-2 0 1]
+  'IYTLHIZ'
+# ---
+# name: test_kirino[0 1 2-JK-2 0 2]
+  'YTLHINW'
+# ---
+# name: test_kirino[0 1 2-JK-2 1 0]
+  'QYWMIRP'
+# ---
+# name: test_kirino[0 1 2-JK-2 1 1]
+  'YWMIRNJ'
+# ---
+# name: test_kirino[0 1 2-JK-2 1 2]
+  'WMIRNEV'
+# ---
+# name: test_kirino[0 1 2-JK-2 2 0]
+  'TMFSBZV'
+# ---
+# name: test_kirino[0 1 2-JK-2 2 1]
+  'MFSBZDD'
+# ---
+# name: test_kirino[0 1 2-JK-2 2 2]
+  'FSBZDVD'
+# ---
+# name: test_kirino[0 2 1--0 0 0]
+  'MGXBZDO'
+# ---
+# name: test_kirino[0 2 1--0 0 1]
+  'GXBZDRL'
+# ---
+# name: test_kirino[0 2 1--0 0 2]
+  'XBZDRUN'
+# ---
+# name: test_kirino[0 2 1--0 1 0]
+  'SFLWFOW'
+# ---
+# name: test_kirino[0 2 1--0 1 1]
+  'FLWFOVB'
+# ---
+# name: test_kirino[0 2 1--0 1 2]
+  'LWFOVFC'
+# ---
+# name: test_kirino[0 2 1--0 2 0]
+  'RVFRODN'
+# ---
+# name: test_kirino[0 2 1--0 2 1]
+  'VFRODSO'
+# ---
+# name: test_kirino[0 2 1--0 2 2]
+  'FRODSVB'
+# ---
+# name: test_kirino[0 2 1--1 0 0]
+  'NVWJVSU'
+# ---
+# name: test_kirino[0 2 1--1 0 1]
+  'VWJVSLI'
+# ---
+# name: test_kirino[0 2 1--1 0 2]
+  'WJVSLDG'
+# ---
+# name: test_kirino[0 2 1--1 1 0]
+  'PHKQRRL'
+# ---
+# name: test_kirino[0 2 1--1 1 1]
+  'HKQRREQ'
+# ---
+# name: test_kirino[0 2 1--1 1 2]
+  'KQRRESS'
+# ---
+# name: test_kirino[0 2 1--1 2 0]
+  'VEIVHWT'
+# ---
+# name: test_kirino[0 2 1--1 2 1]
+  'EIVHWDA'
+# ---
+# name: test_kirino[0 2 1--1 2 2]
+  'IVHWDHI'
+# ---
+# name: test_kirino[0 2 1--2 0 0]
+  'KBZRFQF'
+# ---
+# name: test_kirino[0 2 1--2 0 1]
+  'BZRFQBF'
+# ---
+# name: test_kirino[0 2 1--2 0 2]
+  'ZRFQBZQ'
+# ---
+# name: test_kirino[0 2 1--2 1 0]
+  'SBZDMCJ'
+# ---
+# name: test_kirino[0 2 1--2 1 1]
+  'BZDMCXN'
+# ---
+# name: test_kirino[0 2 1--2 1 2]
+  'ZDMCXYF'
+# ---
+# name: test_kirino[0 2 1--2 2 0]
+  'WLGRVGJ'
+# ---
+# name: test_kirino[0 2 1--2 2 1]
+  'LGRVGRJ'
+# ---
+# name: test_kirino[0 2 1--2 2 2]
+  'GRVGRCF'
+# ---
+# name: test_kirino[0 2 1-AI JK-0 0 0]
+  'FXOQWPO'
+# ---
+# name: test_kirino[0 2 1-AI JK-0 0 1]
+  'XOQWPML'
+# ---
+# name: test_kirino[0 2 1-AI JK-0 0 2]
+  'OQWPMON'
+# ---
+# name: test_kirino[0 2 1-AI JK-0 1 0]
+  'ODNRDXW'
+# ---
+# name: test_kirino[0 2 1-AI JK-0 1 1]
+  'DNRDXCB'
+# ---
+# name: test_kirino[0 2 1-AI JK-0 1 2]
+  'NRDXCDC'
+# ---
+# name: test_kirino[0 2 1-AI JK-0 2 0]
+  'FOXNTON'
+# ---
+# name: test_kirino[0 2 1-AI JK-0 2 1]
+  'OXNTOPO'
+# ---
+# name: test_kirino[0 2 1-AI JK-0 2 2]
+  'XNTOPCB'
+# ---
+# name: test_kirino[0 2 1-AI JK-1 0 0]
+  'SSFNZVU'
+# ---
+# name: test_kirino[0 2 1-AI JK-1 0 1]
+  'SFNZVKA'
+# ---
+# name: test_kirino[0 2 1-AI JK-1 0 2]
+  'FNZVKHG'
+# ---
+# name: test_kirino[0 2 1-AI JK-1 1 0]
+  'BREVYML'
+# ---
+# name: test_kirino[0 2 1-AI JK-1 1 1]
+  'REVYMRQ'
+# ---
+# name: test_kirino[0 2 1-AI JK-1 1 2]
+  'EVYMRTS'
+# ---
+# name: test_kirino[0 2 1-AI JK-1 2 0]
+  'RFIBSUT'
+# ---
+# name: test_kirino[0 2 1-AI JK-1 2 1]
+  'FIBSUBI'
+# ---
+# name: test_kirino[0 2 1-AI JK-1 2 2]
+  'IBSUBKA'
+# ---
+# name: test_kirino[0 2 1-AI JK-2 0 0]
+  'XDYJJGF'
+# ---
+# name: test_kirino[0 2 1-AI JK-2 0 1]
+  'DYJJGGF'
+# ---
+# name: test_kirino[0 2 1-AI JK-2 0 2]
+  'YJJGGRQ'
+# ---
+# name: test_kirino[0 2 1-AI JK-2 1 0]
+  'TKHWTJK'
+# ---
+# name: test_kirino[0 2 1-AI JK-2 1 1]
+  'KHWTJON'
+# ---
+# name: test_kirino[0 2 1-AI JK-2 1 2]
+  'HWTJOGF'
+# ---
+# name: test_kirino[0 2 1-AI JK-2 2 0]
+  'CGTCXJK'
+# ---
+# name: test_kirino[0 2 1-AI JK-2 2 1]
+  'GTCXJJK'
+# ---
+# name: test_kirino[0 2 1-AI JK-2 2 2]
+  'TCXJJGF'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-0 0 0]
+  'FXOQWUO'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-0 0 1]
+  'XOQWUBL'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-0 0 2]
+  'OQWUBON'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-0 1 0]
+  'ODNRDXW'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-0 1 1]
+  'DNRDXCM'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-0 1 2]
+  'NRDXCDC'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-0 2 0]
+  'FOXNTON'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-0 2 1]
+  'OXNTOUO'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-0 2 2]
+  'XNTOUCM'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-1 0 0]
+  'SSFNZVP'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-1 0 1]
+  'SFNZVJA'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-1 0 2]
+  'FNZVJHG'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-1 1 0]
+  'MREVYBL'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-1 1 1]
+  'REVYBRQ'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-1 1 2]
+  'EVYBRTS'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-1 2 0]
+  'RFIMSPT'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-1 2 1]
+  'FIMSPMI'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-1 2 2]
+  'IMSPMJA'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-2 0 0]
+  'XDYKKGF'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-2 0 1]
+  'DYKKGGF'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-2 0 2]
+  'YKKGGRQ'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-2 1 0]
+  'TJHWTKJ'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-2 1 1]
+  'JHWTKON'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-2 1 2]
+  'HWTKOGF'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-2 2 0]
+  'CGTCXKJ'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-2 2 1]
+  'GTCXKKJ'
+# ---
+# name: test_kirino[0 2 1-AI PU BM-2 2 2]
+  'TCXKKGF'
+# ---
+# name: test_kirino[0 2 1-AI-0 0 0]
+  'FXOQWPO'
+# ---
+# name: test_kirino[0 2 1-AI-0 0 1]
+  'XOQWPML'
+# ---
+# name: test_kirino[0 2 1-AI-0 0 2]
+  'OQWPMON'
+# ---
+# name: test_kirino[0 2 1-AI-0 1 0]
+  'ODNRDXW'
+# ---
+# name: test_kirino[0 2 1-AI-0 1 1]
+  'DNRDXCB'
+# ---
+# name: test_kirino[0 2 1-AI-0 1 2]
+  'NRDXCDC'
+# ---
+# name: test_kirino[0 2 1-AI-0 2 0]
+  'FOXNTON'
+# ---
+# name: test_kirino[0 2 1-AI-0 2 1]
+  'OXNTOPO'
+# ---
+# name: test_kirino[0 2 1-AI-0 2 2]
+  'XNTOPCB'
+# ---
+# name: test_kirino[0 2 1-AI-1 0 0]
+  'SSFNZVU'
+# ---
+# name: test_kirino[0 2 1-AI-1 0 1]
+  'SFNZVJA'
+# ---
+# name: test_kirino[0 2 1-AI-1 0 2]
+  'FNZVJHG'
+# ---
+# name: test_kirino[0 2 1-AI-1 1 0]
+  'BREVYML'
+# ---
+# name: test_kirino[0 2 1-AI-1 1 1]
+  'REVYMRQ'
+# ---
+# name: test_kirino[0 2 1-AI-1 1 2]
+  'EVYMRTS'
+# ---
+# name: test_kirino[0 2 1-AI-1 2 0]
+  'RFIBSUT'
+# ---
+# name: test_kirino[0 2 1-AI-1 2 1]
+  'FIBSUBI'
+# ---
+# name: test_kirino[0 2 1-AI-1 2 2]
+  'IBSUBJA'
+# ---
+# name: test_kirino[0 2 1-AI-2 0 0]
+  'XDYKKGF'
+# ---
+# name: test_kirino[0 2 1-AI-2 0 1]
+  'DYKKGGF'
+# ---
+# name: test_kirino[0 2 1-AI-2 0 2]
+  'YKKGGRQ'
+# ---
+# name: test_kirino[0 2 1-AI-2 1 0]
+  'TJHWTKJ'
+# ---
+# name: test_kirino[0 2 1-AI-2 1 1]
+  'JHWTKON'
+# ---
+# name: test_kirino[0 2 1-AI-2 1 2]
+  'HWTKOGF'
+# ---
+# name: test_kirino[0 2 1-AI-2 2 0]
+  'CGTCXKJ'
+# ---
+# name: test_kirino[0 2 1-AI-2 2 1]
+  'GTCXKKJ'
+# ---
+# name: test_kirino[0 2 1-AI-2 2 2]
+  'TCXKKGF'
+# ---
+# name: test_kirino[0 2 1-JK-0 0 0]
+  'MGXBZDO'
+# ---
+# name: test_kirino[0 2 1-JK-0 0 1]
+  'GXBZDRL'
+# ---
+# name: test_kirino[0 2 1-JK-0 0 2]
+  'XBZDRUN'
+# ---
+# name: test_kirino[0 2 1-JK-0 1 0]
+  'SFLWFOW'
+# ---
+# name: test_kirino[0 2 1-JK-0 1 1]
+  'FLWFOVB'
+# ---
+# name: test_kirino[0 2 1-JK-0 1 2]
+  'LWFOVFC'
+# ---
+# name: test_kirino[0 2 1-JK-0 2 0]
+  'RVFRODN'
+# ---
+# name: test_kirino[0 2 1-JK-0 2 1]
+  'VFRODSO'
+# ---
+# name: test_kirino[0 2 1-JK-0 2 2]
+  'FRODSVB'
+# ---
+# name: test_kirino[0 2 1-JK-1 0 0]
+  'NVWKVSU'
+# ---
+# name: test_kirino[0 2 1-JK-1 0 1]
+  'VWKVSLI'
+# ---
+# name: test_kirino[0 2 1-JK-1 0 2]
+  'WKVSLDG'
+# ---
+# name: test_kirino[0 2 1-JK-1 1 0]
+  'PHJQRRL'
+# ---
+# name: test_kirino[0 2 1-JK-1 1 1]
+  'HJQRREQ'
+# ---
+# name: test_kirino[0 2 1-JK-1 1 2]
+  'JQRRESS'
+# ---
+# name: test_kirino[0 2 1-JK-1 2 0]
+  'VEIVHWT'
+# ---
+# name: test_kirino[0 2 1-JK-1 2 1]
+  'EIVHWDA'
+# ---
+# name: test_kirino[0 2 1-JK-1 2 2]
+  'IVHWDHI'
+# ---
+# name: test_kirino[0 2 1-JK-2 0 0]
+  'JBZRFQF'
+# ---
+# name: test_kirino[0 2 1-JK-2 0 1]
+  'BZRFQBF'
+# ---
+# name: test_kirino[0 2 1-JK-2 0 2]
+  'ZRFQBZQ'
+# ---
+# name: test_kirino[0 2 1-JK-2 1 0]
+  'SBZDMCK'
+# ---
+# name: test_kirino[0 2 1-JK-2 1 1]
+  'BZDMCXN'
+# ---
+# name: test_kirino[0 2 1-JK-2 1 2]
+  'ZDMCXYF'
+# ---
+# name: test_kirino[0 2 1-JK-2 2 0]
+  'WLGRVGK'
+# ---
+# name: test_kirino[0 2 1-JK-2 2 1]
+  'LGRVGRK'
+# ---
+# name: test_kirino[0 2 1-JK-2 2 2]
+  'GRVGRCF'
+# ---
+# name: test_kirino[1 0 2--0 0 0]
+  'HWISSPN'
+# ---
+# name: test_kirino[1 0 2--0 0 1]
+  'WISSPTF'
+# ---
+# name: test_kirino[1 0 2--0 0 2]
+  'ISSPTTQ'
+# ---
+# name: test_kirino[1 0 2--0 1 0]
+  'YGHJPFT'
+# ---
+# name: test_kirino[1 0 2--0 1 1]
+  'GHJPFQJ'
+# ---
+# name: test_kirino[1 0 2--0 1 2]
+  'HJPFQUK'
+# ---
+# name: test_kirino[1 0 2--0 2 0]
+  'ZOUEHHE'
+# ---
+# name: test_kirino[1 0 2--0 2 1]
+  'OUEHHCQ'
+# ---
+# name: test_kirino[1 0 2--0 2 2]
+  'UEHHCWT'
+# ---
+# name: test_kirino[1 0 2--1 0 0]
+  'VQKEPFM'
+# ---
+# name: test_kirino[1 0 2--1 0 1]
+  'QKEPFTB'
+# ---
+# name: test_kirino[1 0 2--1 0 2]
+  'KEPFTWO'
+# ---
+# name: test_kirino[1 0 2--1 1 0]
+  'UEHLTWQ'
+# ---
+# name: test_kirino[1 0 2--1 1 1]
+  'EHLTWCW'
+# ---
+# name: test_kirino[1 0 2--1 1 2]
+  'HLTWCSN'
+# ---
+# name: test_kirino[1 0 2--1 2 0]
+  'JHBZHQA'
+# ---
+# name: test_kirino[1 0 2--1 2 1]
+  'HBZHQHN'
+# ---
+# name: test_kirino[1 0 2--1 2 2]
+  'BZHQHLE'
+# ---
+# name: test_kirino[1 0 2--2 0 0]
+  'YWHOVRM'
+# ---
+# name: test_kirino[1 0 2--2 0 1]
+  'WHOVRCI'
+# ---
+# name: test_kirino[1 0 2--2 0 2]
+  'HOVRCNG'
+# ---
+# name: test_kirino[1 0 2--2 1 0]
+  'JGGMHHQ'
+# ---
+# name: test_kirino[1 0 2--2 1 1]
+  'GGMHHNS'
+# ---
+# name: test_kirino[1 0 2--2 1 2]
+  'GMHHNUV'
+# ---
+# name: test_kirino[1 0 2--2 2 0]
+  'EESEWWT'
+# ---
+# name: test_kirino[1 0 2--2 2 1]
+  'ESEWWDD'
+# ---
+# name: test_kirino[1 0 2--2 2 2]
+  'SEWWDWL'
+# ---
+# name: test_kirino[1 0 2-AI JK-0 0 0]
+  'QJIGJON'
+# ---
+# name: test_kirino[1 0 2-AI JK-0 0 1]
+  'JIGJOGF'
+# ---
+# name: test_kirino[1 0 2-AI JK-0 0 2]
+  'IGJOGRQ'
+# ---
+# name: test_kirino[1 0 2-AI JK-0 1 0]
+  'RBDSZUT'
+# ---
+# name: test_kirino[1 0 2-AI JK-0 1 1]
+  'BDSZUJK'
+# ---
+# name: test_kirino[1 0 2-AI JK-0 1 2]
+  'DSZUJLJ'
+# ---
+# name: test_kirino[1 0 2-AI JK-0 2 0]
+  'GQLBBFE'
+# ---
+# name: test_kirino[1 0 2-AI JK-0 2 1]
+  'QLBBFRQ'
+# ---
+# name: test_kirino[1 0 2-AI JK-0 2 2]
+  'LBBFRUT'
+# ---
+# name: test_kirino[1 0 2-AI JK-1 0 0]
+  'OPDRYNM'
+# ---
+# name: test_kirino[1 0 2-AI JK-1 0 1]
+  'PDRYNCB'
+# ---
+# name: test_kirino[1 0 2-AI JK-1 0 2]
+  'DRYNCPO'
+# ---
+# name: test_kirino[1 0 2-AI JK-1 1 0]
+  'GBPVMRQ'
+# ---
+# name: test_kirino[1 0 2-AI JK-1 1 1]
+  'BPVMRXW'
+# ---
+# name: test_kirino[1 0 2-AI JK-1 1 2]
+  'PVMRXON'
+# ---
+# name: test_kirino[1 0 2-AI JK-1 2 0]
+  'BZOBLBI'
+# ---
+# name: test_kirino[1 0 2-AI JK-1 2 1]
+  'ZOBLBON'
+# ---
+# name: test_kirino[1 0 2-AI JK-1 2 2]
+  'OBLBOFE'
+# ---
+# name: test_kirino[1 0 2-AI JK-2 0 0]
+  'GBRSMNM'
+# ---
+# name: test_kirino[1 0 2-AI JK-2 0 1]
+  'BRSMNKA'
+# ---
+# name: test_kirino[1 0 2-AI JK-2 0 2]
+  'RSMNKHG'
+# ---
+# name: test_kirino[1 0 2-AI JK-2 1 0]
+  'CZSBBRQ'
+# ---
+# name: test_kirino[1 0 2-AI JK-2 1 1]
+  'ZSBBRTS'
+# ---
+# name: test_kirino[1 0 2-AI JK-2 1 2]
+  'SBBRTWV'
+# ---
+# name: test_kirino[1 0 2-AI JK-2 2 0]
+  'VFMKHUT'
+# ---
+# name: test_kirino[1 0 2-AI JK-2 2 1]
+  'FMKHUED'
+# ---
+# name: test_kirino[1 0 2-AI JK-2 2 2]
+  'MKHUEML'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-0 0 0]
+  'QKIGKON'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-0 0 1]
+  'KIGKOGF'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-0 0 2]
+  'IGKOGRQ'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-0 1 0]
+  'RMDSZPT'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-0 1 1]
+  'MDSZPKJ'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-0 1 2]
+  'DSZPKLK'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-0 2 0]
+  'GQLMMFE'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-0 2 1]
+  'QLMMFRQ'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-0 2 2]
+  'LMMFRPT'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-1 0 0]
+  'OUDRYNB'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-1 0 1]
+  'UDRYNCM'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-1 0 2]
+  'DRYNCUO'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-1 1 0]
+  'GMUVBRQ'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-1 1 1]
+  'MUVBRXW'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-1 1 2]
+  'UVBRXON'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-1 2 0]
+  'MZOMLMI'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-1 2 1]
+  'ZOMLMON'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-1 2 2]
+  'OMLMOFE'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-2 0 0]
+  'GMRSBNB'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-2 0 1]
+  'MRSBNJA'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-2 0 2]
+  'RSBNJHG'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-2 1 0]
+  'CZSMMRQ'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-2 1 1]
+  'ZSMMRTS'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-2 1 2]
+  'SMMRTWV'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-2 2 0]
+  'VFBJHPT'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-2 2 1]
+  'FBJHPED'
+# ---
+# name: test_kirino[1 0 2-AI PU BM-2 2 2]
+  'BJHPEBL'
+# ---
+# name: test_kirino[1 0 2-AI-0 0 0]
+  'QKIGKON'
+# ---
+# name: test_kirino[1 0 2-AI-0 0 1]
+  'KIGKOGF'
+# ---
+# name: test_kirino[1 0 2-AI-0 0 2]
+  'IGKOGRQ'
+# ---
+# name: test_kirino[1 0 2-AI-0 1 0]
+  'RBDSZUT'
+# ---
+# name: test_kirino[1 0 2-AI-0 1 1]
+  'BDSZUKJ'
+# ---
+# name: test_kirino[1 0 2-AI-0 1 2]
+  'DSZUKLK'
+# ---
+# name: test_kirino[1 0 2-AI-0 2 0]
+  'GQLBBFE'
+# ---
+# name: test_kirino[1 0 2-AI-0 2 1]
+  'QLBBFRQ'
+# ---
+# name: test_kirino[1 0 2-AI-0 2 2]
+  'LBBFRUT'
+# ---
+# name: test_kirino[1 0 2-AI-1 0 0]
+  'OPDRYNM'
+# ---
+# name: test_kirino[1 0 2-AI-1 0 1]
+  'PDRYNCB'
+# ---
+# name: test_kirino[1 0 2-AI-1 0 2]
+  'DRYNCPO'
+# ---
+# name: test_kirino[1 0 2-AI-1 1 0]
+  'GBPVMRQ'
+# ---
+# name: test_kirino[1 0 2-AI-1 1 1]
+  'BPVMRXW'
+# ---
+# name: test_kirino[1 0 2-AI-1 1 2]
+  'PVMRXON'
+# ---
+# name: test_kirino[1 0 2-AI-1 2 0]
+  'BZOBLBI'
+# ---
+# name: test_kirino[1 0 2-AI-1 2 1]
+  'ZOBLBON'
+# ---
+# name: test_kirino[1 0 2-AI-1 2 2]
+  'OBLBOFE'
+# ---
+# name: test_kirino[1 0 2-AI-2 0 0]
+  'GBRSMNM'
+# ---
+# name: test_kirino[1 0 2-AI-2 0 1]
+  'BRSMNJA'
+# ---
+# name: test_kirino[1 0 2-AI-2 0 2]
+  'RSMNJHG'
+# ---
+# name: test_kirino[1 0 2-AI-2 1 0]
+  'CZSBBRQ'
+# ---
+# name: test_kirino[1 0 2-AI-2 1 1]
+  'ZSBBRTS'
+# ---
+# name: test_kirino[1 0 2-AI-2 1 2]
+  'SBBRTWV'
+# ---
+# name: test_kirino[1 0 2-AI-2 2 0]
+  'VFMJHUT'
+# ---
+# name: test_kirino[1 0 2-AI-2 2 1]
+  'FMJHUED'
+# ---
+# name: test_kirino[1 0 2-AI-2 2 2]
+  'MJHUEML'
+# ---
+# name: test_kirino[1 0 2-JK-0 0 0]
+  'HWISSPN'
+# ---
+# name: test_kirino[1 0 2-JK-0 0 1]
+  'WISSPTF'
+# ---
+# name: test_kirino[1 0 2-JK-0 0 2]
+  'ISSPTTQ'
+# ---
+# name: test_kirino[1 0 2-JK-0 1 0]
+  'YGHKPFT'
+# ---
+# name: test_kirino[1 0 2-JK-0 1 1]
+  'GHKPFQK'
+# ---
+# name: test_kirino[1 0 2-JK-0 1 2]
+  'HKPFQUJ'
+# ---
+# name: test_kirino[1 0 2-JK-0 2 0]
+  'ZOUEHHE'
+# ---
+# name: test_kirino[1 0 2-JK-0 2 1]
+  'OUEHHCQ'
+# ---
+# name: test_kirino[1 0 2-JK-0 2 2]
+  'UEHHCWT'
+# ---
+# name: test_kirino[1 0 2-JK-1 0 0]
+  'VQJEPFM'
+# ---
+# name: test_kirino[1 0 2-JK-1 0 1]
+  'QJEPFTB'
+# ---
+# name: test_kirino[1 0 2-JK-1 0 2]
+  'JEPFTWO'
+# ---
+# name: test_kirino[1 0 2-JK-1 1 0]
+  'UEHLTWQ'
+# ---
+# name: test_kirino[1 0 2-JK-1 1 1]
+  'EHLTWCW'
+# ---
+# name: test_kirino[1 0 2-JK-1 1 2]
+  'HLTWCSN'
+# ---
+# name: test_kirino[1 0 2-JK-1 2 0]
+  'KHBZHQA'
+# ---
+# name: test_kirino[1 0 2-JK-1 2 1]
+  'HBZHQHN'
+# ---
+# name: test_kirino[1 0 2-JK-1 2 2]
+  'BZHQHLE'
+# ---
+# name: test_kirino[1 0 2-JK-2 0 0]
+  'YWHOVRM'
+# ---
+# name: test_kirino[1 0 2-JK-2 0 1]
+  'WHOVRCI'
+# ---
+# name: test_kirino[1 0 2-JK-2 0 2]
+  'HOVRCNG'
+# ---
+# name: test_kirino[1 0 2-JK-2 1 0]
+  'KGGMHHQ'
+# ---
+# name: test_kirino[1 0 2-JK-2 1 1]
+  'GGMHHNS'
+# ---
+# name: test_kirino[1 0 2-JK-2 1 2]
+  'GMHHNUV'
+# ---
+# name: test_kirino[1 0 2-JK-2 2 0]
+  'EESEWWT'
+# ---
+# name: test_kirino[1 0 2-JK-2 2 1]
+  'ESEWWDD'
+# ---
+# name: test_kirino[1 0 2-JK-2 2 2]
+  'SEWWDWL'
+# ---
+# name: test_kirino[1 2 0--0 0 0]
+  'QCRYNCC'
+# ---
+# name: test_kirino[1 2 0--0 0 1]
+  'CRYNCIZ'
+# ---
+# name: test_kirino[1 2 0--0 0 2]
+  'RYNCIYR'
+# ---
+# name: test_kirino[1 2 0--0 1 0]
+  'TKLDFMW'
+# ---
+# name: test_kirino[1 2 0--0 1 1]
+  'KLDFMXN'
+# ---
+# name: test_kirino[1 2 0--0 1 2]
+  'LDFMXJK'
+# ---
+# name: test_kirino[1 2 0--0 2 0]
+  'NQNLIRU'
+# ---
+# name: test_kirino[1 2 0--0 2 1]
+  'QNLIRDW'
+# ---
+# name: test_kirino[1 2 0--0 2 2]
+  'NLIRDDU'
+# ---
+# name: test_kirino[1 2 0--1 0 0]
+  'LUXLIDO'
+# ---
+# name: test_kirino[1 2 0--1 0 1]
+  'UXLIDSW'
+# ---
+# name: test_kirino[1 2 0--1 0 2]
+  'XLIDSQL'
+# ---
+# name: test_kirino[1 2 0--1 1 0]
+  'TTBZCJR'
+# ---
+# name: test_kirino[1 2 0--1 1 1]
+  'TBZCJYY'
+# ---
+# name: test_kirino[1 2 0--1 1 2]
+  'BZCJYCQ'
+# ---
+# name: test_kirino[1 2 0--1 2 0]
+  'ISMJHRJ'
+# ---
+# name: test_kirino[1 2 0--1 2 1]
+  'SMJHRSV'
+# ---
+# name: test_kirino[1 2 0--1 2 2]
+  'MJHRSLF'
+# ---
+# name: test_kirino[1 2 0--2 0 0]
+  'CSYTUDI'
+# ---
+# name: test_kirino[1 2 0--2 0 1]
+  'SYTUDGG'
+# ---
+# name: test_kirino[1 2 0--2 0 2]
+  'YTUDGIZ'
+# ---
+# name: test_kirino[1 2 0--2 1 0]
+  'MRNTVTD'
+# ---
+# name: test_kirino[1 2 0--2 1 1]
+  'RNTVTEN'
+# ---
+# name: test_kirino[1 2 0--2 1 2]
+  'NTVTEQU'
+# ---
+# name: test_kirino[1 2 0--2 2 0]
+  'JTMNIIZ'
+# ---
+# name: test_kirino[1 2 0--2 2 1]
+  'TMNIIEV'
+# ---
+# name: test_kirino[1 2 0--2 2 2]
+  'MNIIEEP'
+# ---
+# name: test_kirino[1 2 0-AI JK-0 0 0]
+  'NKHURDC'
+# ---
+# name: test_kirino[1 2 0-AI JK-0 0 1]
+  'KHURDIZ'
+# ---
+# name: test_kirino[1 2 0-AI JK-0 0 2]
+  'HURDISR'
+# ---
+# name: test_kirino[1 2 0-AI JK-0 1 0]
+  'XDJYGXW'
+# ---
+# name: test_kirino[1 2 0-AI JK-0 1 1]
+  'DJYGXON'
+# ---
+# name: test_kirino[1 2 0-AI JK-0 1 2]
+  'JYGXOLJ'
+# ---
+# name: test_kirino[1 2 0-AI JK-0 2 0]
+  'LFFFIVU'
+# ---
+# name: test_kirino[1 2 0-AI JK-0 2 1]
+  'FFFIVXW'
+# ---
+# name: test_kirino[1 2 0-AI JK-0 2 2]
+  'FFIVXVU'
+# ---
+# name: test_kirino[1 2 0-AI JK-1 0 0]
+  'FKHXIPO'
+# ---
+# name: test_kirino[1 2 0-AI JK-1 0 1]
+  'KHXIPXW'
+# ---
+# name: test_kirino[1 2 0-AI JK-1 0 2]
+  'HXIPXML'
+# ---
+# name: test_kirino[1 2 0-AI JK-1 1 0]
+  'QGPSVSR'
+# ---
+# name: test_kirino[1 2 0-AI JK-1 1 1]
+  'GPSVSZY'
+# ---
+# name: test_kirino[1 2 0-AI JK-1 1 2]
+  'PSVSZRQ'
+# ---
+# name: test_kirino[1 2 0-AI JK-1 2 0]
+  'IWOBZJK'
+# ---
+# name: test_kirino[1 2 0-AI JK-1 2 1]
+  'WOBZJWV'
+# ---
+# name: test_kirino[1 2 0-AI JK-1 2 2]
+  'OBZJWGF'
+# ---
+# name: test_kirino[1 2 0-AI JK-2 0 0]
+  'FQSUCKA'
+# ---
+# name: test_kirino[1 2 0-AI JK-2 0 1]
+  'QSUCKHG'
+# ---
+# name: test_kirino[1 2 0-AI JK-2 0 2]
+  'SUCKHIZ'
+# ---
+# name: test_kirino[1 2 0-AI JK-2 1 0]
+  'TMESWED'
+# ---
+# name: test_kirino[1 2 0-AI JK-2 1 1]
+  'MESWEON'
+# ---
+# name: test_kirino[1 2 0-AI JK-2 1 2]
+  'ESWEOVU'
+# ---
+# name: test_kirino[1 2 0-AI JK-2 2 0]
+  'RZEEIIZ'
+# ---
+# name: test_kirino[1 2 0-AI JK-2 2 1]
+  'ZEEIIWV'
+# ---
+# name: test_kirino[1 2 0-AI JK-2 2 2]
+  'EEIIWQP'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-0 0 0]
+  'NJHPRDC'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-0 0 1]
+  'JHPRDIZ'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-0 0 2]
+  'HPRDISR'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-0 1 0]
+  'XDKYGXW'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-0 1 1]
+  'DKYGXON'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-0 1 2]
+  'KYGXOLK'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-0 2 0]
+  'LFFFIVP'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-0 2 1]
+  'FFFIVXW'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-0 2 2]
+  'FFIVXVP'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-1 0 0]
+  'FJHXIUO'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-1 0 1]
+  'JHXIUXW'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-1 0 2]
+  'HXIUXBL'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-1 1 0]
+  'QGUSVSR'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-1 1 1]
+  'GUSVSZY'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-1 1 2]
+  'USVSZRQ'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-1 2 0]
+  'IWOMZKJ'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-1 2 1]
+  'WOMZKWV'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-1 2 2]
+  'OMZKWGF'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-2 0 0]
+  'FQSPCJA'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-2 0 1]
+  'QSPCJHG'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-2 0 2]
+  'SPCJHIZ'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-2 1 0]
+  'TBESWED'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-2 1 1]
+  'BESWEON'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-2 1 2]
+  'ESWEOVP'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-2 2 0]
+  'RZEEIIZ'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-2 2 1]
+  'ZEEIIWV'
+# ---
+# name: test_kirino[1 2 0-AI PU BM-2 2 2]
+  'EEIIWQU'
+# ---
+# name: test_kirino[1 2 0-AI-0 0 0]
+  'NJHURDC'
+# ---
+# name: test_kirino[1 2 0-AI-0 0 1]
+  'JHURDIZ'
+# ---
+# name: test_kirino[1 2 0-AI-0 0 2]
+  'HURDISR'
+# ---
+# name: test_kirino[1 2 0-AI-0 1 0]
+  'XDKYGXW'
+# ---
+# name: test_kirino[1 2 0-AI-0 1 1]
+  'DKYGXON'
+# ---
+# name: test_kirino[1 2 0-AI-0 1 2]
+  'KYGXOLK'
+# ---
+# name: test_kirino[1 2 0-AI-0 2 0]
+  'LFFFIVU'
+# ---
+# name: test_kirino[1 2 0-AI-0 2 1]
+  'FFFIVXW'
+# ---
+# name: test_kirino[1 2 0-AI-0 2 2]
+  'FFIVXVU'
+# ---
+# name: test_kirino[1 2 0-AI-1 0 0]
+  'FJHXIPO'
+# ---
+# name: test_kirino[1 2 0-AI-1 0 1]
+  'JHXIPXW'
+# ---
+# name: test_kirino[1 2 0-AI-1 0 2]
+  'HXIPXML'
+# ---
+# name: test_kirino[1 2 0-AI-1 1 0]
+  'QGPSVSR'
+# ---
+# name: test_kirino[1 2 0-AI-1 1 1]
+  'GPSVSZY'
+# ---
+# name: test_kirino[1 2 0-AI-1 1 2]
+  'PSVSZRQ'
+# ---
+# name: test_kirino[1 2 0-AI-1 2 0]
+  'IWOBZKJ'
+# ---
+# name: test_kirino[1 2 0-AI-1 2 1]
+  'WOBZKWV'
+# ---
+# name: test_kirino[1 2 0-AI-1 2 2]
+  'OBZKWGF'
+# ---
+# name: test_kirino[1 2 0-AI-2 0 0]
+  'FQSUCJA'
+# ---
+# name: test_kirino[1 2 0-AI-2 0 1]
+  'QSUCJHG'
+# ---
+# name: test_kirino[1 2 0-AI-2 0 2]
+  'SUCJHIZ'
+# ---
+# name: test_kirino[1 2 0-AI-2 1 0]
+  'TMESWED'
+# ---
+# name: test_kirino[1 2 0-AI-2 1 1]
+  'MESWEON'
+# ---
+# name: test_kirino[1 2 0-AI-2 1 2]
+  'ESWEOVU'
+# ---
+# name: test_kirino[1 2 0-AI-2 2 0]
+  'RZEEIIZ'
+# ---
+# name: test_kirino[1 2 0-AI-2 2 1]
+  'ZEEIIWV'
+# ---
+# name: test_kirino[1 2 0-AI-2 2 2]
+  'EEIIWQP'
+# ---
+# name: test_kirino[1 2 0-JK-0 0 0]
+  'QCRYNCC'
+# ---
+# name: test_kirino[1 2 0-JK-0 0 1]
+  'CRYNCIZ'
+# ---
+# name: test_kirino[1 2 0-JK-0 0 2]
+  'RYNCIYR'
+# ---
+# name: test_kirino[1 2 0-JK-0 1 0]
+  'TJLDFMW'
+# ---
+# name: test_kirino[1 2 0-JK-0 1 1]
+  'JLDFMXN'
+# ---
+# name: test_kirino[1 2 0-JK-0 1 2]
+  'LDFMXKJ'
+# ---
+# name: test_kirino[1 2 0-JK-0 2 0]
+  'NQNLIRU'
+# ---
+# name: test_kirino[1 2 0-JK-0 2 1]
+  'QNLIRDW'
+# ---
+# name: test_kirino[1 2 0-JK-0 2 2]
+  'NLIRDDU'
+# ---
+# name: test_kirino[1 2 0-JK-1 0 0]
+  'LUXLIDO'
+# ---
+# name: test_kirino[1 2 0-JK-1 0 1]
+  'UXLIDSW'
+# ---
+# name: test_kirino[1 2 0-JK-1 0 2]
+  'XLIDSQL'
+# ---
+# name: test_kirino[1 2 0-JK-1 1 0]
+  'TTBZCKR'
+# ---
+# name: test_kirino[1 2 0-JK-1 1 1]
+  'TBZCKYY'
+# ---
+# name: test_kirino[1 2 0-JK-1 1 2]
+  'BZCKYCQ'
+# ---
+# name: test_kirino[1 2 0-JK-1 2 0]
+  'ISMKHRK'
+# ---
+# name: test_kirino[1 2 0-JK-1 2 1]
+  'SMKHRSV'
+# ---
+# name: test_kirino[1 2 0-JK-1 2 2]
+  'MKHRSLF'
+# ---
+# name: test_kirino[1 2 0-JK-2 0 0]
+  'CSYTUDI'
+# ---
+# name: test_kirino[1 2 0-JK-2 0 1]
+  'SYTUDGG'
+# ---
+# name: test_kirino[1 2 0-JK-2 0 2]
+  'YTUDGIZ'
+# ---
+# name: test_kirino[1 2 0-JK-2 1 0]
+  'MRNTVTD'
+# ---
+# name: test_kirino[1 2 0-JK-2 1 1]
+  'RNTVTEN'
+# ---
+# name: test_kirino[1 2 0-JK-2 1 2]
+  'NTVTEQU'
+# ---
+# name: test_kirino[1 2 0-JK-2 2 0]
+  'KTMNIIZ'
+# ---
+# name: test_kirino[1 2 0-JK-2 2 1]
+  'TMNIIEV'
+# ---
+# name: test_kirino[1 2 0-JK-2 2 2]
+  'MNIIEEP'
+# ---
+# name: test_kirino[2 0 1--0 0 0]
+  'PIMVEQK'
+# ---
+# name: test_kirino[2 0 1--0 0 1]
+  'IMVEQGV'
+# ---
+# name: test_kirino[2 0 1--0 0 2]
+  'MVEQGLS'
+# ---
+# name: test_kirino[2 0 1--0 1 0]
+  'FSGVKVF'
+# ---
+# name: test_kirino[2 0 1--0 1 1]
+  'SGVKVMX'
+# ---
+# name: test_kirino[2 0 1--0 1 2]
+  'GVKVMKP'
+# ---
+# name: test_kirino[2 0 1--0 2 0]
+  'WYVSUBK'
+# ---
+# name: test_kirino[2 0 1--0 2 1]
+  'YVSUBZI'
+# ---
+# name: test_kirino[2 0 1--0 2 2]
+  'VSUBZKG'
+# ---
+# name: test_kirino[2 0 1--1 0 0]
+  'PFPISND'
+# ---
+# name: test_kirino[2 0 1--1 0 1]
+  'FPISNVA'
+# ---
+# name: test_kirino[2 0 1--1 0 2]
+  'PISNVHS'
+# ---
+# name: test_kirino[2 0 1--1 1 0]
+  'MFDVKXM'
+# ---
+# name: test_kirino[2 0 1--1 1 1]
+  'FDVKXVX'
+# ---
+# name: test_kirino[2 0 1--1 1 2]
+  'DVKXVBB'
+# ---
+# name: test_kirino[2 0 1--1 2 0]
+  'SBZWKRP'
+# ---
+# name: test_kirino[2 0 1--1 2 1]
+  'BZWKRCX'
+# ---
+# name: test_kirino[2 0 1--1 2 2]
+  'ZWKRCKB'
+# ---
+# name: test_kirino[2 0 1--2 0 0]
+  'HPJJFNN'
+# ---
+# name: test_kirino[2 0 1--2 0 1]
+  'PJJFNIZ'
+# ---
+# name: test_kirino[2 0 1--2 0 2]
+  'JJFNITA'
+# ---
+# name: test_kirino[2 0 1--2 1 0]
+  'GODHNXC'
+# ---
+# name: test_kirino[2 0 1--2 1 1]
+  'ODHNXUM'
+# ---
+# name: test_kirino[2 0 1--2 1 2]
+  'DHNXUST'
+# ---
+# name: test_kirino[2 0 1--2 2 0]
+  'UQIGVRP'
+# ---
+# name: test_kirino[2 0 1--2 2 1]
+  'QIGVRBE'
+# ---
+# name: test_kirino[2 0 1--2 2 2]
+  'IGVRBZQ'
+# ---
+# name: test_kirino[2 0 1-AI JK-0 0 0]
+  'EIPWCLJ'
+# ---
+# name: test_kirino[2 0 1-AI JK-0 0 1]
+  'IPWCLWV'
+# ---
+# name: test_kirino[2 0 1-AI JK-0 0 2]
+  'PWCLWTS'
+# ---
+# name: test_kirino[2 0 1-AI JK-0 1 0]
+  'CYSJMGF'
+# ---
+# name: test_kirino[2 0 1-AI JK-0 1 1]
+  'YSJMGYX'
+# ---
+# name: test_kirino[2 0 1-AI JK-0 1 2]
+  'SJMGYQP'
+# ---
+# name: test_kirino[2 0 1-AI JK-0 2 0]
+  'TTQKHLJ'
+# ---
+# name: test_kirino[2 0 1-AI JK-0 2 1]
+  'TQKHLKA'
+# ---
+# name: test_kirino[2 0 1-AI JK-0 2 2]
+  'QKHLKHG'
+# ---
+# name: test_kirino[2 0 1-AI JK-1 0 0]
+  'MMOIEED'
+# ---
+# name: test_kirino[2 0 1-AI JK-1 0 1]
+  'MOIEEBI'
+# ---
+# name: test_kirino[2 0 1-AI JK-1 0 2]
+  'OIEEBTS'
+# ---
+# name: test_kirino[2 0 1-AI JK-1 1 0]
+  'HOKHWNM'
+# ---
+# name: test_kirino[2 0 1-AI JK-1 1 1]
+  'OKHWNYX'
+# ---
+# name: test_kirino[2 0 1-AI JK-1 1 2]
+  'KHWNYCB'
+# ---
+# name: test_kirino[2 0 1-AI JK-1 2 0]
+  'GOOKHQP'
+# ---
+# name: test_kirino[2 0 1-AI JK-1 2 1]
+  'OOKHQYX'
+# ---
+# name: test_kirino[2 0 1-AI JK-1 2 2]
+  'OKHQYCB'
+# ---
+# name: test_kirino[2 0 1-AI JK-2 0 0]
+  'PDUZZON'
+# ---
+# name: test_kirino[2 0 1-AI JK-2 0 1]
+  'DUZZOIZ'
+# ---
+# name: test_kirino[2 0 1-AI JK-2 0 2]
+  'UZZOIBI'
+# ---
+# name: test_kirino[2 0 1-AI JK-2 1 0]
+  'NJBGTDC'
+# ---
+# name: test_kirino[2 0 1-AI JK-2 1 1]
+  'JBGTDNM'
+# ---
+# name: test_kirino[2 0 1-AI JK-2 1 2]
+  'BGTDNUT'
+# ---
+# name: test_kirino[2 0 1-AI JK-2 2 0]
+  'XCILOQP'
+# ---
+# name: test_kirino[2 0 1-AI JK-2 2 1]
+  'CILOQFE'
+# ---
+# name: test_kirino[2 0 1-AI JK-2 2 2]
+  'ILOQFRQ'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-0 0 0]
+  'EIUWCLK'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-0 0 1]
+  'IUWCLWV'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-0 0 2]
+  'UWCLWTS'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-0 1 0]
+  'CYSKBGF'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-0 1 1]
+  'YSKBGYX'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-0 1 2]
+  'SKBGYQU'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-0 2 0]
+  'TTQJHLK'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-0 2 1]
+  'TQJHLJA'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-0 2 2]
+  'QJHLJHG'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-1 0 0]
+  'BBOIEED'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-1 0 1]
+  'BOIEEMI'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-1 0 2]
+  'OIEEMTS'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-1 1 0]
+  'HOJHWNB'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-1 1 1]
+  'OJHWNYX'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-1 1 2]
+  'JHWNYCM'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-1 2 0]
+  'GOOJHQU'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-1 2 1]
+  'OOJHQYX'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-1 2 2]
+  'OJHQYCM'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-2 0 0]
+  'UDPZZON'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-2 0 1]
+  'DPZZOIZ'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-2 0 2]
+  'PZZOIMI'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-2 1 0]
+  'NKMGTDC'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-2 1 1]
+  'KMGTDNB'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-2 1 2]
+  'MGTDNPT'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-2 2 0]
+  'XCILOQU'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-2 2 1]
+  'CILOQFE'
+# ---
+# name: test_kirino[2 0 1-AI PU BM-2 2 2]
+  'ILOQFRQ'
+# ---
+# name: test_kirino[2 0 1-AI-0 0 0]
+  'EIPWCLK'
+# ---
+# name: test_kirino[2 0 1-AI-0 0 1]
+  'IPWCLWV'
+# ---
+# name: test_kirino[2 0 1-AI-0 0 2]
+  'PWCLWTS'
+# ---
+# name: test_kirino[2 0 1-AI-0 1 0]
+  'CYSKMGF'
+# ---
+# name: test_kirino[2 0 1-AI-0 1 1]
+  'YSKMGYX'
+# ---
+# name: test_kirino[2 0 1-AI-0 1 2]
+  'SKMGYQP'
+# ---
+# name: test_kirino[2 0 1-AI-0 2 0]
+  'TTQJHLK'
+# ---
+# name: test_kirino[2 0 1-AI-0 2 1]
+  'TQJHLJA'
+# ---
+# name: test_kirino[2 0 1-AI-0 2 2]
+  'QJHLJHG'
+# ---
+# name: test_kirino[2 0 1-AI-1 0 0]
+  'MMOIEED'
+# ---
+# name: test_kirino[2 0 1-AI-1 0 1]
+  'MOIEEBI'
+# ---
+# name: test_kirino[2 0 1-AI-1 0 2]
+  'OIEEBTS'
+# ---
+# name: test_kirino[2 0 1-AI-1 1 0]
+  'HOJHWNM'
+# ---
+# name: test_kirino[2 0 1-AI-1 1 1]
+  'OJHWNYX'
+# ---
+# name: test_kirino[2 0 1-AI-1 1 2]
+  'JHWNYCB'
+# ---
+# name: test_kirino[2 0 1-AI-1 2 0]
+  'GOOJHQP'
+# ---
+# name: test_kirino[2 0 1-AI-1 2 1]
+  'OOJHQYX'
+# ---
+# name: test_kirino[2 0 1-AI-1 2 2]
+  'OJHQYCB'
+# ---
+# name: test_kirino[2 0 1-AI-2 0 0]
+  'PDUZZON'
+# ---
+# name: test_kirino[2 0 1-AI-2 0 1]
+  'DUZZOIZ'
+# ---
+# name: test_kirino[2 0 1-AI-2 0 2]
+  'UZZOIBI'
+# ---
+# name: test_kirino[2 0 1-AI-2 1 0]
+  'NKBGTDC'
+# ---
+# name: test_kirino[2 0 1-AI-2 1 1]
+  'KBGTDNM'
+# ---
+# name: test_kirino[2 0 1-AI-2 1 2]
+  'BGTDNUT'
+# ---
+# name: test_kirino[2 0 1-AI-2 2 0]
+  'XCILOQP'
+# ---
+# name: test_kirino[2 0 1-AI-2 2 1]
+  'CILOQFE'
+# ---
+# name: test_kirino[2 0 1-AI-2 2 2]
+  'ILOQFRQ'
+# ---
+# name: test_kirino[2 0 1-JK-0 0 0]
+  'PIMVEQJ'
+# ---
+# name: test_kirino[2 0 1-JK-0 0 1]
+  'IMVEQGV'
+# ---
+# name: test_kirino[2 0 1-JK-0 0 2]
+  'MVEQGLS'
+# ---
+# name: test_kirino[2 0 1-JK-0 1 0]
+  'FSGVJVF'
+# ---
+# name: test_kirino[2 0 1-JK-0 1 1]
+  'SGVJVMX'
+# ---
+# name: test_kirino[2 0 1-JK-0 1 2]
+  'GVJVMJP'
+# ---
+# name: test_kirino[2 0 1-JK-0 2 0]
+  'WYVSUBJ'
+# ---
+# name: test_kirino[2 0 1-JK-0 2 1]
+  'YVSUBZI'
+# ---
+# name: test_kirino[2 0 1-JK-0 2 2]
+  'VSUBZJG'
+# ---
+# name: test_kirino[2 0 1-JK-1 0 0]
+  'PFPISND'
+# ---
+# name: test_kirino[2 0 1-JK-1 0 1]
+  'FPISNVA'
+# ---
+# name: test_kirino[2 0 1-JK-1 0 2]
+  'PISNVHS'
+# ---
+# name: test_kirino[2 0 1-JK-1 1 0]
+  'MFDVJXM'
+# ---
+# name: test_kirino[2 0 1-JK-1 1 1]
+  'FDVJXVX'
+# ---
+# name: test_kirino[2 0 1-JK-1 1 2]
+  'DVJXVBB'
+# ---
+# name: test_kirino[2 0 1-JK-1 2 0]
+  'SBZWJRP'
+# ---
+# name: test_kirino[2 0 1-JK-1 2 1]
+  'BZWJRCX'
+# ---
+# name: test_kirino[2 0 1-JK-1 2 2]
+  'ZWJRCJB'
+# ---
+# name: test_kirino[2 0 1-JK-2 0 0]
+  'HPKKFNN'
+# ---
+# name: test_kirino[2 0 1-JK-2 0 1]
+  'PKKFNIZ'
+# ---
+# name: test_kirino[2 0 1-JK-2 0 2]
+  'KKFNITA'
+# ---
+# name: test_kirino[2 0 1-JK-2 1 0]
+  'GODHNXC'
+# ---
+# name: test_kirino[2 0 1-JK-2 1 1]
+  'ODHNXUM'
+# ---
+# name: test_kirino[2 0 1-JK-2 1 2]
+  'DHNXUST'
+# ---
+# name: test_kirino[2 0 1-JK-2 2 0]
+  'UQIGVRP'
+# ---
+# name: test_kirino[2 0 1-JK-2 2 1]
+  'QIGVRBE'
+# ---
+# name: test_kirino[2 0 1-JK-2 2 2]
+  'IGVRBZQ'
+# ---
+# name: test_kirino[2 1 0--0 0 0]
+  'QEQIIWA'
+# ---
+# name: test_kirino[2 1 0--0 0 1]
+  'EQIIWHI'
+# ---
+# name: test_kirino[2 1 0--0 0 2]
+  'QIIWHSG'
+# ---
+# name: test_kirino[2 1 0--0 1 0]
+  'WOKIOMR'
+# ---
+# name: test_kirino[2 1 0--0 1 1]
+  'OKIOMIZ'
+# ---
+# name: test_kirino[2 1 0--0 1 2]
+  'KIOMIOT'
+# ---
+# name: test_kirino[2 1 0--0 2 0]
+  'VBZPFFS'
+# ---
+# name: test_kirino[2 1 0--0 2 1]
+  'BZPFFIZ'
+# ---
+# name: test_kirino[2 1 0--0 2 2]
+  'ZPFFIKL'
+# ---
+# name: test_kirino[2 1 0--1 0 0]
+  'QHQELFP'
+# ---
+# name: test_kirino[2 1 0--1 0 1]
+  'HQELFDS'
+# ---
+# name: test_kirino[2 1 0--1 0 2]
+  'QELFDWW'
+# ---
+# name: test_kirino[2 1 0--1 1 0]
+  'LFXSLMG'
+# ---
+# name: test_kirino[2 1 0--1 1 1]
+  'FXSLMVB'
+# ---
+# name: test_kirino[2 1 0--1 1 2]
+  'XSLMVNW'
+# ---
+# name: test_kirino[2 1 0--1 2 0]
+  'KLEGRJT'
+# ---
+# name: test_kirino[2 1 0--1 2 1]
+  'LEGRJWY'
+# ---
+# name: test_kirino[2 1 0--1 2 2]
+  'EGRJWKQ'
+# ---
+# name: test_kirino[2 1 0--2 0 0]
+  'HSIFOEP'
+# ---
+# name: test_kirino[2 1 0--2 0 1]
+  'SIFOEQS'
+# ---
+# name: test_kirino[2 1 0--2 0 2]
+  'IFOEQTJ'
+# ---
+# name: test_kirino[2 1 0--2 1 0]
+  'YEXTLWB'
+# ---
+# name: test_kirino[2 1 0--2 1 1]
+  'EXTLWPF'
+# ---
+# name: test_kirino[2 1 0--2 1 2]
+  'XTLWPGW'
+# ---
+# name: test_kirino[2 1 0--2 2 0]
+  'TYHIJCY'
+# ---
+# name: test_kirino[2 1 0--2 2 1]
+  'YHIJCEP'
+# ---
+# name: test_kirino[2 1 0--2 2 2]
+  'HIJCEYQ'
+# ---
+# name: test_kirino[2 1 0-AI JK-0 0 0]
+  'YWRIIBI'
+# ---
+# name: test_kirino[2 1 0-AI JK-0 0 1]
+  'WRIIBKA'
+# ---
+# name: test_kirino[2 1 0-AI JK-0 0 2]
+  'RIIBKHG'
+# ---
+# name: test_kirino[2 1 0-AI JK-0 1 0]
+  'JYGIYSR'
+# ---
+# name: test_kirino[2 1 0-AI JK-0 1 1]
+  'YGIYSIZ'
+# ---
+# name: test_kirino[2 1 0-AI JK-0 1 2]
+  'GIYSIUT'
+# ---
+# name: test_kirino[2 1 0-AI JK-0 2 0]
+  'LDDFSTS'
+# ---
+# name: test_kirino[2 1 0-AI JK-0 2 1]
+  'DDFSTIZ'
+# ---
+# name: test_kirino[2 1 0-AI JK-0 2 2]
+  'DFSTIML'
+# ---
+# name: test_kirino[2 1 0-AI JK-1 0 0]
+  'BFDOQQP'
+# ---
+# name: test_kirino[2 1 0-AI JK-1 0 1]
+  'FDOQQTS'
+# ---
+# name: test_kirino[2 1 0-AI JK-1 0 2]
+  'DOQQTXW'
+# ---
+# name: test_kirino[2 1 0-AI JK-1 1 0]
+  'OSUXKHG'
+# ---
+# name: test_kirino[2 1 0-AI JK-1 1 1]
+  'SUXKHCB'
+# ---
+# name: test_kirino[2 1 0-AI JK-1 1 2]
+  'UXKHCXW'
+# ---
+# name: test_kirino[2 1 0-AI JK-1 2 0]
+  'LCYFXUT'
+# ---
+# name: test_kirino[2 1 0-AI JK-1 2 1]
+  'CYFXUZY'
+# ---
+# name: test_kirino[2 1 0-AI JK-1 2 2]
+  'YFXUZRQ'
+# ---
+# name: test_kirino[2 1 0-AI JK-2 0 0]
+  'DEIRUQP'
+# ---
+# name: test_kirino[2 1 0-AI JK-2 0 1]
+  'EIRUQTS'
+# ---
+# name: test_kirino[2 1 0-AI JK-2 0 2]
+  'IRUQTJK'
+# ---
+# name: test_kirino[2 1 0-AI JK-2 1 0]
+  'SKHQJCB'
+# ---
+# name: test_kirino[2 1 0-AI JK-2 1 1]
+  'KHQJCGF'
+# ---
+# name: test_kirino[2 1 0-AI JK-2 1 2]
+  'HQJCGXW'
+# ---
+# name: test_kirino[2 1 0-AI JK-2 2 0]
+  'MBEIEZY'
+# ---
+# name: test_kirino[2 1 0-AI JK-2 2 1]
+  'BEIEZQP'
+# ---
+# name: test_kirino[2 1 0-AI JK-2 2 2]
+  'EIEZQRQ'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-0 0 0]
+  'YWRIIMI'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-0 0 1]
+  'WRIIMJA'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-0 0 2]
+  'RIIMJHG'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-0 1 0]
+  'KYGIYSR'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-0 1 1]
+  'YGIYSIZ'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-0 1 2]
+  'GIYSIPT'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-0 2 0]
+  'LDDFSTS'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-0 2 1]
+  'DDFSTIZ'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-0 2 2]
+  'DFSTIBL'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-1 0 0]
+  'MFDOQQU'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-1 0 1]
+  'FDOQQTS'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-1 0 2]
+  'DOQQTXW'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-1 1 0]
+  'OSPXJHG'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-1 1 1]
+  'SPXJHCM'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-1 1 2]
+  'PXJHCXW'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-1 2 0]
+  'LCYFXPT'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-1 2 1]
+  'CYFXPZY'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-1 2 2]
+  'YFXPZRQ'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-2 0 0]
+  'DEIRPQU'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-2 0 1]
+  'EIRPQTS'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-2 0 2]
+  'IRPQTKJ'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-2 1 0]
+  'SJHQKCM'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-2 1 1]
+  'JHQKCGF'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-2 1 2]
+  'HQKCGXW'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-2 2 0]
+  'BMEIEZY'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-2 2 1]
+  'MEIEZQU'
+# ---
+# name: test_kirino[2 1 0-AI PU BM-2 2 2]
+  'EIEZQRQ'
+# ---
+# name: test_kirino[2 1 0-AI-0 0 0]
+  'YWRIIBI'
+# ---
+# name: test_kirino[2 1 0-AI-0 0 1]
+  'WRIIBJA'
+# ---
+# name: test_kirino[2 1 0-AI-0 0 2]
+  'RIIBJHG'
+# ---
+# name: test_kirino[2 1 0-AI-0 1 0]
+  'KYGIYSR'
+# ---
+# name: test_kirino[2 1 0-AI-0 1 1]
+  'YGIYSIZ'
+# ---
+# name: test_kirino[2 1 0-AI-0 1 2]
+  'GIYSIUT'
+# ---
+# name: test_kirino[2 1 0-AI-0 2 0]
+  'LDDFSTS'
+# ---
+# name: test_kirino[2 1 0-AI-0 2 1]
+  'DDFSTIZ'
+# ---
+# name: test_kirino[2 1 0-AI-0 2 2]
+  'DFSTIML'
+# ---
+# name: test_kirino[2 1 0-AI-1 0 0]
+  'BFDOQQP'
+# ---
+# name: test_kirino[2 1 0-AI-1 0 1]
+  'FDOQQTS'
+# ---
+# name: test_kirino[2 1 0-AI-1 0 2]
+  'DOQQTXW'
+# ---
+# name: test_kirino[2 1 0-AI-1 1 0]
+  'OSUXJHG'
+# ---
+# name: test_kirino[2 1 0-AI-1 1 1]
+  'SUXJHCB'
+# ---
+# name: test_kirino[2 1 0-AI-1 1 2]
+  'UXJHCXW'
+# ---
+# name: test_kirino[2 1 0-AI-1 2 0]
+  'LCYFXUT'
+# ---
+# name: test_kirino[2 1 0-AI-1 2 1]
+  'CYFXUZY'
+# ---
+# name: test_kirino[2 1 0-AI-1 2 2]
+  'YFXUZRQ'
+# ---
+# name: test_kirino[2 1 0-AI-2 0 0]
+  'DEIRUQP'
+# ---
+# name: test_kirino[2 1 0-AI-2 0 1]
+  'EIRUQTS'
+# ---
+# name: test_kirino[2 1 0-AI-2 0 2]
+  'IRUQTKJ'
+# ---
+# name: test_kirino[2 1 0-AI-2 1 0]
+  'SJHQKCB'
+# ---
+# name: test_kirino[2 1 0-AI-2 1 1]
+  'JHQKCGF'
+# ---
+# name: test_kirino[2 1 0-AI-2 1 2]
+  'HQKCGXW'
+# ---
+# name: test_kirino[2 1 0-AI-2 2 0]
+  'MBEIEZY'
+# ---
+# name: test_kirino[2 1 0-AI-2 2 1]
+  'BEIEZQP'
+# ---
+# name: test_kirino[2 1 0-AI-2 2 2]
+  'EIEZQRQ'
+# ---
+# name: test_kirino[2 1 0-JK-0 0 0]
+  'QEQIIWA'
+# ---
+# name: test_kirino[2 1 0-JK-0 0 1]
+  'EQIIWHI'
+# ---
+# name: test_kirino[2 1 0-JK-0 0 2]
+  'QIIWHSG'
+# ---
+# name: test_kirino[2 1 0-JK-0 1 0]
+  'WOJIOMR'
+# ---
+# name: test_kirino[2 1 0-JK-0 1 1]
+  'OJIOMIZ'
+# ---
+# name: test_kirino[2 1 0-JK-0 1 2]
+  'JIOMIOT'
+# ---
+# name: test_kirino[2 1 0-JK-0 2 0]
+  'VBZPFFS'
+# ---
+# name: test_kirino[2 1 0-JK-0 2 1]
+  'BZPFFIZ'
+# ---
+# name: test_kirino[2 1 0-JK-0 2 2]
+  'ZPFFIJL'
+# ---
+# name: test_kirino[2 1 0-JK-1 0 0]
+  'QHQELFP'
+# ---
+# name: test_kirino[2 1 0-JK-1 0 1]
+  'HQELFDS'
+# ---
+# name: test_kirino[2 1 0-JK-1 0 2]
+  'QELFDWW'
+# ---
+# name: test_kirino[2 1 0-JK-1 1 0]
+  'LFXSLMG'
+# ---
+# name: test_kirino[2 1 0-JK-1 1 1]
+  'FXSLMVB'
+# ---
+# name: test_kirino[2 1 0-JK-1 1 2]
+  'XSLMVNW'
+# ---
+# name: test_kirino[2 1 0-JK-1 2 0]
+  'JLEGRKT'
+# ---
+# name: test_kirino[2 1 0-JK-1 2 1]
+  'LEGRKWY'
+# ---
+# name: test_kirino[2 1 0-JK-1 2 2]
+  'EGRKWJQ'
+# ---
+# name: test_kirino[2 1 0-JK-2 0 0]
+  'HSIFOEP'
+# ---
+# name: test_kirino[2 1 0-JK-2 0 1]
+  'SIFOEQS'
+# ---
+# name: test_kirino[2 1 0-JK-2 0 2]
+  'IFOEQTK'
+# ---
+# name: test_kirino[2 1 0-JK-2 1 0]
+  'YEXTLWB'
+# ---
+# name: test_kirino[2 1 0-JK-2 1 1]
+  'EXTLWPF'
+# ---
+# name: test_kirino[2 1 0-JK-2 1 2]
+  'XTLWPGW'
+# ---
+# name: test_kirino[2 1 0-JK-2 2 0]
+  'TYHIKCY'
+# ---
+# name: test_kirino[2 1 0-JK-2 2 1]
+  'YHIKCEP'
+# ---
+# name: test_kirino[2 1 0-JK-2 2 2]
+  'HIKCEYQ'
+# ---
