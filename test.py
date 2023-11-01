@@ -21,9 +21,13 @@ def get_plug_choices() -> Iterable[str]:
     for pair_count in range(10, 11):
         for choices in joined_permutation(pairs, r=pair_count):
             yield choices
+
+def get_plugin_board() -> Iterable[str]:
+    yield from ("","AI", "JK", "AI JK", "AI PU BM", "MN AH JR CQ")
+
 def get_test_conf() -> Iterable[tuple[str, str, str]]:
     return product(
-        get_rotor_choices(), ("","AI", "JK", "AI JK", "AI PU BM"), get_rotor_pos()
+        get_rotor_choices(), get_plugin_board(), get_rotor_pos()
     )
 
 @pytest.mark.skip
@@ -58,7 +62,7 @@ def test_fred(rotor_choice: str, plugin_board: str, rotor_pos: str, snapshot) ->
     ("rotor_choice", "plugin_board", "rotor_pos"),
     get_test_conf(),
 )
-def test_fred(rotor_choice: str, plugin_board: str, rotor_pos: str, snapshot) -> None:
+def test_fred_(rotor_choice: str, plugin_board: str, rotor_pos: str, snapshot) -> None:
     message = "aaaaaah".upper()
 
     encoded = encode_fred(message, rotor_choice, plugin_board, rotor_pos)
