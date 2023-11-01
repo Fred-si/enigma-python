@@ -1,3 +1,4 @@
+from collections.abc import Iterable
 from dataclasses import dataclass
 from string import ascii_uppercase
 from typing import Callable
@@ -29,9 +30,7 @@ class RotorConfig:
 class Enigma:
     def __init__(
         self,
-        first_rotor: RotorConfig,
-        second_rotor: RotorConfig,
-        third_rotor: RotorConfig,
+        rotors_config: Iterable[RotorConfig],
         reflector: RotorConfig,
         *plugs: Plug,
         debug: bool = False,
@@ -44,41 +43,21 @@ class Enigma:
             reflector.encoder_config,
             reflector.rotor_position,
         )
+        rotors: list[Rotor] = [reflector]
+        for rotor in rotors_config:
+            rotors.insert(
+                0,
+                Rotor(
+                    rotor.encoder_config,
+                    rotor.rotor_position,
+                    rotors[0].make_step,
+                ),
+            )
 
-        rotors: list[Rotor] = []
-        rotors.insert(
-            0,
-            Rotor(
-                first_rotor.encoder_config,
-                first_rotor.rotor_position,
-                reflector.make_step,
-            ),
-        )
-        rotors.insert(
-            0,
-            Rotor(
-                second_rotor.encoder_config,
-                second_rotor.rotor_position,
-                rotors[0].make_step,
-            ),
-        )
-        rotors.insert(
-            0,
-            Rotor(
-                third_rotor.encoder_config,
-                third_rotor.rotor_position,
-                rotors[0].make_step,
-            ),
-        )
         self._encode = self._chain(
             plug_board.permute,
-            rotors[0].encode,
-            rotors[1].encode,
-            rotors[2].encode,
-            reflector.encode,
-            rotors[2].encode_reverse,
-            rotors[1].encode_reverse,
-            rotors[0].encode_reverse,
+            *(r.encode for r in rotors),
+            *(r.encode_reverse for r in rotors[:-1][::-1]),
             plug_board.permute,
         )
         self._make_step = rotors[0].make_step

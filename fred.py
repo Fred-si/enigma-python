@@ -13,16 +13,17 @@ T = TypeVar("T")
 
 
 def get_enigma_from_config(
-    rotor_places,
-    initial_rotor_positions,
-    plugin_board,
-    reflector: AvailableReflector = AvailableReflector.UKW.name,
+    rotor_places: str,
+    initial_rotor_positions: str,
+    plugin_board: str,
+    reflector: str = AvailableReflector.UKW.name,
     *,
     debug: bool = False
 ) -> Enigma:
     return Enigma(
-        *get_rotors(
-            rotor_places.split(), to_int(initial_rotor_positions.split())
+        get_rotors(
+            rotor_places.split(),
+            to_int(initial_rotor_positions.split()),
         ),
         RotorConfig(AvailableReflector[reflector], "A"),
         *get_plugs(plugin_board.split()),
@@ -94,10 +95,10 @@ def chunks(lst: Collection[Any], n: int):
 if __name__ == "__main__":
     # config = get_random_config(10)
     config = {
-        'rotor_places': 'II1930 IIIC I1930',
-        'initial_rotor_positions': '14 6 24',
-        'plugin_board': 'MN AH JR CQ',
-        'reflector': 'BETA',
+        "rotor_places": "II1930 IIIC I1930",
+        "initial_rotor_positions": "20 23 11",
+        "plugin_board": "MN AH JR CQ",
+        "reflector": "UKW",
     }
     message = "AHAHAHJEVOUSAIBIENNIQUE"
     e = get_enigma_from_config(**config, debug=True).encode_message(message)

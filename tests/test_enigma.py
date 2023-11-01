@@ -33,38 +33,45 @@ class TestRotorConfig:
 class TestEnigma:
     def test_init(self) -> None:
         Enigma(
-            RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
-            RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
-            RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            (
+                RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
+                RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
+                RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            ),
             RotorConfig("QYHOGNECVPUZTFDJAXWMKISRBL", "A"),
         )
 
     def test_encode_letter_should_step_first_rotor(self) -> None:
         enigma_a = Enigma(
-            RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
-            RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
-            RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            (
+                RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
+                RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
+                RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            ),
             RotorConfig("QYHOGNECVPUZTFDJAXWMKISRBL", "A"),
         )
 
         enigma_b = Enigma(
-            RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "B"),
-            RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
-            RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            (
+                RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "B"),
+                RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
+                RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            ),
             RotorConfig("QYHOGNECVPUZTFDJAXWMKISRBL", "A"),
         )
 
         first = enigma_a.encode_letter("A")
         second = enigma_a.encode_letter("A")
 
-
         assert first != second
 
     def test_encode_letter_should_encode_letter_after_step(self) -> None:
         config = (
-            RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
-            RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
-            RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            (
+                RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
+                RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
+                RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            ),
             RotorConfig("QYHOGNECVPUZTFDJAXWMKISRBL", "A"),
         )
 
@@ -76,9 +83,11 @@ class TestEnigma:
         letter,
     ) -> None:
         config = (
-            RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
-            RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
-            RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            (
+                RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
+                RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
+                RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            ),
             RotorConfig("QYHOGNECVPUZTFDJAXWMKISRBL", "A"),
         )
         encoded = Enigma(*config).encode_letter(letter)
@@ -91,9 +100,11 @@ class TestEnigma:
 
     def test_encode_should_convert_letter_to_uppercase(self) -> None:
         config = (
-            RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
-            RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
-            RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            (
+                RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
+                RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
+                RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            ),
             RotorConfig("QYHOGNECVPUZTFDJAXWMKISRBL", "A"),
         )
         assert Enigma(*config).encode_letter("a") == "I"
@@ -104,9 +115,11 @@ class TestEnigma:
         letter: str,
     ) -> None:
         config = (
-            RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
-            RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
-            RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            (
+                RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
+                RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
+                RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            ),
             RotorConfig("QYHOGNECVPUZTFDJAXWMKISRBL", "A"),
         )
         with pytest.raises(NotASCIILetterError):
@@ -114,9 +127,11 @@ class TestEnigma:
 
     def test_encode_word_should_return_encoded_word(self) -> None:
         config = (
-            RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
-            RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
-            RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            (
+                RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
+                RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
+                RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            ),
             RotorConfig("QYHOGNECVPUZTFDJAXWMKISRBL", "A"),
         )
         encoded = Enigma(*config).encode_word("FOOBAR")
@@ -125,9 +140,11 @@ class TestEnigma:
 
     def test_encode_already_encoded_word_should_return_decoded_word(self) -> None:
         config = (
-            RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
-            RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
-            RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            (
+                RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
+                RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
+                RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            ),
             RotorConfig("QYHOGNECVPUZTFDJAXWMKISRBL", "A"),
         )
         encoded = Enigma(*config).encode_word("FOOBAR")
@@ -140,9 +157,11 @@ class TestEnigma:
 
     def test_encode_message_should_return_encoded_message(self) -> None:
         config = (
-            RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
-            RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
-            RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            (
+                RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
+                RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
+                RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            ),
             RotorConfig("QYHOGNECVPUZTFDJAXWMKISRBL", "A"),
         )
         encoded = Enigma(*config).encode_message("FOO BAR")
@@ -151,9 +170,11 @@ class TestEnigma:
 
     def test_encode_already_encoded_message_should_return_decoded_message(self) -> None:
         config = (
-            RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
-            RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
-            RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            (
+                RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
+                RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
+                RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            ),
             RotorConfig("QYHOGNECVPUZTFDJAXWMKISRBL", "A"),
         )
         encoded = Enigma(*config).encode_message("FOO BAR")
@@ -166,9 +187,11 @@ class TestEnigma:
 
     def test_plug_board_permute_letters(self) -> None:
         config = (
-            RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
-            RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
-            RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            (
+                RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
+                RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
+                RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            ),
             RotorConfig("QYHOGNECVPUZTFDJAXWMKISRBL", "A"),
             Plug("F", "G"),
             Plug("O", "P"),
@@ -184,9 +207,11 @@ class TestEnigma:
         self,
     ) -> None:
         config = (
-            RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
-            RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
-            RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            (
+                RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
+                RotorConfig("NTZPSFBOKMWRCJDIVLAEYUXHGQ", "A"),
+                RotorConfig("JVIUBHTCDYAKEQZPOSGXNRMWFL", "A"),
+            ),
             RotorConfig("QYHOGNECVPUZTFDJAXWMKISRBL", "A"),
             Plug("F", "G"),
             Plug("O", "P"),

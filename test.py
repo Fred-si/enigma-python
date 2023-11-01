@@ -1,20 +1,28 @@
 import pytest
 
-from itertools import permutations, product, islice
-from typing import Any, Iterable, TypeVar
+from itertools import permutations, product
+from typing import Any, Iterable
 
 from string import ascii_uppercase
 
-def joined_permutation(iterable: Iterable[Any], r=None, char=' ') -> Iterable[str]:
+from enigma.available import AvailableReflector
+
+
+def joined_permutation(iterable: Iterable[Any], r=None, char=" ") -> Iterable[str]:
     for p in permutations(iterable, r=r):
         yield char.join(p)
+
 
 def get_rotor_choices() -> Iterable[str]:
     yield from joined_permutation(("II1930", "IIIC", "I1930"))
 
+
 def get_rotor_pos() -> Iterable[str]:
     for p in product(range(3), repeat=3):
-        yield ' '.join([str(q) for q in p])
+        yield " ".join([str(q) for q in p])
+
+    yield "20 23 11"
+
 
 def get_plug_choices() -> Iterable[str]:
     pairs = list(joined_permutation(ascii_uppercase, r=2, char=""))
@@ -22,20 +30,43 @@ def get_plug_choices() -> Iterable[str]:
         for choices in joined_permutation(pairs, r=pair_count):
             yield choices
 
-def get_plugin_board() -> Iterable[str]:
-    yield from ("","AI", "JK", "AI JK", "AI PU BM", "MN AH JR CQ")
 
-def get_test_conf() -> Iterable[tuple[str, str, str]]:
+def get_plugin_board() -> Iterable[str]:
+    yield from ("", "AI", "JK", "AI JK", "AI PU BM", "MN AH JR CQ")
+
+def get_reflectors() -> Iterable[AvailableReflector]:
+    forbidden_reflectors = {
+        AvailableReflector.BETA,
+        AvailableReflector.GAMMA,
+        AvailableReflector.ETW,
+    }
+    for reflector in AvailableReflector:
+        if reflector in forbidden_reflectors:
+            continue
+
+        yield reflector
+
+def get_test_conf() -> Iterable[tuple[str, str, str, AvailableReflector]]:
     return product(
-        get_rotor_choices(), get_plugin_board(), get_rotor_pos()
+        get_rotor_choices(),
+        get_plugin_board(),
+        get_rotor_pos(),
+        get_reflectors(),
     )
+
 
 @pytest.mark.skip
 @pytest.mark.parametrize(
-    ("rotor_choice", "plugin_board", "rotor_pos"),
+    ("rotor_choice", "plugin_board", "rotor_pos", "reflector"),
     get_test_conf(),
 )
-def test_kirino(rotor_choice: str, plugin_board: str, rotor_pos: str, snapshot) -> None:
+def test_kirino(
+    rotor_choice: str,
+    plugin_board: str,
+    rotor_pos: str,
+    reflector: AvailableReflector,
+    snapshot,
+) -> None:
     message = "aaaaaah".upper()
 
     encoded = encode_kirino(message, rotor_choice, plugin_board, rotor_pos)
@@ -45,37 +76,50 @@ def test_kirino(rotor_choice: str, plugin_board: str, rotor_pos: str, snapshot) 
     decoded = encode_kirino(encoded, rotor_choice, plugin_board, rotor_pos)
     assert decoded == message
 
+
 @pytest.mark.parametrize(
-    ("rotor_choice", "plugin_board", "rotor_pos"),
+    ("rotor_choice", "plugin_board", "rotor_pos", "reflector"),
     get_test_conf(),
 )
-def test_fred(rotor_choice: str, plugin_board: str, rotor_pos: str, snapshot) -> None:
-    message = "aaaaaah".upper()
+def test_fred(
+    rotor_choice: str,
+    plugin_board: str,
+    rotor_pos: str,
+    reflector: AvailableReflector,
+) -> None:
+    message = "AHAHAHJEVOUSAIBIENNIQUE"
 
-    encoded = encode_fred(message, rotor_choice, plugin_board, rotor_pos)
-    decoded = encode_fred(encoded, rotor_choice, plugin_board, rotor_pos)
+    encoded = encode_fred(message, rotor_choice, plugin_board, rotor_pos, reflector)
+    decoded = encode_fred(encoded, rotor_choice, plugin_board, rotor_pos, reflector)
 
     assert decoded == message
 
-@pytest.mark.skip
+
 @pytest.mark.parametrize(
-    ("rotor_choice", "plugin_board", "rotor_pos"),
+    ("rotor_choice", "plugin_board", "rotor_pos", "reflector"),
     get_test_conf(),
 )
-def test_fred_(rotor_choice: str, plugin_board: str, rotor_pos: str, snapshot) -> None:
-    message = "aaaaaah".upper()
+def test_fred_(
+    rotor_choice: str,
+    plugin_board: str,
+    rotor_pos: str,
+    reflector: AvailableReflector,
+    snapshot,
+) -> None:
+    message = "AHAHAHJEVOUSAIBIENNIQUE"
 
-    encoded = encode_fred(message, rotor_choice, plugin_board, rotor_pos)
+    encoded = encode_fred(message, rotor_choice, plugin_board, rotor_pos, reflector)
 
     assert encoded.strip() == snapshot
 
-    decoded = encode_fred(encoded, rotor_choice, plugin_board, rotor_pos)
+    decoded = encode_fred(encoded, rotor_choice, plugin_board, rotor_pos, reflector)
     assert decoded == message
+
 
 @pytest.mark.skip
 @pytest.mark.parametrize(
     ("rotor_choice", "plugin_board", "rotor_pos"),
-    [('4 9 10', 'ZL RC WN JP KF IO HV ED GX MT', '20 23 11')],
+    [("4 9 10", "ZL RC WN JP KF IO HV ED GX MT", "20 23 11")],
     # get_test_conf(),
 )
 def test_versus(rotor_choice: str, plugin_board: str, rotor_pos: str) -> None:
@@ -107,7 +151,13 @@ def encode_fred(
     rotor_choice: str,
     plugin_board: str,
     rotor_pos: str,
+    reflector: AvailableReflector,
 ) -> str:
     from fred import get_enigma_from_config
 
-    return get_enigma_from_config(rotor_choice, rotor_pos, plugin_board).encode_message(message)
+    return get_enigma_from_config(
+        rotor_choice,
+        rotor_pos,
+        plugin_board,
+        reflector.name,
+    ).encode_message(message)

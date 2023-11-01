@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Callable, Iterable
 
-from .available import AvailableRotor as AvailableRotor, AvailableReflector as AvailableReflector
+from .available import AvailableRotor, AvailableReflector
 from .encoder import Encoder
 from .helper import get_letter_index
 
@@ -30,6 +30,8 @@ class Reflector(BaseRotor):
         config: AvailableReflector,
         position: str,
     ) -> None:
+        self.config = config
+
         self._encoder = Encoder(config)
         self._position = get_letter_index(position)
 
@@ -41,6 +43,9 @@ class Reflector(BaseRotor):
     def encoder(self) -> Encoder:
         return self._encoder
 
+    def __repr__(self) -> str:
+        return f"Reflector({repr(self.config)}, {repr(self._position)})"
+
 
 class Rotor(BaseRotor):
     def __init__(
@@ -49,6 +54,9 @@ class Rotor(BaseRotor):
         initial_position: str,
         turnover: Callable[[], None],
     ) -> None:
+        self.config = config
+
+        self._initial_position = initial_position
         self._encoder = Encoder(config)
         self._position = get_letter_index(initial_position)
         self._turnover = turnover
@@ -69,3 +77,12 @@ class Rotor(BaseRotor):
     @property
     def encoder(self) -> Encoder:
         return self._encoder
+
+    def __repr__(self) -> str:
+        return (
+            f"Rotor("
+            f"{self.config}"
+            f", {self._initial_position}"
+            f", {self._turnover}"
+            f")"
+        )
