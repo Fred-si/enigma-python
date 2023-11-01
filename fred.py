@@ -17,7 +17,7 @@ def get_enigma_from_config(
     rotor_places: str = "II1930 IIIC I1930",
     initial_rotor_positions: str = "5 22 17",
     plugin_board: str = "AB BC DE FG HI JK LM NO PQ RS",
-    reflector: AvailableReflector = AvailableReflector.BETA.name,
+    reflector: AvailableReflector = AvailableReflector.UKW.name,
     *,
     debug: bool = False
 ) -> Enigma:
