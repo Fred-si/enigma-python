@@ -14,7 +14,7 @@ def get_enigma_from_config(
     rotor_places: str,
     initial_rotor_positions: str,
     plugin_board: str,
-    reflector: str = AvailableReflector.UKW.name,
+    reflector: str,
     *,
     debug: bool = False
 ) -> Enigma:
@@ -24,7 +24,7 @@ def get_enigma_from_config(
             map(int, initial_rotor_positions.split()),
         ),
         RotorConfig(AvailableReflector[reflector], "A"),
-        *get_plugs(plugin_board.split()),
+        *(Plug(*plug) for plug in plugin_board.split()),
         debug=debug,
     )
 
@@ -44,11 +44,6 @@ def get_rotors(
             )
         except StopIteration:
             return
-
-
-def get_plugs(plugin_board: Iterable[str]) -> Iterable[Plug]:
-    for plug in plugin_board:
-        yield Plug(*plug)
 
 
 def get_random_config(plug_count: int) -> dict[str, str]:

@@ -112,11 +112,9 @@ def test_snapshot(
     assert encoded.strip() == snapshot
 
 
-@pytest.mark.parametrize("_", range(10_000))
-def test_random_equality(_) -> None:
+@pytest.mark.parametrize("config", (get_random_config(10) for _ in range(1_000)))
+def test_random_equality(config) -> None:
     message = "AHAHAHJEVOUSAIBIENNIQUE"
-
-    config = get_random_config(10)
 
     encoded = encode(message, **config)
     decoded = encode(encoded, **config)
