@@ -133,7 +133,8 @@ class Enigma:
         return "\n".join(
             " ".join(words)
             for words in batched(
-                ("".join(letters) for letters in batched(encoded, 4)), 4,
+                ("".join(letters) for letters in batched(encoded, 4)),
+                4,
             )
         )
 
@@ -170,3 +171,31 @@ class Enigma:
     def debug(self, message: str) -> None:
         if self._debug:
             print(message)
+
+    @classmethod
+    def get_from_str_config(
+        cls,
+        rotors: str,
+        reflector: str,
+        plugin_board: str,
+        *,
+        debug: bool = False,
+    ) -> "Enigma":
+        return cls(
+            [cls._get_rotor_config(r) for r in rotors.split()],
+            cls._get_reflector_config(reflector),
+            *(Plug(*p) for p in plugin_board.split()),
+            debug=debug,
+        )
+
+    @classmethod
+    def _get_rotor_config(cls, config: str) -> RotorConfig:
+        rotor, position = config.split(":")
+
+        return RotorConfig(AvailableRotor[rotor], position)
+
+    @classmethod
+    def _get_reflector_config(cls, config: str) -> ReflectorConfig:
+        reflector, position = config.split(":")
+
+        return ReflectorConfig(AvailableReflector[reflector], position)

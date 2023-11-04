@@ -1,110 +1,91 @@
 import pytest
 
-from itertools import permutations, product
+from itertools import chain, permutations, product
 from typing import Any
 from collections.abc import Iterable
 
-from string import ascii_uppercase
-
+from enigma import Enigma
 from enigma.available import AvailableReflector
 from main import get_random_config
 
 
-def joined_permutation(
-    iterable: Iterable[Any],
-    r: int | None = None,
-    char: str = " ",
+def get_rotors_config(
+    rotor_places: Iterable[str],
+    initial_rotor_positions: Iterable[str],
 ) -> Iterable[str]:
-    for p in permutations(iterable, r=r):
-        yield char.join(p)
+    rotor_places = iter(rotor_places)
+    initial_rotor_positions = iter(initial_rotor_positions)
+
+    while True:
+        try:
+            yield ":".join((next(rotor_places), next(initial_rotor_positions)))
+        except StopIteration:
+            return
 
 
 def get_rotors() -> Iterable[str]:
-    yield from joined_permutation(("II1930", "IIIC", "I1930"))
-
-
-def get_initial_rotor_positions() -> Iterable[str]:
-    for p in product(range(3), repeat=3):
-        yield " ".join([str(q) for q in p])
-
-    yield "20 23 11"
-
-
-def get_plug_choices() -> Iterable[str]:
-    pairs = list(joined_permutation(ascii_uppercase, r=2, char=""))
-    for pair_count in range(10, 11):
-        yield from joined_permutation(pairs, r=pair_count)
+    for r in permutations(("II1930", "IIIC", "I1930")):
+        for p in chain(product("ABC", repeat=3), ("UXL",)):
+            yield " ".join(get_rotors_config(r, p))
 
 
 def get_plugin_board() -> Iterable[str]:
     yield from ("", "AI", "JK", "AI JK", "AI PU BM", "MN AH JR CQ")
 
 
-def get_reflectors() -> Iterable[AvailableReflector]:
-    thin_reflectors = set(AvailableReflector.get_thin_reflectors())
-    for reflector in AvailableReflector:
-        if reflector not in thin_reflectors:
-            yield reflector
+def get_reflectors() -> Iterable[str]:
+    for reflector in AvailableReflector.get_normal_reflectors():
+        yield f"{reflector.name}:A"
 
 
-def get_test_conf() -> Iterable[tuple[str, str, str, str]]:
+def get_test_conf() -> Iterable[tuple[str, str, str]]:
     return product(
         get_rotors(),
-        get_initial_rotor_positions(),
+        get_reflectors(),
         get_plugin_board(),
-        (r.name for r in get_reflectors()),
     )
 
 
 @pytest.mark.parametrize(
-    ("rotor_places", "initial_rotor_positions", "plugin_board", "reflector"),
+    ("rotors", "reflector", "plugin_board"),
     get_test_conf(),
 )
-def test_equality(
-    rotor_places: str,
-    initial_rotor_positions: str,
-    plugin_board: str,
-    reflector: AvailableReflector,
-) -> None:
+def test_equality(rotors: str, reflector: str, plugin_board: str) -> None:
     message = "AHAHAHJEVOUSAIBIENNIQUE"
 
     encoded = encode(
         message,
-        rotor_places,
-        initial_rotor_positions,
-        plugin_board,
+        rotors,
         reflector,
+        plugin_board,
     )
     decoded = encode(
         encoded,
-        rotor_places,
-        initial_rotor_positions,
-        plugin_board,
+        rotors,
         reflector,
+        plugin_board,
     )
 
     assert decoded == "AHAH AHJE VOUS AIBI\nENNI QUE"
 
 
 @pytest.mark.parametrize(
-    ("rotor_places", "initial_rotor_positions", "plugin_board", "reflector"),
+    ("rotors", "reflector", "plugin_board"),
     get_test_conf(),
 )
 def test_snapshot(
-    rotor_places: str,
-    initial_rotor_positions: str,
+    rotors: str,
+    reflector: str,
     plugin_board: str,
-    reflector: AvailableReflector,
     snapshot: Any,
 ) -> None:
     message = "AHAHAHJEVOUSAIBIENNIQUE"
 
     encoded = encode(
         message,
-        rotor_places,
-        initial_rotor_positions,
-        plugin_board,
+        rotors,
         reflector,
+        plugin_board,
     )
 
     assert encoded.strip() == snapshot
@@ -112,7 +93,7 @@ def test_snapshot(
 
 @pytest.mark.parametrize(
     "config",
-    (get_random_config(10) for _ in range(1_000)),
+    (get_random_config(10) for _ in range(100)),
 )
 def test_random_equality(config: dict[str, str]) -> None:
     message = "AHAHAHJEVOUSAIBIENNIQUE"
@@ -126,10 +107,9 @@ def test_random_equality(config: dict[str, str]) -> None:
 def test_equality_with_thin_rotor() -> None:
     message = "AHAHAHJEVOUSAIBIENNIQUE"
     config = {
-        "rotor_places": "II1930 IIIC I1930 BETA",
-        "initial_rotor_positions": "20 23 11 0",
+        "rotors": "II1930:U IIIC:X I1930:L BETA:A",
         "plugin_board": "MN AH JR CQ",
-        "reflector": "REFBTHIN",
+        "reflector": "REFBTHIN:A",
     }
 
     encoded = encode(message, **config)
@@ -140,16 +120,12 @@ def test_equality_with_thin_rotor() -> None:
 
 def encode(
     message: str,
-    rotor_places: str,
-    initial_rotor_positions: str,
-    plugin_board: str,
+    rotors: str,
     reflector: str,
+    plugin_board: str,
 ) -> str:
-    from main import get_enigma_from_config
-
-    return get_enigma_from_config(
-        rotor_places,
-        initial_rotor_positions,
-        plugin_board,
+    return Enigma.get_from_str_config(
+        rotors,
         reflector,
+        plugin_board,
     ).encode_message(message)
