@@ -83,7 +83,7 @@ def test_equality(
         reflector,
     )
 
-    assert decoded == message
+    assert decoded == "AHAH AHJE VOUS AIBI\nENNI QUE"
 
 
 @pytest.mark.parametrize(
@@ -120,7 +120,7 @@ def test_random_equality(config: dict[str, str]) -> None:
     encoded = encode(message, **config)
     decoded = encode(encoded, **config)
 
-    assert decoded == message
+    assert decoded == "AHAH AHJE VOUS AIBI\nENNI QUE"
 
 
 def test_equality_with_thin_rotor() -> None:
@@ -135,7 +135,7 @@ def test_equality_with_thin_rotor() -> None:
     encoded = encode(message, **config)
     decoded = encode(encoded, **config)
 
-    assert decoded == message
+    assert decoded == "AHAH AHJE VOUS AIBI\nENNI QUE"
 
 
 def encode(

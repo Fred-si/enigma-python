@@ -227,21 +227,20 @@ class EnigmaTest:
         with pytest.raises(NotASCIILetterError):
             Enigma(*config).encode_letter(letter)
 
-    def test_encode_word_should_return_encoded_word(self) -> None:
-        config = (
-            (
-                RotorConfig(AvailableRotor.I, "A"),
-                RotorConfig(AvailableRotor.II, "A"),
-                RotorConfig(AvailableRotor.III, "A"),
-            ),
-            ReflectorConfig(AvailableReflector.UKW, "A"),
-        )
-        encoded = Enigma(*config).encode_word("FOOBAR")
-
-        assert encoded == "VSLRQF"
-
-    def test_encode_already_encoded_word_should_return_decoded_word(
+    @pytest.mark.parametrize(
+        ("message", "expected"),
+        [
+            ("F", "F"),
+            ("FOO", "FOO"),
+            ("FOO BAR", "FOOB AR"),
+            ("FOOBAR", "FOOB AR"),
+            ("AAAAAAAAAAAAAAAA", "AAAA AAAA AAAA AAAA"),
+        ],
+    )
+    def test_mesage_should_grouped_by_four_letter(
         self,
+        message: str,
+        expected: str,
     ) -> None:
         config = (
             (
@@ -251,13 +250,39 @@ class EnigmaTest:
             ),
             ReflectorConfig(AvailableReflector.UKW, "A"),
         )
-        encoded = Enigma(*config).encode_word("FOOBAR")
+        encoded = Enigma(*config).encode_message(message)
+        decoded = Enigma(*config).encode_message(encoded)
 
-        # because Enigma step rotors at each letter, we need to create a new
-        # instance from the config for decode the letter.
-        decoded = Enigma(*config).encode_word(encoded)
+        assert decoded == expected
 
-        assert decoded == "FOOBAR"
+    @pytest.mark.parametrize(
+        ("message", "expected"),
+        [
+            ("AAAAAAAAAAAAAAAA", "AAAA AAAA AAAA AAAA"),
+            ("AAAAAAAAAAAAAAAAA", "AAAA AAAA AAAA AAAA\nA"),
+            (
+                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "AAAA AAAA AAAA AAAA\nAAAA AAAA AAAA AAAA",
+            ),
+        ],
+    )
+    def test_mesage_lines_should_contain_four_letter_groups(
+        self,
+        message: str,
+        expected: str,
+    ) -> None:
+        config = (
+            (
+                RotorConfig(AvailableRotor.I, "A"),
+                RotorConfig(AvailableRotor.II, "A"),
+                RotorConfig(AvailableRotor.III, "A"),
+            ),
+            ReflectorConfig(AvailableReflector.UKW, "A"),
+        )
+        encoded = Enigma(*config).encode_message(message)
+        decoded = Enigma(*config).encode_message(encoded)
+
+        assert decoded == expected
 
     def test_encode_message_should_return_encoded_message(self) -> None:
         config = (
@@ -270,7 +295,7 @@ class EnigmaTest:
         )
         encoded = Enigma(*config).encode_message("FOO BAR")
 
-        assert encoded == "VSL RQF"
+        assert encoded == "VSLR QF"
 
     def test_encode_already_encoded_message_should_return_decoded_message(
         self,
@@ -289,7 +314,7 @@ class EnigmaTest:
         # instance from the config for decode the letter.
         decoded = Enigma(*config).encode_message(encoded)
 
-        assert decoded == "FOO BAR"
+        assert decoded == "FOOB AR"
 
     def test_plug_board_permute_letters(self) -> None:
         config = (
@@ -307,7 +332,7 @@ class EnigmaTest:
         )
         encoded = Enigma(*config).encode_message("FOO BAR")
 
-        assert encoded == "PMJ LKE"
+        assert encoded == "PMJL KE"
 
     def test_encode_already_encoded_message_should_return_decoded_message_again(
         self,
@@ -331,4 +356,4 @@ class EnigmaTest:
         # instance from the config for decode the letter.
         decoded = Enigma(*config).encode_message(encoded)
 
-        assert decoded == "FOO BAR"
+        assert decoded == "FOOB AR"

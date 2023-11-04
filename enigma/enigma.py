@@ -7,6 +7,7 @@ from typing import Final
 
 from .available import AvailableRotor, AvailableReflector
 from .helper import (
+    batched,
     get_letter_from_index,
     get_letter_index,
     is_single_ascii_uppercase_letter,
@@ -126,10 +127,15 @@ class Enigma:
             raise InvalidReflectorError(msg)
 
     def encode_message(self, message: str) -> str:
-        return " ".join(self.encode_word(word) for word in message.split())
+        message = message.replace(" ", "").replace("\n", "")
+        encoded = (self.encode_letter(letter) for letter in message)
 
-    def encode_word(self, word: str) -> str:
-        return "".join(self.encode_letter(letter) for letter in word)
+        return "\n".join(
+            " ".join(words)
+            for words in batched(
+                ("".join(letters) for letters in batched(encoded, 4)), 4,
+            )
+        )
 
     def encode_letter(self, letter: str) -> str:
         self._make_step()
