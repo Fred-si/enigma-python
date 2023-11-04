@@ -1,12 +1,13 @@
 from string import ascii_uppercase
 
 import pytest
-from enigma import Enigma, RotorConfig
-from enigma.exception import NotASCIILetterError
-from enigma.plug_board import Plug
+
+from . import Enigma, RotorConfig
+from .exception import NotASCIILetterError
+from .plug_board import Plug
 
 
-class TestRotorConfig:
+class RotorConfigTest:
     @pytest.mark.parametrize("rotor_position", ["", "a", "AB"])
     def test_init_should_raise_when_position_is_not_single_ascii_uppercase_char(
         self,
@@ -15,11 +16,15 @@ class TestRotorConfig:
         with pytest.raises(AssertionError):
             RotorConfig(ascii_uppercase, rotor_position)
 
-    def test_init_should_raise_when_encoder_config_have_less_than_26_char(self) -> None:
+    def test_init_should_raise_when_encoder_config_have_less_than_26_char(
+        self,
+    ) -> None:
         with pytest.raises(AssertionError):
             RotorConfig("BCDEFGHIJKLMNOPQRSTUVWXYZ", "A")
 
-    def test_init_should_raise_when_encoder_config_have_repeated_char(self) -> None:
+    def test_init_should_raise_when_encoder_config_have_repeated_char(
+        self,
+    ) -> None:
         with pytest.raises(AssertionError):
             RotorConfig("AABCDEFGHIJKLMNOPQRSTUVWXY", "A")
 
@@ -30,7 +35,7 @@ class TestRotorConfig:
             RotorConfig("aBCDEFGHIJKLMNOPQRSTUVWXYZ", "A")
 
 
-class TestEnigma:
+class EnigmaTest:
     def test_init(self) -> None:
         Enigma(
             (
@@ -138,7 +143,9 @@ class TestEnigma:
 
         assert encoded == "IQRDCU"
 
-    def test_encode_already_encoded_word_should_return_decoded_word(self) -> None:
+    def test_encode_already_encoded_word_should_return_decoded_word(
+        self,
+    ) -> None:
         config = (
             (
                 RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),
@@ -168,7 +175,9 @@ class TestEnigma:
 
         assert encoded == "IQR DCU"
 
-    def test_encode_already_encoded_message_should_return_decoded_message(self) -> None:
+    def test_encode_already_encoded_message_should_return_decoded_message(
+        self,
+    ) -> None:
         config = (
             (
                 RotorConfig("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A"),

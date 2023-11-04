@@ -16,7 +16,7 @@ def get_enigma_from_config(
     plugin_board: str,
     reflector: str,
     *,
-    debug: bool = False
+    debug: bool = False,
 ) -> Enigma:
     return Enigma(
         get_rotors(
@@ -86,7 +86,7 @@ def choices_unique(iterable: Iterable[T], k=0) -> list[T]:
     return ret
 
 
-def chunks(lst: Collection[Any], n: int):
+def chunks(lst: Collection[T], n: int) -> Iterable[Collection[T]]:
     """Yield successive n-sized chunks from lst."""
     for i in range(0, len(lst), n):
         yield lst[i : i + n]

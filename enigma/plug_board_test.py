@@ -2,13 +2,12 @@ from string import ascii_uppercase
 
 import pytest
 
-from enigma.exception import NotASCIIUppercaseLetterError
-from enigma.plug_board import Plug, PlugBoard
+from .exception import NotASCIIUppercaseLetterError
+from .helper import get_letter_index as index
+from .plug_board import Plug, PlugBoard
 
-from .helper import index
 
-
-class TestPlug:
+class PlugTest:
     @pytest.mark.parametrize(
         ("left", "right"),
         [
@@ -24,7 +23,7 @@ class TestPlug:
             Plug(left, right)
 
 
-class TestPlugBoard:
+class PlugBoardTest:
     @pytest.mark.parametrize("letter", ascii_uppercase)
     def test_plug_board_should_not_permute_letters_when_init_without_plug(
         self,
@@ -49,7 +48,9 @@ class TestPlugBoard:
 
         assert plug_board.permute(index(letter)) == index(letter)
 
-    def test_plug_board_should_permute_plug_letters_with_two_plugs(self) -> None:
+    def test_plug_board_should_permute_plug_letters_with_two_plugs(
+        self,
+    ) -> None:
         plug_board = PlugBoard(Plug("A", "I"), Plug("B", "Z"))
 
         assert plug_board.permute(index("A")) == index("I")
@@ -57,7 +58,9 @@ class TestPlugBoard:
         assert plug_board.permute(index("B")) == index("Z")
         assert plug_board.permute(index("Z")) == index("B")
 
-    @pytest.mark.parametrize("letter", set(ascii_uppercase) - {"A", "I", "B", "Z"})
+    @pytest.mark.parametrize(
+        "letter", set(ascii_uppercase) - {"A", "I", "B", "Z"}
+    )
     def test_plug_board_should_not_permute_letters_when_not_plug_letters(
         self,
         letter,

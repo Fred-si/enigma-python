@@ -1,9 +1,9 @@
 import pytest
 
-from enigma.encoder import Encoder, Config
+from .encoder import Encoder, Config
 
 
-class TestConfig:
+class ConfigTest:
     def test_normal(self) -> None:
         expected = {
             0: 9,
@@ -67,7 +67,7 @@ class TestConfig:
         assert Config("JGDQOXUSCAMIFRVTPNEWKBLZYH").reverse == expected
 
 
-class TestEncoder:
+class EncoderTest:
     @pytest.mark.parametrize(
         ("normal", "reverse"), Config("JGDQOXUSCAMIFRVTPNEWKBLZYH")
     )
@@ -80,7 +80,9 @@ class TestEncoder:
     @pytest.mark.parametrize(
         ("normal", "reverse"), Config("JGDQOXUSCAMIFRVTPNEWKBLZYH")
     )
-    def test_encode_reverse_with_first_config(self, normal: int, reverse: int) -> None:
+    def test_encode_reverse_with_first_config(
+        self, normal: int, reverse: int
+    ) -> None:
         config = "JGDQOXUSCAMIFRVTPNEWKBLZYH"
         rotor = Encoder(config)
 
@@ -98,7 +100,9 @@ class TestEncoder:
     @pytest.mark.parametrize(
         ("normal", "reverse"), Config("NTZPSFBOKMWRCJDIVLAEYUXHGQ")
     )
-    def test_encode_reverse_with_second_config(self, normal: int, reverse: int) -> None:
+    def test_encode_reverse_with_second_config(
+        self, normal: int, reverse: int
+    ) -> None:
         config = "NTZPSFBOKMWRCJDIVLAEYUXHGQ"
         rotor = Encoder(config)
 

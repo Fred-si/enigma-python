@@ -1,5 +1,11 @@
-.pytest_cache
-__pycache__
 .idea
+.vscode
+
+__pycache__
+venv/
+*.egg-info
+dist/
+
 .mypy_cache
 .ruff_cache
+.pytest_cache

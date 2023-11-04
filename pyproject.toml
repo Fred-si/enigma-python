@@ -1,0 +1,79 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "enigma"
+version = "0.0.1"
+authors = [
+    { name = "fred-si", email = "fred-si@zaclys.net" },
+]
+description = "A simple Enigma machine"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/fred-si/enigma-python"
+"Bug Tracker" = "https://github.com/fred-si/enigma-python/issues"
+
+[tool.pytest.ini_options]
+python_classes = ["*Test"]
+addopts = "--doctest-modules"
+
+[tool.ruff]
+fixable = [
+    "Q000", # double quotes
+    "Q001", # double quotes
+    "Q002", # double quotes
+    "UP035", # import from collections.abc instead of typing
+    "COM812", # trailing comma
+    "D210", # no whitespace surrounding docstring text
+]
+extend-select = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ", "DTZ", "EM", "ERA", "EXE", "FBT", "ICN", "INP", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI", "RET", "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
+ignore = [
+    "D10", # missing docstring
+    "D203", # one blank line before class docstring
+    "D213", # multi-line summary first line
+    "ANN", # type annotation
+    "T20", # print/pprint
+    "I001", # import sort/formating
+    "DTZ001",
+    "DTZ005",
+    "DTZ006",
+    "RUF001", # ambiguous character
+    "PLC0414", # useless-import-alias
+]
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["E402"]
+"*_test.py" = [
+    "S101", # assert
+    "PLR2004", # missing-type-self
+    "E501", # line-too-long
+]
+
+[tool.ruff.flake8-annotations]
+mypy-init-return = true
+
+[tool.ruff.flake8-quotes]
+inline-quotes = "double"
+
+[tool.ruff.isort]
+lines-between-types = 1
+order-by-type = true
+
+[tool.black]
+target-version = ['py311', 'py312']
+line-length = 80
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+exclude = [
+    "^(build|venv|.mypy_cache|.pytest_cache|.ruff_cache|__snapshots__)/$"
+]

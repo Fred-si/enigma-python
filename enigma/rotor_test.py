@@ -1,12 +1,11 @@
 from string import ascii_uppercase
 from unittest.mock import MagicMock
 
-from enigma.rotor import Rotor, Reflector
+from .helper import get_letter_index as index
+from .rotor import Rotor, Reflector
 
-from .helper import index
 
-
-class TestRotor:
+class RotorTest:
     def test_init(self) -> None:
         Rotor("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A", MagicMock())
 
@@ -45,7 +44,9 @@ class TestRotor:
 
         rotor.encode(index("Z"))
 
-    def test_encode_reverse_should_return_right_letter_when_position_overflow(self) -> None:
+    def test_encode_reverse_should_return_right_letter_when_position_overflow(
+        self,
+    ) -> None:
         rotor = Rotor("JGDQOXUSCAMIFRVTPNEWKBLZYH", "B", MagicMock())
 
         assert rotor.encode_reverse(rotor.encode(index("Z"))) == index("Z")
@@ -72,7 +73,9 @@ class TestRotor:
 
         assert ascii_uppercase[rotor.position] == "A"
 
-    def test_step_should_call_turnover_callback_when_position_is_z(self) -> None:
+    def test_step_should_call_turnover_callback_when_position_is_z(
+        self,
+    ) -> None:
         callback = MagicMock()
         rotor = Rotor("", "Z", callback)
         rotor.make_step()
@@ -80,7 +83,7 @@ class TestRotor:
         assert callback.called
 
 
-class TestReflector:
+class ReflectorTest:
     def test_init(self) -> None:
         Reflector("JGDQOXUSCAMIFRVTPNEWKBLZYH", "A")
 
