@@ -59,6 +59,10 @@ class Reflector(FrozenRotor):
         return f"Reflector({self.config!r}, {self._position!r})"
 
 
+class ThinRotor(FrozenRotor):
+    pass
+
+
 class Rotor(AbstractRotor):
     def __init__(
         self,

@@ -25,15 +25,8 @@ def _validate(enum: type[StrEnum]) -> type[StrEnum]:
     return enum
 
 
-class _Available(StrEnum):
-    @classmethod
-    def names(cls) -> Iterable[str]:
-        for item in cls:
-            yield item.name
-
-
 @_validate
-class AvailableRotor(_Available):
+class AvailableRotor(StrEnum):
     IC = "DMTWSILRUYQNKFEJCAZBPGXOHV"
     IIC = "HQZGPJTMOBLNCIFDYAWVEUSRKX"
     IIIC = "UQNTLSZFMREHDPXKIBVYGJCWOA"
@@ -52,17 +45,45 @@ class AvailableRotor(_Available):
     VII1939 = "NZJHGRCXMYSWBOUFAIVLPEKQDT"
     VIII1939 = "FKQHTLXOCBJSPDZRAMEWNIUYGV"
 
-
-@_validate
-class AvailableReflector(_Available):
-    UKW = "QYHOGNECVPUZTFDJAXWMKISRBL"
-    ETW = "QWERTZUIOASDFGHJKPYXCVBNML"
-    UKWK = "IMETCGFRAYSQBZXWLHKDVUPOJN"
+    # Thin rotors
     BETA = "LEYJVCNIXWPBQMDRTAKZGFUHOS"
     GAMMA = "FSOKANUERHMBTIYCWLQPZXVGJD"
+
+    @classmethod
+    def get_thin_rotors(cls) -> set["AvailableRotor"]:
+        return {
+            cls.BETA,
+            cls.GAMMA,
+        }
+
+    @classmethod
+    def get_normal_rotors(cls) -> set["AvailableRotor"]:
+        thin_rotors = cls.get_thin_rotors()
+
+        return {r for r in cls if r not in thin_rotors}
+
+
+@_validate
+class AvailableReflector(StrEnum):
+    UKW = "QYHOGNECVPUZTFDJAXWMKISRBL"
+    UKWK = "IMETCGFRAYSQBZXWLHKDVUPOJN"
     REFA = "EJMZALYXVBWFCRQUONTSPIKHGD"
     REFB = "YRUHQSLDPXNGOKMIEBFZCWVJAT"
     REFC = "FVPJIAOYEDRZXWGCTKUQSBNMHL"
+
+    # Thin reflectors
     REFBTHIN = "ENKQAUYWJICOPBLMDXZVFTHRGS"
     REFCTHIN = "RDOBJNTKVEHMLFCWZAXGYIPSUQ"
-    REFETW = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+    @classmethod
+    def get_thin_reflectors(cls) -> Iterable["AvailableReflector"]:
+        return {
+            cls.REFBTHIN,
+            cls.REFCTHIN,
+        }
+
+    @classmethod
+    def get_normal_reflectors(cls) -> set["AvailableReflector"]:
+        thin_reflectors = cls.get_thin_reflectors()
+
+        return {r for r in cls if r not in thin_reflectors}

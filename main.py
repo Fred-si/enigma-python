@@ -20,9 +20,11 @@ def get_enigma_from_config(
     debug: bool = False,
 ) -> Enigma:
     return Enigma(
-        get_rotors(
-            rotor_places.split(),
-            map(int, initial_rotor_positions.split()),
+        tuple(
+            get_rotors(
+                rotor_places.split(),
+                map(int, initial_rotor_positions.split()),
+            ),
         ),
         ReflectorConfig(AvailableReflector[reflector], "A"),
         *(Plug(*plug) for plug in plugin_board.split()),
@@ -49,10 +51,17 @@ def get_rotors(
 
 def get_random_config(plug_count: int) -> dict[str, str]:
     return {
-        "rotor_places": " ".join(choices_unique(AvailableRotor.names(), k=3)),
+        "rotor_places": " ".join(
+            choices_unique(
+                (r.name for r in AvailableRotor.get_normal_rotors()),
+                k=3,
+            ),
+        ),
         "initial_rotor_positions": " ".join(map(str, choices(range(25), k=3))),
         "plugin_board": get_random_plugs(plug_count),
-        "reflector": choice(list(get_available_reflectors())).name,
+        "reflector": choice(
+            [r.name for r in AvailableReflector.get_normal_reflectors()],
+        ),
     }
 
 
@@ -64,18 +73,6 @@ def get_random_plugs(plug_count: int) -> str:
         "".join(chunk)
         for chunk in batched(choices_unique(ascii_uppercase, plug_count * 2), 2)
     )
-
-
-def get_available_reflectors() -> Iterable[AvailableReflector]:
-    forbidden_reflectors = {
-        AvailableReflector.BETA,
-        AvailableReflector.GAMMA,
-        AvailableReflector.ETW,
-    }
-
-    for reflector in AvailableReflector:
-        if reflector not in forbidden_reflectors:
-            yield reflector
 
 
 def choices_unique(iterable: Iterable[T], k: int = 0) -> list[T]:

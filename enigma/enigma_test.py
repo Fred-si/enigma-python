@@ -5,7 +5,12 @@ import pytest
 
 from .available import AvailableReflector, AvailableRotor
 from .enigma import Enigma, AbstractConfig, ReflectorConfig, RotorConfig
-from .exception import NotASCIILetterError
+from .exception import (
+    ConfigurationError,
+    InvalidReflectorError,
+    InvalidRotorError,
+    NotASCIILetterError,
+)
 from .plug_board import Plug
 
 
@@ -24,7 +29,7 @@ class AbstractConfigTest:
 
 
 class EnigmaTest:
-    def test_init(self) -> None:
+    def test_init_should_not_raise(self) -> None:
         Enigma(
             (
                 RotorConfig(AvailableRotor.I, "A"),
@@ -33,6 +38,117 @@ class EnigmaTest:
             ),
             ReflectorConfig(AvailableReflector.UKW, "A"),
         )
+
+    def test_init_should_raise_when_called_without_rotor(self) -> None:
+        with pytest.raises(ConfigurationError, match="at least three"):
+            Enigma(
+                (),
+                ReflectorConfig(AvailableReflector.UKW, "A"),
+            )
+
+    def test_init_should_raise_when_called_with_one_rotor(self) -> None:
+        with pytest.raises(ConfigurationError, match="at least three"):
+            Enigma(
+                (RotorConfig(AvailableRotor.I, "A"),),
+                ReflectorConfig(AvailableReflector.UKW, "A"),
+            )
+
+    def test_init_should_raise_when_called_with_two_rotors(self) -> None:
+        with pytest.raises(ConfigurationError, match="at least three"):
+            Enigma(
+                (
+                    RotorConfig(AvailableRotor.I, "A"),
+                    RotorConfig(AvailableRotor.II, "A"),
+                ),
+                ReflectorConfig(AvailableReflector.UKW, "A"),
+            )
+
+    def test_init_should_raise_when_first_rotor_is_thin(self) -> None:
+        with pytest.raises(InvalidRotorError, match="first"):
+            Enigma(
+                (
+                    RotorConfig(AvailableRotor.BETA, "A"),
+                    RotorConfig(AvailableRotor.I, "A"),
+                    RotorConfig(AvailableRotor.II, "A"),
+                ),
+                ReflectorConfig(AvailableReflector.UKW, "A"),
+            )
+
+    def test_init_should_raise_when_second_rotor_is_thin(self) -> None:
+        with pytest.raises(InvalidRotorError, match="second"):
+            Enigma(
+                (
+                    RotorConfig(AvailableRotor.I, "A"),
+                    RotorConfig(AvailableRotor.BETA, "A"),
+                    RotorConfig(AvailableRotor.II, "A"),
+                ),
+                ReflectorConfig(AvailableReflector.UKW, "A"),
+            )
+
+    def test_init_should_raise_when_third_rotor_is_thin(self) -> None:
+        with pytest.raises(InvalidRotorError, match="third"):
+            Enigma(
+                (
+                    RotorConfig(AvailableRotor.I, "A"),
+                    RotorConfig(AvailableRotor.II, "A"),
+                    RotorConfig(AvailableRotor.BETA, "A"),
+                ),
+                ReflectorConfig(AvailableReflector.UKW, "A"),
+            )
+
+    def test_init_should_raise_when_fourth_rotor_is_not_thin(self) -> None:
+        with pytest.raises(InvalidRotorError, match="fourth"):
+            Enigma(
+                (
+                    RotorConfig(AvailableRotor.I, "A"),
+                    RotorConfig(AvailableRotor.II, "A"),
+                    RotorConfig(AvailableRotor.III, "A"),
+                    RotorConfig(AvailableRotor.IIC, "A"),
+                ),
+                ReflectorConfig(AvailableReflector.UKW, "A"),
+            )
+
+    def test_init_should_raise_when_called_with_more_than_four_rotors(
+        self,
+    ) -> None:
+        with pytest.raises(ConfigurationError, match="at most four"):
+            Enigma(
+                (
+                    RotorConfig(AvailableRotor.I, "A"),
+                    RotorConfig(AvailableRotor.II, "A"),
+                    RotorConfig(AvailableRotor.III, "A"),
+                    RotorConfig(AvailableRotor.BETA, "A"),
+                    RotorConfig(AvailableRotor.IIC, "A"),
+                ),
+                ReflectorConfig(AvailableReflector.UKW, "A"),
+            )
+
+    def test_init_should_raise_when_called_with_four_rotor_and_normal_reflector(
+        self,
+    ) -> None:
+        with pytest.raises(InvalidReflectorError, match="thin"):
+            Enigma(
+                (
+                    RotorConfig(AvailableRotor.I, "A"),
+                    RotorConfig(AvailableRotor.II, "A"),
+                    RotorConfig(AvailableRotor.III, "A"),
+                    RotorConfig(AvailableRotor.BETA, "A"),
+                ),
+                ReflectorConfig(AvailableReflector.UKW, "A"),
+            )
+
+    def test_init_should_raise_when_called_with_three_rotor_and_thin_reflector(
+        self,
+    ) -> None:
+        with pytest.raises(InvalidReflectorError, match="not.*thin"):
+            Enigma(
+                (
+                    RotorConfig(AvailableRotor.I, "A"),
+                    RotorConfig(AvailableRotor.II, "A"),
+                    RotorConfig(AvailableRotor.III, "A"),
+                ),
+                ReflectorConfig(AvailableReflector.REFBTHIN, "A"),
+            )
 
     def test_encode_letter_should_step_first_rotor(self) -> None:
         enigma = Enigma(
@@ -59,7 +175,7 @@ class EnigmaTest:
             ReflectorConfig(AvailableReflector.UKW, "A"),
         )
 
-        assert Enigma(*config).encode_letter("A") == "M"
+        assert Enigma(*config).encode_letter("A") == "I"
 
     @pytest.mark.parametrize("letter", ascii_uppercase)
     def test_encode_already_encoded_letter_should_return_decoded_letter(
@@ -92,7 +208,7 @@ class EnigmaTest:
             ReflectorConfig(AvailableReflector.UKW, "A"),
         )
 
-        assert Enigma(*config).encode_letter("a") == "M"
+        assert Enigma(*config).encode_letter("a") == "I"
 
     @pytest.mark.parametrize("letter", ["", "AB", "É", "!", ",", '"', "'"])
     def test_encode_should_raise_not_ascii_error_when_letter_is_not_an_ascii_letter(
@@ -122,7 +238,7 @@ class EnigmaTest:
         )
         encoded = Enigma(*config).encode_word("FOOBAR")
 
-        assert encoded == "IQRDCU"
+        assert encoded == "VSLRQF"
 
     def test_encode_already_encoded_word_should_return_decoded_word(
         self,
@@ -154,7 +270,7 @@ class EnigmaTest:
         )
         encoded = Enigma(*config).encode_message("FOO BAR")
 
-        assert encoded == "IQR DCU"
+        assert encoded == "VSL RQF"
 
     def test_encode_already_encoded_message_should_return_decoded_message(
         self,
@@ -191,7 +307,7 @@ class EnigmaTest:
         )
         encoded = Enigma(*config).encode_message("FOO BAR")
 
-        assert encoded == "ERN DCW"
+        assert encoded == "PMJ LKE"
 
     def test_encode_already_encoded_message_should_return_decoded_message_again(
         self,

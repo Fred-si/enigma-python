@@ -40,17 +40,11 @@ def get_plugin_board() -> Iterable[str]:
     yield from ("", "AI", "JK", "AI JK", "AI PU BM", "MN AH JR CQ")
 
 
-def get_reflectors() -> Iterable[str]:
-    forbidden_reflectors = {
-        AvailableReflector.BETA,
-        AvailableReflector.GAMMA,
-        AvailableReflector.ETW,
-    }
+def get_reflectors() -> Iterable[AvailableReflector]:
+    thin_reflectors = set(AvailableReflector.get_thin_reflectors())
     for reflector in AvailableReflector:
-        if reflector in forbidden_reflectors:
-            continue
-
-        yield reflector.name
+        if reflector not in thin_reflectors:
+            yield reflector
 
 
 def get_test_conf() -> Iterable[tuple[str, str, str, str]]:
@@ -58,7 +52,7 @@ def get_test_conf() -> Iterable[tuple[str, str, str, str]]:
         get_rotors(),
         get_initial_rotor_positions(),
         get_plugin_board(),
-        get_reflectors(),
+        (r.name for r in get_reflectors()),
     )
 
 
@@ -122,6 +116,21 @@ def test_snapshot(
 )
 def test_random_equality(config: dict[str, str]) -> None:
     message = "AHAHAHJEVOUSAIBIENNIQUE"
+
+    encoded = encode(message, **config)
+    decoded = encode(encoded, **config)
+
+    assert decoded == message
+
+
+def test_equality_with_thin_rotor() -> None:
+    message = "AHAHAHJEVOUSAIBIENNIQUE"
+    config = {
+        "rotor_places": "II1930 IIIC I1930 BETA",
+        "initial_rotor_positions": "20 23 11 0",
+        "plugin_board": "MN AH JR CQ",
+        "reflector": "REFBTHIN",
+    }
 
     encoded = encode(message, **config)
     decoded = encode(encoded, **config)
