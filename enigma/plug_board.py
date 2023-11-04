@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from typing import Final
 
 from enigma.exception import NotASCIIUppercaseLetterError
 from enigma.helper import get_letter_index, is_single_ascii_uppercase_letter
@@ -18,9 +19,13 @@ class Plug:
 
 
 class PlugBoard:
+    MAX_PLUG_COUNT: Final = 10
+
     def __init__(self, *plugs: Plug) -> None:
-        if len(plugs) > 10:
-            msg = f"PlugBoard can't contain more than 10 plug, {len(plugs)} given"
+        if len(plugs) > self.MAX_PLUG_COUNT:
+            msg = (
+                f"PlugBoard can't contain more than 10 plug, {len(plugs)} given"
+            )
             raise ValueError(msg)
 
         self._plugs: dict[int, int] = {}
@@ -39,6 +44,4 @@ class PlugBoard:
         if not self._plugs:
             return letter
 
-        letter = self._plugs.get(letter, letter)
-
-        return letter
+        return self._plugs.get(letter, letter)

@@ -1,7 +1,8 @@
+from abc import ABC
 from collections.abc import Iterable
 from dataclasses import dataclass
 from string import ascii_uppercase
-from typing import Callable
+from collections.abc import Callable
 
 from .available import AvailableRotor, AvailableReflector
 from .helper import (
@@ -14,34 +15,43 @@ from .rotor import AbstractRotor, FrozenRotor, Reflector, Rotor
 from .exception import NotASCIILetterError
 
 
-@dataclass(frozen=True)
-class RotorConfig:
-    encoder_config: AvailableRotor | AvailableReflector
+class AbstractConfig(ABC):
     rotor_position: str
 
     def __post_init__(self) -> None:
-        assert is_single_ascii_uppercase_letter(self.rotor_position)
+        if not is_single_ascii_uppercase_letter(self.rotor_position):
+            msg = (
+                f"rotor_position must be a single ascii uppercase letter."
+                f" '{self.rotor_position}' given"
+            )
+            raise ValueError(msg)
 
-        assert len(self.encoder_config) == len(ascii_uppercase)
-        assert len(self.encoder_config) == len(set(self.encoder_config))
-        assert all(letter in ascii_uppercase for letter in self.encoder_config)
+
+@dataclass(frozen=True)
+class RotorConfig(AbstractConfig):
+    encoder_config: AvailableRotor
+    rotor_position: str
+
+
+@dataclass(frozen=True)
+class ReflectorConfig(AbstractConfig):
+    encoder_config: AvailableReflector
+    rotor_position: str
 
 
 class Enigma:
     def __init__(
         self,
         rotors_config: Iterable[RotorConfig],
-        reflector: RotorConfig,
+        reflector_config: ReflectorConfig,
         *plugs: Plug,
         debug: bool = False,
     ) -> None:
-        self.debug = print if debug else lambda *_, **__: None
-
         plug_board = PlugBoard(*plugs)
 
         reflector = Reflector(
-            reflector.encoder_config,
-            reflector.rotor_position,
+            reflector_config.encoder_config,
+            reflector_config.rotor_position,
         )
         rotors: list[AbstractRotor] = [
             reflector,
@@ -63,12 +73,13 @@ class Enigma:
             plug_board.permute,
         )
         self._make_step = rotors[-1].make_step
+        self._debug = debug
 
     def encode_message(self, message: str) -> str:
         return " ".join(self.encode_word(word) for word in message.split())
 
     def encode_word(self, word: str) -> str:
-        return "".join((self.encode_letter(letter) for letter in word))
+        return "".join(self.encode_letter(letter) for letter in word)
 
     def encode_letter(self, letter: str) -> str:
         self._make_step()
@@ -91,10 +102,15 @@ class Enigma:
             for encoder in encoders:
                 letter = encoder(letter)
                 self.debug(
-                    f"Converted fred {previous_letter} -> {get_letter_from_index(letter)}"
+                    f"Converted fred"
+                    f" {previous_letter} -> {get_letter_from_index(letter)}",
                 )
                 previous_letter = get_letter_from_index(letter)
 
             return letter
 
         return ret
+
+    def debug(self, message: str) -> None:
+        if self._debug:
+            print(message)

@@ -9,7 +9,8 @@ from .helper import is_single_ascii_uppercase_letter, get_letter_index
 class IsSingleASCIIUppercaseLetterTest:
     @pytest.mark.parametrize("letter", ascii_uppercase)
     def test_with_ascii_uppercase_letter_should_return_true(
-        self, letter
+        self,
+        letter: str,
     ) -> None:
         assert is_single_ascii_uppercase_letter(letter)
 
@@ -25,7 +26,7 @@ class IsSingleASCIIUppercaseLetterTest:
 
 class GetLetterIndexTest:
     @pytest.mark.parametrize(
-        ("expected_index", "letter"), enumerate(ascii_uppercase)
+        ("expected_index", "letter"), enumerate(ascii_uppercase),
     )
     def test_should_return_letter_index(
         self,
@@ -36,7 +37,7 @@ class GetLetterIndexTest:
 
     @pytest.mark.parametrize("letter", ["", "a", "AB"])
     def test_function_should_raise_when_called_without_single_ascii_uppercase_letter(
-        self, letter: str
+        self, letter: str,
     ) -> None:
         with pytest.raises(NotASCIIUppercaseLetterError):
             get_letter_index(letter)

@@ -1,5 +1,6 @@
 from .enigma import (
     Enigma as Enigma,
     RotorConfig as RotorConfig,
-    Plug as Plug,
+    ReflectorConfig as ReflectorConfig,
 )
+from .plug_board import Plug as Plug

@@ -6,15 +6,15 @@ from .helper import get_letter_index
 
 
 class Config:
-    def __init__(self, config: AvailableRotor|AvailableReflector) -> None:
+    def __init__(self, config: AvailableRotor | AvailableReflector) -> None:
         self.config = [
             (idx, get_letter_index(letter)) for idx, letter in enumerate(config)
         ]
 
-        self.normal = {raw: encoded for raw, encoded in self.config}
+        self.normal = dict(self.config)
         self.reverse = {encoded: raw for raw, encoded in self.config}
 
-    def __iter__(self) -> Iterator[tuple[int, int], None, None]:
+    def __iter__(self) -> Iterator[tuple[int, int]]:
         yield from self.config
 
 
@@ -27,7 +27,6 @@ class AbstractEncoder:
 
     def _encode(self, direction: dict[int, int], letter: int) -> int:
         return direction[letter]
-
 
 
 class ReflectorEncoder(AbstractEncoder):

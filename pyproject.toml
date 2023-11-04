@@ -38,7 +38,7 @@ extend-select = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W"
 ignore = [
     "D10", # missing docstring
     "D203", # one blank line before class docstring
-    "D213", # multi-line summary first line
+    "D212", # multi-line summary first line
     "ANN", # type annotation
     "T20", # print/pprint
     "I001", # import sort/formating
@@ -46,6 +46,7 @@ ignore = [
     "DTZ005",
     "DTZ006",
     "RUF001", # ambiguous character
+    "S311", # Standard pseudo-random generators are not suitable for cryptographic purposes
     "PLC0414", # useless-import-alias
 ]
 

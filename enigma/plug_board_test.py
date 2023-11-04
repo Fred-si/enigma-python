@@ -17,7 +17,9 @@ class PlugTest:
         ],
     )
     def test_plug_init_should_raise_when_values_are_not_single_ascii_letters(
-        self, left, right
+        self,
+        left: str,
+        right: str,
     ) -> None:
         with pytest.raises(NotASCIIUppercaseLetterError):
             Plug(left, right)
@@ -27,28 +29,19 @@ class PlugBoardTest:
     @pytest.mark.parametrize("letter", ascii_uppercase)
     def test_plug_board_should_not_permute_letters_when_init_without_plug(
         self,
-        letter,
+        letter: str,
     ) -> None:
         plug_board = PlugBoard()
 
         assert plug_board.permute(index(letter)) == index(letter)
 
-    def test_plug_board_should_permute_plug_letters(self) -> None:
+    def test_plug_board_should_permute_plugged_letters(self) -> None:
         plug_board = PlugBoard(Plug("A", "I"))
 
         assert plug_board.permute(index("A")) == index("I")
         assert plug_board.permute(index("I")) == index("A")
 
-    @pytest.mark.parametrize("letter", set(ascii_uppercase) - {"A", "I"})
-    def test_plug_board_should_not_permute_letters_when_not_plug_letters(
-        self,
-        letter,
-    ) -> None:
-        plug_board = PlugBoard(Plug("A", "I"))
-
-        assert plug_board.permute(index(letter)) == index(letter)
-
-    def test_plug_board_should_permute_plug_letters_with_two_plugs(
+    def test_plug_board_should_permute_plugged_letters_with_two_plugs(
         self,
     ) -> None:
         plug_board = PlugBoard(Plug("A", "I"), Plug("B", "Z"))
@@ -59,11 +52,11 @@ class PlugBoardTest:
         assert plug_board.permute(index("Z")) == index("B")
 
     @pytest.mark.parametrize(
-        "letter", set(ascii_uppercase) - {"A", "I", "B", "Z"}
+        "letter", set(ascii_uppercase) - {"A", "I", "B", "Z"},
     )
-    def test_plug_board_should_not_permute_letters_when_not_plug_letters(
+    def test_plug_board_should_not_permute_letters_when_not_plugged(
         self,
-        letter,
+        letter: str,
     ) -> None:
         plug_board = PlugBoard(Plug("A", "I"), Plug("B", "Z"))
 

@@ -1,5 +1,6 @@
 import pytest
 
+from .available import AvailableRotor
 from .encoder import Encoder, Config
 
 
@@ -33,7 +34,7 @@ class ConfigTest:
             24: 24,
             25: 7,
         }
-        assert Config("JGDQOXUSCAMIFRVTPNEWKBLZYH").normal == expected
+        assert Config(AvailableRotor.I).normal == expected
 
     def test_reverse(self) -> None:
         expected = {
@@ -64,46 +65,38 @@ class ConfigTest:
             24: 24,
             25: 23,
         }
-        assert Config("JGDQOXUSCAMIFRVTPNEWKBLZYH").reverse == expected
+        assert Config(AvailableRotor.I).reverse == expected
 
 
 class EncoderTest:
-    @pytest.mark.parametrize(
-        ("normal", "reverse"), Config("JGDQOXUSCAMIFRVTPNEWKBLZYH")
-    )
+    @pytest.mark.parametrize(("normal", "reverse"), Config(AvailableRotor.I))
     def test_encode_with_first_config(self, normal: int, reverse: int) -> None:
-        config = "JGDQOXUSCAMIFRVTPNEWKBLZYH"
+        config = AvailableRotor.I
         rotor = Encoder(config)
 
         assert rotor.encode(normal) == reverse
 
-    @pytest.mark.parametrize(
-        ("normal", "reverse"), Config("JGDQOXUSCAMIFRVTPNEWKBLZYH")
-    )
+    @pytest.mark.parametrize(("normal", "reverse"), Config(AvailableRotor.I))
     def test_encode_reverse_with_first_config(
-        self, normal: int, reverse: int
+        self, normal: int, reverse: int,
     ) -> None:
-        config = "JGDQOXUSCAMIFRVTPNEWKBLZYH"
+        config = AvailableRotor.I
         rotor = Encoder(config)
 
         assert rotor.encode_reverse(reverse) == normal
 
-    @pytest.mark.parametrize(
-        ("normal", "reverse"), Config("NTZPSFBOKMWRCJDIVLAEYUXHGQ")
-    )
+    @pytest.mark.parametrize(("normal", "reverse"), Config(AvailableRotor.II))
     def test_encode_with_second_config(self, normal: int, reverse: int) -> None:
-        config = "NTZPSFBOKMWRCJDIVLAEYUXHGQ"
+        config = AvailableRotor.II
         rotor = Encoder(config)
 
         assert rotor.encode(normal) == reverse
 
-    @pytest.mark.parametrize(
-        ("normal", "reverse"), Config("NTZPSFBOKMWRCJDIVLAEYUXHGQ")
-    )
+    @pytest.mark.parametrize(("normal", "reverse"), Config(AvailableRotor.II))
     def test_encode_reverse_with_second_config(
-        self, normal: int, reverse: int
+        self, normal: int, reverse: int,
     ) -> None:
-        config = "NTZPSFBOKMWRCJDIVLAEYUXHGQ"
+        config = AvailableRotor.II
         rotor = Encoder(config)
 
         assert rotor.encode_reverse(reverse) == normal

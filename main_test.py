@@ -1,7 +1,8 @@
 import pytest
 
 from itertools import permutations, product
-from typing import Any, Iterable
+from typing import Any
+from collections.abc import Iterable
 
 from string import ascii_uppercase
 
@@ -9,7 +10,11 @@ from enigma.available import AvailableReflector
 from main import get_random_config
 
 
-def joined_permutation(iterable: Iterable[Any], r=None, char=" ") -> Iterable[str]:
+def joined_permutation(
+    iterable: Iterable[Any],
+    r: int | None = None,
+    char: str = " ",
+) -> Iterable[str]:
     for p in permutations(iterable, r=r):
         yield char.join(p)
 
@@ -28,15 +33,14 @@ def get_initial_rotor_positions() -> Iterable[str]:
 def get_plug_choices() -> Iterable[str]:
     pairs = list(joined_permutation(ascii_uppercase, r=2, char=""))
     for pair_count in range(10, 11):
-        for choices in joined_permutation(pairs, r=pair_count):
-            yield choices
+        yield from joined_permutation(pairs, r=pair_count)
 
 
 def get_plugin_board() -> Iterable[str]:
     yield from ("", "AI", "JK", "AI JK", "AI PU BM", "MN AH JR CQ")
 
 
-def get_reflectors() -> Iterable[AvailableReflector]:
+def get_reflectors() -> Iterable[str]:
     forbidden_reflectors = {
         AvailableReflector.BETA,
         AvailableReflector.GAMMA,
@@ -46,10 +50,10 @@ def get_reflectors() -> Iterable[AvailableReflector]:
         if reflector in forbidden_reflectors:
             continue
 
-        yield reflector
+        yield reflector.name
 
 
-def get_test_conf() -> Iterable[tuple[str, str, str, AvailableReflector]]:
+def get_test_conf() -> Iterable[tuple[str, str, str, str]]:
     return product(
         get_rotors(),
         get_initial_rotor_positions(),
@@ -97,7 +101,7 @@ def test_snapshot(
     initial_rotor_positions: str,
     plugin_board: str,
     reflector: AvailableReflector,
-    snapshot,
+    snapshot: Any,
 ) -> None:
     message = "AHAHAHJEVOUSAIBIENNIQUE"
 
@@ -112,8 +116,11 @@ def test_snapshot(
     assert encoded.strip() == snapshot
 
 
-@pytest.mark.parametrize("config", (get_random_config(10) for _ in range(1_000)))
-def test_random_equality(config) -> None:
+@pytest.mark.parametrize(
+    "config",
+    (get_random_config(10) for _ in range(1_000)),
+)
+def test_random_equality(config: dict[str, str]) -> None:
     message = "AHAHAHJEVOUSAIBIENNIQUE"
 
     encoded = encode(message, **config)
@@ -127,7 +134,7 @@ def encode(
     rotor_places: str,
     initial_rotor_positions: str,
     plugin_board: str,
-    reflector: AvailableReflector,
+    reflector: str,
 ) -> str:
     from main import get_enigma_from_config
 
@@ -135,5 +142,5 @@ def encode(
         rotor_places,
         initial_rotor_positions,
         plugin_board,
-        reflector.name,
+        reflector,
     ).encode_message(message)

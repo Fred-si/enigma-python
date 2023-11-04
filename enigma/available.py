@@ -3,15 +3,22 @@ from enum import StrEnum, unique
 from string import ascii_uppercase
 
 
-def _validate(enum: StrEnum) -> StrEnum:
+def _validate(enum: type[StrEnum]) -> type[StrEnum]:
     unique(enum)
 
     for e in enum:
-        if len(e) != len(set(e)):
-            msg = f"{enum}.{e.name} contain more the same letter several times."
+        if len(e) != len(ascii_uppercase):
+            msg = (
+                f"{enum}.{e.name} contain {len(e)}"
+                f" letters instead of {len(ascii_uppercase)}"
+            )
             raise ValueError(msg)
 
-        if not all(l in ascii_uppercase for l in e):
+        if len(e) != len(set(e)):
+            msg = f"{enum}.{e.name} contain same letter several times."
+            raise ValueError(msg)
+
+        if not all(letter in ascii_uppercase for letter in e):
             msg = f"{enum}.{e.name} not contain only ASCII uppercase letters."
             raise ValueError(msg)
 
@@ -30,7 +37,7 @@ class AvailableRotor(_Available):
     IC = "DMTWSILRUYQNKFEJCAZBPGXOHV"
     IIC = "HQZGPJTMOBLNCIFDYAWVEUSRKX"
     IIIC = "UQNTLSZFMREHDPXKIBVYGJCWOA"
-    I = "JGDQOXUSCAMIFRVTPNEWKBLZYH"
+    I = "JGDQOXUSCAMIFRVTPNEWKBLZYH"  # noqa: E741 (Ambiguous variable name: `I`)
     II = "NTZPSFBOKMWRCJDIVLAEYUXHGQ"
     III = "JVIUBHTCDYAKEQZPOSGXNRMWFL"
     IK = "PEZUOHXSCVFMTBGLRINQJWAYDK"

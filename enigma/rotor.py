@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import Callable, Iterable
+from collections.abc import Callable
 
 from .available import AvailableRotor, AvailableReflector
 from .encoder import Encoder
@@ -56,7 +56,7 @@ class Reflector(FrozenRotor):
         return letter
 
     def __repr__(self) -> str:
-        return f"Reflector({repr(self.config)}, {repr(self._position)})"
+        return f"Reflector({self.config!r}, {self._position!r})"
 
 
 class Rotor(AbstractRotor):
