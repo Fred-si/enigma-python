@@ -1,7 +1,6 @@
 from abc import ABC
 from collections.abc import Sequence
 from dataclasses import dataclass
-from random import choices
 from secrets import choice
 from string import ascii_uppercase
 from typing import Any, Final, Self, TypedDict
@@ -9,7 +8,12 @@ from collections.abc import Iterable
 from collections.abc import Container
 
 from .available import AvailableReflector, AvailableRotor
-from .helper import batched, choices_unique, is_single_ascii_uppercase_letter
+from .helper import (
+    batched,
+    choices,
+    choices_unique,
+    is_single_ascii_uppercase_letter,
+)
 from .plug_board import Plug, PlugBoard
 
 name_position_separator: Final = ":"

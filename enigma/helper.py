@@ -1,5 +1,5 @@
 from itertools import islice
-from secrets import randbelow
+from secrets import choice, randbelow
 from string import ascii_uppercase
 from typing import TypeVar
 from collections.abc import Iterable, Sequence
@@ -76,3 +76,7 @@ def choices_unique(seq: Sequence[T], k: int = 1) -> list[T]:
         ret.append(lst.pop(randbelow(len(lst))))
 
     return ret
+
+
+def choices(seq: Sequence[T], k: int = 1) -> list[T]:
+    return [choice(seq) for _ in range(k)]

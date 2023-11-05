@@ -46,7 +46,6 @@ ignore = [
     "DTZ005",
     "DTZ006",
     "RUF001", # ambiguous character
-    "S311", # Standard pseudo-random generators are not suitable for cryptographic purposes
     "PLC0414", # useless-import-alias
 ]
 
