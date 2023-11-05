@@ -4,9 +4,8 @@ from itertools import chain, permutations, product
 from typing import Any
 from collections.abc import Iterable
 
-from enigma import Enigma
+from enigma import Enigma, EnigmaConfig
 from enigma.available import AvailableReflector
-from main import get_random_config
 
 
 def get_rotors_config(
@@ -93,7 +92,7 @@ def test_snapshot(
 
 @pytest.mark.parametrize(
     "config",
-    (get_random_config(10) for _ in range(100)),
+    (EnigmaConfig.generate_random_config(10).as_dict() for _ in range(100)),
 )
 def test_random_equality(config: dict[str, str]) -> None:
     message = "AHAHAHJEVOUSAIBIENNIQUE"
@@ -124,8 +123,9 @@ def encode(
     reflector: str,
     plugin_board: str,
 ) -> str:
-    return Enigma.get_from_str_config(
+    config = EnigmaConfig.parse(
         rotors,
         reflector,
         plugin_board,
-    ).encode_message(message)
+    )
+    return Enigma(config).encode_message(message)
