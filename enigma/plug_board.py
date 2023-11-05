@@ -1,3 +1,4 @@
+from collections.abc import Callable
 from dataclasses import dataclass
 from typing import Final
 
@@ -21,7 +22,7 @@ class Plug:
 class PlugBoard:
     MAX_PLUG_COUNT: Final = 10
 
-    def __init__(self, *plugs: Plug) -> None:
+    def __init__(self, *plugs: Plug, turnover: Callable[[], None]) -> None:
         if len(plugs) > self.MAX_PLUG_COUNT:
             msg = (
                 f"PlugBoard can't contain more than 10 plug, {len(plugs)} given"
@@ -40,8 +41,16 @@ class PlugBoard:
             self._plugs[left] = right
             self._plugs[right] = left
 
-    def permute(self, letter: int) -> int:
+        self._turnover = turnover
+
+    def encode(self, letter: int) -> int:
         if not self._plugs:
             return letter
 
         return self._plugs.get(letter, letter)
+
+    def encode_reverse(self, letter: int) -> int:
+        return self.encode(letter)
+
+    def make_step(self) -> None:
+        self._turnover()

@@ -1,4 +1,5 @@
 from string import ascii_uppercase
+from unittest.mock import MagicMock
 
 import pytest
 
@@ -31,40 +32,49 @@ class PlugBoardTest:
         self,
         letter: str,
     ) -> None:
-        plug_board = PlugBoard()
+        plug_board = PlugBoard(turnover=MagicMock())
 
-        assert plug_board.permute(index(letter)) == index(letter)
+        assert plug_board.encode(index(letter)) == index(letter)
 
     def test_plug_board_should_permute_plugged_letters(self) -> None:
-        plug_board = PlugBoard(Plug("A", "I"))
+        plug_board = PlugBoard(Plug("A", "I"), turnover=MagicMock())
 
-        assert plug_board.permute(index("A")) == index("I")
-        assert plug_board.permute(index("I")) == index("A")
+        assert plug_board.encode(index("A")) == index("I")
+        assert plug_board.encode(index("I")) == index("A")
 
     def test_plug_board_should_permute_plugged_letters_with_two_plugs(
         self,
     ) -> None:
-        plug_board = PlugBoard(Plug("A", "I"), Plug("B", "Z"))
+        plug_board = PlugBoard(
+            Plug("A", "I"),
+            Plug("B", "Z"),
+            turnover=MagicMock(),
+        )
 
-        assert plug_board.permute(index("A")) == index("I")
-        assert plug_board.permute(index("I")) == index("A")
-        assert plug_board.permute(index("B")) == index("Z")
-        assert plug_board.permute(index("Z")) == index("B")
+        assert plug_board.encode(index("A")) == index("I")
+        assert plug_board.encode(index("I")) == index("A")
+        assert plug_board.encode(index("B")) == index("Z")
+        assert plug_board.encode(index("Z")) == index("B")
 
     @pytest.mark.parametrize(
-        "letter", set(ascii_uppercase) - {"A", "I", "B", "Z"},
+        "letter",
+        set(ascii_uppercase) - {"A", "I", "B", "Z"},
     )
     def test_plug_board_should_not_permute_letters_when_not_plugged(
         self,
         letter: str,
     ) -> None:
-        plug_board = PlugBoard(Plug("A", "I"), Plug("B", "Z"))
+        plug_board = PlugBoard(
+            Plug("A", "I"),
+            Plug("B", "Z"),
+            turnover=MagicMock(),
+        )
 
-        assert plug_board.permute(index(letter)) == index(letter)
+        assert plug_board.encode(index(letter)) == index(letter)
 
     def test_init_should_raise_when_pass_duplicated_plug(self) -> None:
         with pytest.raises(ValueError, match=".*duplicate.*"):
-            PlugBoard(Plug("A", "I"), Plug("I", "A"))
+            PlugBoard(Plug("A", "I"), Plug("I", "A"), turnover=MagicMock())
 
     def test_init_should_raise_when_pass_more_than_ten_plugs(self) -> None:
         with pytest.raises(ValueError, match=".*10.*11.*"):
@@ -80,4 +90,5 @@ class PlugBoardTest:
                 Plug("Q", "R"),
                 Plug("S", "T"),
                 Plug("U", "V"),
+                turnover=MagicMock(),
             )
