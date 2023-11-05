@@ -1,3 +1,4 @@
+import sys
 from argparse import ArgumentParser, Namespace
 from collections.abc import Sequence
 from enum import Enum
@@ -72,7 +73,9 @@ def parse_args(argv: Sequence[str]) -> Namespace:
     return parser.parse_args(argv)
 
 
-def main(argv: Sequence[str]) -> None:
+def main(argv: Sequence[str] | None = None) -> None:
+    argv = argv or sys.argv
+
     args = parse_args(argv[1:])
 
     match args.command:
@@ -91,23 +94,27 @@ def main(argv: Sequence[str]) -> None:
             print(Enigma(config).encode_message(args.message))
 
         case "random":
+            plug_count = (
+                args.plug_count
+                if args.plug_count is not None
+                else randbelow(11)
+            )
             configs = (
-                EnigmaConfig.generate_random_config(
-                    args.plug_count
-                    if args.plug_count is not None
-                    else randbelow(11),
-                ).as_dict()
+                EnigmaConfig.generate_random_config(plug_count).as_dict()
                 for _ in range(args.count)
             )
-
-            for c in configs:
-                print(
-                    f"rotors: '{c['rotors']}'",
-                    f"reflector: '{c['reflector']}'",
-                    f"plugs: '{c['plugin_board']}'",
-                    "",
-                    sep="\n",
+            display = "\n\n".join(
+                "\n".join(
+                    (
+                        f"rotors: '{c['rotors']}'",
+                        f"reflector: '{c['reflector']}'",
+                        f"plugs: '{c['plugin_board']}'",
+                    ),
                 )
+                for c in configs
+            )
+
+            print(display)
 
 
 def enum_to_string(enum: type[Enum], line_prefix: str) -> str:
@@ -115,6 +122,4 @@ def enum_to_string(enum: type[Enum], line_prefix: str) -> str:
 
 
 if __name__ == "__main__":
-    import sys
-
-    main(sys.argv)
+    main()

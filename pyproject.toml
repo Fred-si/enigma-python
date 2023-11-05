@@ -21,6 +21,9 @@ classifiers = [
 "Homepage" = "https://github.com/fred-si/enigma-python"
 "Bug Tracker" = "https://github.com/fred-si/enigma-python/issues"
 
+[project.scripts]
+enigma = "main:main"
+
 [tool.pytest.ini_options]
 python_classes = ["*Test"]
 addopts = "--doctest-modules"
