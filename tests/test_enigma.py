@@ -2,11 +2,11 @@ from string import ascii_uppercase
 
 import pytest
 
-from .available import AvailableReflector, AvailableRotor
-from .enigma import Enigma
-from .config import EnigmaConfig, ReflectorConfig, RotorConfig
-from .exception import NotASCIILetterError
-from .plug_board import Plug
+from enigma.available import AvailableReflector, AvailableRotor
+from enigma.enigma import Enigma
+from enigma.config import EnigmaConfig, ReflectorConfig, RotorConfig
+from enigma.exception import NotASCIILetterError
+from enigma.plug_board import Plug
 
 
 class EnigmaTest:

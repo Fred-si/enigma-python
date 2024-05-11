@@ -1,7 +1,7 @@
 import pytest
 
-from .available import AvailableRotor
-from .encoder import Encoder
+from enigma.available import AvailableRotor
+from enigma.encoder import Encoder
 
 
 class ConfigTest:

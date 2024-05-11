@@ -4,8 +4,8 @@ from typing import Any
 
 import pytest
 
-from .exception import NotASCIIUppercaseLetterError
-from .helper import (
+from enigma.exception import NotASCIIUppercaseLetterError
+from enigma.helper import (
     choices_unique,
     is_single_ascii_uppercase_letter,
     get_letter_index,

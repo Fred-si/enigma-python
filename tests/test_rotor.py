@@ -1,9 +1,9 @@
 from string import ascii_uppercase
 from unittest.mock import MagicMock
 
-from .available import AvailableReflector, AvailableRotor
-from .helper import get_letter_index as index
-from .rotor import Rotor, Reflector
+from enigma.available import AvailableReflector, AvailableRotor
+from enigma.helper import get_letter_index as index
+from enigma.rotor import Rotor, Reflector
 
 
 class RotorTest:

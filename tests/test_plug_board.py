@@ -3,9 +3,9 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from .exception import NotASCIIUppercaseLetterError
-from .helper import get_letter_index as index
-from .plug_board import Plug, PlugBoard
+from enigma.exception import NotASCIIUppercaseLetterError
+from enigma.helper import get_letter_index as index
+from enigma.plug_board import Plug, PlugBoard
 
 
 class PlugTest:
